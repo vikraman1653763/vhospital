@@ -19,34 +19,22 @@ const Navbar = () => {
 
   const droneLinks = [
     {
-      type: 'Agricultural Drone',
+      type: '111',
       models: [
-        { name: 'AGR 10', link: '/agr10' },
-        { name: 'AGR 16', link: '/agr16' },
-        { name: 'AGR 20', link: '/agr20' },
+        { name: '1', link: '/1' },
+        { name: '1', link: '/1' },
+        { name: '1', link: '/1' },
       ],
     },
     {
-      type: 'Surveillance Drone',
+      type: '222',
       models: [
-        { name: 'VTOL', link: '/vtol' },
-        { name: 'Quadcopter', link: '/Quadcopter' },
+        { name: '1', link: '/1' },
+        { name: '1', link: '/1' },
       ],
     },
-    {
-      type: 'Military Drone',
-      models: [
-        { name: 'LW-50', link: '/lw-50' },
-        { name: 'HW-60', link: '/hw-60' },
-      ],
-    },
-    {
-      type: 'Accessories',
-      models: [
-        { name: 'Flight Controller', link: '/flight-controller' },
-        { name: 'Batteries', link: '/batteries' },
-      ],
-    },
+   
+    
   ];
 
   // Close dropdowns when the route changes
@@ -58,18 +46,21 @@ const Navbar = () => {
   return (
     <nav>
       <div className="navbar">
+        <div className='nav-logo'>
+
         <Link to="/">
-          <img className="logooimg" src="/assets/logo.webp" alt="logo" />
+        <img className="logooimg" src="/assets/logo.webp" alt="logo" />
+        <img className="logooimg" src="/assets/emergency.webp" alt="logo" />
         </Link>
+        </div>
         <ul>
-          <li onClick={toggleFuture}>
-            <span>Future</span>
-          </li>
+        
           <li><Link to="/about">ABOUT</Link></li>
           <li><Link to="/services">SERVICES</Link></li>
-          <li><Link to="/Specialities">SPECIALITIES & CONSULTANTS</Link></li>
+          <li onClick={toggleFuture}>
+            <span>SPECIALITIES & CONSULTANTS</span>
+          </li>
           <li><Link to="/Contact ">CONTACT</Link></li>
-          
         </ul>
       </div>
 

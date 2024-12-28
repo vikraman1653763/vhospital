@@ -3,8 +3,8 @@ nav{
     background-color:#105e3c;
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 0 48px;
     position: fixed;
@@ -12,6 +12,8 @@ nav{
     z-index: 10;
     height: auto;
 }
+
+
 .navbar{
     background-color: #105e3c;
     width: 100%;
@@ -24,19 +26,23 @@ nav{
     height: auto;
     
 }
-.logooimg {
-    width: clamp(3rem, 7rem, 10rem);
-    height:auto;
+.navbar .nav-logo a{
+    display: flex;
+    align-items: center;
     background-color: #fff;
+    height:auto;
     border-radius: 5px;
     padding: .2em;
+}
+.logooimg {
+    width: clamp(3rem, 7rem, 10rem);
 }
 nav ul {
     display: flex;
     flex-flow: row nowrap;
     list-style-type: none;
     justify-content: space-between;
-    width: 60%;
+    width: 40%;
     position: absolute;
     right: 0;
 }
@@ -51,7 +57,7 @@ nav ul li a, nav ul span {
 }
 nav ul li a:hover, nav ul span:hover{
 
-    color: #105e3c;
+    color: #000000;
 }
 
 .login-btn {
@@ -287,7 +293,6 @@ border: none;
     width: 100%;
     height: auto;
     padding: 2em 0em;
-    background-color: #111111;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -306,7 +311,7 @@ border: none;
 
 .future-type-container{
     padding: 2em 0em;
-    background-color:rgb(0, 0, 0);                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     width: 100vw;
     height: auto;
     display: flex;
