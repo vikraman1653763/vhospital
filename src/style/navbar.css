@@ -1,4 +1,6 @@
 
+
+
 nav{
     background-color:#105e3c;
     width: 100%;
@@ -6,15 +8,14 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 48px;
     position: fixed;
     top: 0;
     z-index: 10;
     height: auto;
-}
-
-
-.navbar{
+  }
+  
+  
+  .navbar{
     background-color: #105e3c;
     width: 100%;
     display: flex;
@@ -25,19 +26,19 @@ nav{
     z-index: 9;
     height: auto;
     
-}
-.navbar .nav-logo a{
+  }
+  .navbar .nav-logo a{
     display: flex;
     align-items: center;
     background-color: #fff;
     height:auto;
     border-radius: 5px;
     padding: .2em;
-}
-.logooimg {
+  }
+  .logooimg {
     width: clamp(3rem, 7rem, 10rem);
-}
-nav ul {
+  }
+  nav ul {
     display: flex;
     flex-flow: row nowrap;
     list-style-type: none;
@@ -45,8 +46,8 @@ nav ul {
     width: 40%;
     position: absolute;
     right: 0;
-}
-nav ul li a, nav ul span {
+  }
+  nav ul li a, nav ul span {
     text-decoration: none;
     color: white ;
     font-size: var(--fs-s);
@@ -54,13 +55,13 @@ nav ul li a, nav ul span {
     font-weight: 600;
     margin: 1rem;
     cursor: pointer;
-}
-nav ul li a:hover, nav ul span:hover{
-
+  }
+  nav ul li a:hover, nav ul span:hover{
+  
     color: #000000;
-}
-
-.login-btn {
+  }
+  
+  .login-btn {
     background-color: #105e3c;
     padding: .5em 1em;
     border-radius: 0.5em;
@@ -74,33 +75,33 @@ nav ul li a:hover, nav ul span:hover{
     align-items: center;
     border: 2px solid #000000;
     color: #000000;
-}
-
-.login-btn:hover {
+  }
+  
+  .login-btn:hover {
     background-color: #9cf00b00;
     border: 2px solid #105e3c;
     color: #105e3c;
-}
-
-.login-btn a {
+  }
+  
+  .login-btn a {
     line-height: 0;
     color: #000000;
-}
-
-.hamburger {
+  }
+  
+  .hamburger {
     display: none;
     cursor: pointer;
-}
-
-.hamburger div {
+  }
+  
+  .hamburger div {
     width: 20px;
     height: 3px;
     background: #f2f5f7;
     margin: 5px;
     transition: all 0.3s ease;
-}
-/* Submenu styles */
-.menu {
+  }
+  /* Submenu styles */
+  .menu {
     font-size: var(--fs-s);
     font-weight: 500;
     padding: 0;
@@ -116,13 +117,13 @@ nav ul li a:hover, nav ul span:hover{
     border-radius: 5px;
     gap: 4px;
     right: 70%;    
-}
-.menu li:hover,
-.submenu a:hover {
+  }
+  .menu li:hover,
+  .submenu a:hover {
     color: #105e3c;
-}
-
-.submenu {
+  }
+  
+  .submenu {
     flex-direction: column;
     background: transparent;
     position: absolute;
@@ -135,13 +136,13 @@ nav ul li a:hover, nav ul span:hover{
     visibility: hidden;
     gap: 4px;
     transition: transform 0.7s ease-in-out, opacity 1s ease-in-out, visibility 1s ease-in-out;
-}
-
-
-
-
-/* Mobile View */
-@media (max-width: 767px) {
+  }
+  
+  
+  
+  
+  /* Mobile View */
+  @media (max-width: 767px) {
     body {
         background-color: #0C0C0C;
     }
@@ -191,7 +192,7 @@ nav ul li a:hover, nav ul span:hover{
         font-size: var(--fs-s);
         width: 50%;
     }
-
+  
     .login-btn {
         background-color: black;
         color: #105e3c;
@@ -202,7 +203,7 @@ nav ul li a:hover, nav ul span:hover{
         text-transform: uppercase;
     }
     .login-btn:hover{
-border: none;
+  border: none;
         color: white;
     }
    
@@ -228,14 +229,14 @@ border: none;
     
    
   
-}
-
-/* Tablet View */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  }
+  
+  /* Tablet View */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     body {
         background-color: #0C0C0C;
     }
-
+  
     .hamburger {
         display: block;
     }
@@ -257,18 +258,18 @@ border: none;
         gap: 1rem;
         z-index: 100;
     }
-
+  
     nav ul.open {
         transform: translate(20%, -5%);
         margin-right: 1rem;
         z-index: 10000;
     }
-
+  
     nav ul li a, nav ul span {
         font-size: var(--fs-s);
         margin: 0.5rem;
     }
-
+  
     .login-btn {
         width: auto;
         font-size: 0.875rem;
@@ -277,7 +278,7 @@ border: none;
         margin-left: 1rem;
         text-align: center;
     }
-
+  
     .menu {
         font-size: var(--fs-m);
         font-weight: 500;
@@ -287,36 +288,59 @@ border: none;
         text-align: start;
         width: 12rem;
     }
-}
-
-.future-container{
-    width: 100%;
-    height: auto;
-    padding: 2em 0em;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color:  white;
-    z-index: 8;
-
-}
-.drone-link{
+  }
+  .types-box{
+      width: 100%;
+    }
+    .services-container{
+        width: 100%;
+        height: auto;
+        padding: 2em 0em;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color:  white;
+        z-index: 8;
+        background-color:#0c422b62;
+  
+  }
+  .service-link{
     text-decoration: none;
     list-style: none;
     cursor:pointer;   
-}
-.drone-link:hover, .future-type-container a:hover{
-    color: #105e3c;
-}
-
-.future-type-container{
-    padding: 2em 0em;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-    width: 100vw;
+  }
+  .service-link:hover, .indi-type-container a:hover{
+    color: black;
+  }
+  
+  .indi-type-container {
+    padding: 2em ;
+    width: 100%;
     height: auto;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 1em; /* Space between items */
+    justify-items: first baseline;
     align-items: center;
     z-index: 7;
-    border-bottom:1px solid #111111 ;
-}
+  }
+  
+  .indi-type-container a {
+    list-style: none;
+    color: #fff;
+    text-decoration: none; /* Optional: Remove underline from links */
+    font-size: 1.1em; /* Optional: Adjust font size */
+  }
+  
+  @media (max-width: 768px) {
+    .indi-type-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .indi-type-container {
+      grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+  }
+  

@@ -54,7 +54,7 @@ main{
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #9BF00B;
+  background-color: #105e3c;
   border-radius: 10px;
   border: 3px solid #0C0C0C;
 }
@@ -65,13 +65,13 @@ main{
 
 /* Example CSS for styling selected text */
 ::selection {
-  background: #9BF00B;
+  background: #105e3c;
   color: #000000;
 }
 
 /* For Firefox */
 ::-moz-selection {
-  background: #9BF00B;
+  background: #105e3c;
   color: #000000;
 }
 
