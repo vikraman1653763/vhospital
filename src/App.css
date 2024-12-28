@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'varela';
+  src: url('/assets/VarelaRound.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+:root {
+  --fs-xxs: .5rem; 
+  --fs-xs: .8rem; 
+  --fs-s: 1rem; 
+  --fs-m: 1.5rem;  
+  --fs-l: 2rem;   
+  --fs-xl: 3rem;  
+  --fs-xxl: 4rem;  
+  --fs-xxxl: 8rem; 
+}
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #105e3c #0C0C0C;
+  scroll-behavior: smooth;
+  scroll-snap-type:y mandatory;
+  scroll-snap-align: start;
+}
+
+body {
+  font-family: 'varela', sans-serif;
+  background-color: #ffffff;
+  position: relative;
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  margin-top: 3rem;
+  
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0C0C0C;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9BF00B;
+  border-radius: 10px;
+  border: 3px solid #0C0C0C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7FB00B;
+}
+
+/* Example CSS for styling selected text */
+::selection {
+  background: #9BF00B;
+  color: #000000;
+}
+
+/* For Firefox */
+::-moz-selection {
+  background: #9BF00B;
+  color: #000000;
+}
+
+
+@media screen and (max-width: 767px) {
+  main{
+      margin-top: 3.5em;
+      overflow: hidden;
+  }
+
+ 
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      main{
+          margin-top: 3.5em;   
+      }
+  
+ 
+      
+  }
+
+
+
+
+  
