@@ -1,7 +1,8 @@
 import React from 'react';
 import '../style/footer.css';
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin, FaYoutubeSquare } from "react-icons/fa";
-
+import specialityData from '../speciality.json'; 
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="footer">
@@ -31,43 +32,11 @@ const Footer = () => {
         <div className="footer-services">
           <h3 className="footer-title">Specialities & Consultants</h3>
           <ul className="footer-service-link">
-            <li>Anaesthesiology</li>
-            <li>Cardiology</li>
-            <li>Cardiothoracic Surgery</li>
-            <li>Counselling</li>
-            <li>Dental Surgery</li>
-            <li>Dental and Maxillo-facial Surgery</li>
-            <li>Dermatology</li>
-            <li>Diabetology</li>
-            <li>Endoscopy</li>
-            <li>ENT Surgery</li>
-            <li>Gastroenterological Surgery</li>
-            <li>Gastroenterology</li>
-            <li>General and Internal Medicine</li>
-            <li>General and Laparoscopic Surgery</li>
-            <li>Hepatology</li>
-            <li>Nephrology</li>
-            <li>Neurology</li>
-            <li>Neurosurgery</li>
-            <li>Obstetric & Gynaecological Surgery</li>
-            <li>Obstetrics and Gynaecology</li>
-            <li>Oncological Surgery</li>
-            <li>Oncology</li>
-            <li>Ophthalmological Surgery</li>
-            <li>Ophthalmology</li>
-            <li>Orthopaedic Surgery</li>
-            <li>Paediatrics</li>
-            <li>Paediatric Anaesthesiology</li>
-            <li>Plastic Surgery</li>
-            <li>Psychiatry</li>
-            <li>Psychology</li>
-            <li>Pulmonology</li>
-            <li>Rheumatology</li>
-            <li>Speech Therapy</li>
-            <li>Urological Surgery</li>
-            <li>Urology</li>
-            <li>Vascular Surgery</li>
-            <li>Visiting Consultants</li>
+           {specialityData.map((speciality)=>(
+            <li key={speciality.id}>
+            <Link to={`/speciality/${speciality.id}`}>{speciality.title}</Link>
+            </li>
+           ))}
           </ul>
         </div>
       </div>

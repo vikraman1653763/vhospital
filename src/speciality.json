@@ -1,0 +1,19 @@
+[
+    {
+      "id": "allergy-asthma",
+      "title": "Allergy & Asthma",
+      "description1": "Allergies and asthma, two conditions that usually occur together and affect the patient gravely. These two conditions have many symptoms and side effects in common.The same substance that may trigger your allergic reactions and symptoms, such as pollen dust, pet dander, etc., may also be the reason behind the appearance of asthma-related signs and symptoms. In some people, skin or food-related allergies may be instrumental in causing asthma symptoms. This condition can also be termed as allergic asthma or allergy-induced asthma.",
+      "image": "/specialityimg/counsel.png",
+      "description2": "The Department of Allergy and Immunology at Venkataeswara Hospitals treats a wide range of conditions, including eye infections like allergic conjunctivitis, respiratory tract disorders such as allergic rhinitis, asthma, hypersensitivity pneumonitis, sinusitis, and occupational lung diseases. It also manages gastrointestinal disorders caused by allergic reactions to various foods, as well as skin allergies like contact dermatitis, atopic dermatitis, and both acute and chronic urticaria. The department addresses adverse reactions to different food items, drugs, vaccines, and other agents, along with diseases affecting the immune system.",
+      "description3": "Additionally, the department treats systemic conditions such as anaphylaxis and diseases involving mast cells or eosinophils. It specializes in autoimmune diseases related to the immune response to self-antigens, including auto-inflammatory syndromes, and provides care for patients undergoing stem cell, bone marrow, or organ transplantation."
+    },
+    {
+      "id": "cardiology",
+      "title": "Cardiology",
+      "description1": "Cardiology focuses on heart health and related conditions.",
+      "image": "/specialityimg/counsel.png",
+      "description2": "Our cardiologists are experts in treating cardiovascular diseases.",
+      "description3": "We provide state-of-the-art facilities for heart care."
+    }
+  ]
+  

@@ -2,75 +2,32 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../style/navbar.css';
 import { motion, AnimatePresence } from 'framer-motion';
-import { link } from 'framer-motion/client';
+import serviceLinks from '../speciality.json'; // Import the JSON data
 
 const Navbar = () => {
   const [mini, setMini] = useState(false);
   const [types, setTypes] = useState(null);
-  const location = useLocation(); 
+  const [academicOpen, setAcademicOpen] = useState(false); // State for toggling Academic submenu
+  const location = useLocation();
 
   const toggleservices = () => {
     setMini(!mini);
-    setTypes(null);
+    setTypes(null); // Reset types when toggling services
   };
 
-  const toggleTypes = (index) => {
-    setTypes((prev) => (prev === index ? null : index));
+  const toggleTypes = () => {
+    setTypes(!types); // Toggle the display of the individual types
   };
 
-  const serviceLinks = [
-    {
-      type: 'SPECIALITIES ',
-      models: [
-        { name: 'Allergy & Asthma', link: '/allergy-asthma' },
-        { name: 'Anaesthesiology', link: '/anaesthesiology' },
-        { name: 'Cardiology', link: '/cardiology' },
-        { name: 'Cardiothoracic Surgery', link: '/cardiothoracic-surgery' },
-        { name: 'Counselling', link: '/counselling' },
-        { name: 'Dental Surgery', link: '/dental-surgery' },
-        { name: 'Dental and Maxillo-facial Surgery', link: '/dental-maxillo-facial-surgery' },
-        { name: 'Dermatology', link: '/dermatology' },
-        { name: 'Diabetology', link: '/diabetology' },
-        { name: 'Endoscopy', link: '/endoscopy' },
-        { name: 'ENT Surgery', link: '/ent-surgery' },
-        { name: 'Gastroenterological Surgery', link: '/gastroenterological-surgery' },
-        { name: 'Gastroenterology', link: '/gastroenterology' },
-        { name: 'General and Internal Medicine', link: '/general-internal-medicine' },
-        { name: 'General and Laparoscopic Surgery', link: '/general-laparoscopic-surgery' },
-        { name: 'Hepatology', link: '/hepatology' },
-        { name: 'Nephrology', link: '/nephrology' },
-        { name: 'Neurology', link: '/neurology' },
-        { name: 'Neurosurgery', link: '/neurosurgery' },
-        { name: 'Obstetrics and Gynaecology', link: '/obstetrics-gynaecology' },
-        { name: 'Oncological Surgery', link: '/oncological-surgery' },
-        { name: 'Oncology', link: '/oncology' },
-        { name: 'Ophthalmological Surgery', link: '/ophthalmological-surgery' },
-        { name: 'Ophthalmology', link: '/ophthalmology' },
-        { name: 'Orthopaedic Surgery', link: '/orthopaedic-surgery' },
-        { name: 'Paediatrics', link: '/paediatrics' },
-        { name: 'Paediatric Anaesthesiology', link: '/paediatric-anaesthesiology' },
-        { name: 'Plastic Surgery', link: '/plastic-surgery' },
-        { name: 'Psychiatry', link: '/psychiatry' },
-        { name: 'Psychology', link: '/psychology' },
-        { name: 'Pulmonology', link: '/pulmonology' },
-        { name: 'Rheumatology', link: '/rheumatology' },
-        { name: 'Speech Therapy', link: '/speech-therapy' },
-        { name: 'Urology', link: '/urology' },
-        { name: 'Vascular Surgery', link: '/vascular-surgery' },
-        { name: 'Visiting Consultants', link: '/visiting-consultants' },
-      ],
-    },{
-      type: 'CONSULTANTS ',
-      models: [
-        { name: 'Allergy doctor', link: '/allergy-asthma' },
-      ]
-    }
-  ];
+  const toggleAcademic = () => {
+    setAcademicOpen(!academicOpen); // Toggle the Academic submenu
+  };
 
   // Close dropdowns when the route changes
   useEffect(() => {
     setMini(false);
     setTypes(null);
+    setAcademicOpen(false); // Close Academic submenu when route changes
   }, [location]);
 
   return (
@@ -88,30 +45,28 @@ const Navbar = () => {
           <li onClick={toggleservices}>
             <span>SPECIALITIES & CONSULTANTS</span>
           </li>
-          <li><Link to="/Contact ">CONTACT</Link></li>
+          <li className="menu-item" onClick={toggleAcademic}>
+            <span>ACADEMIC</span>
+            {academicOpen && (
+            <motion.ul 
+              className="submenu"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.5 }}
+            >
+              <li><a href="https://venkataeswaraalliedhealthsciences.com/">Enroll Online</a></li>
+              <li><a href="/assets/Enroll-Online.pdf" target="_blank" rel="noopener noreferrer">Download Form</a></li>
+              </motion.ul>
+          )}
+
+          </li>
+          <li><Link to="/Contact">CONTACT</Link></li>
         </ul>
       </div>
 
       <AnimatePresence>
         {mini && (
-          <motion.div
-            className="services-container"
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -100 }}
-            transition={{ duration: 0.3 }}
-          >
-            {serviceLinks.map((service, index) => (
-              <div key={index} onClick={() => toggleTypes(index)} className="service-link">
-                {service.type}
-              </div>
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {types !== null && (
           <motion.div
             className="types-box"
             initial={{ opacity: 0, y: -100 }}
@@ -120,10 +75,10 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           >
             <div className="indi-type-container">
-              {serviceLinks[types].models.map((model, modelIndex) => (
-                <Link key={modelIndex} to={model.link}>
-                  {model.name}
-                </Link>
+              {serviceLinks.map((speciality) => (
+                <li key={speciality.id}>
+                  <Link to={`/speciality/${speciality.id}`}>{speciality.title}</Link>
+                </li>
               ))}
             </div>
           </motion.div>
