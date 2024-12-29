@@ -18,7 +18,7 @@ const Section2 = () => {
       </div>
      
       <div className="service-sec-2-equipment">
-      <div className="service-sec-2-icon">
+         <div className="service-sec-2-icon">
         <FaAmbulance  />
       </div>
         <h3>We provide top quality emergency care with the following equipment available in our ambulance:</h3>

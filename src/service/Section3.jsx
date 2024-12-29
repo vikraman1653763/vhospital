@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaFire, FaHeartbeat, FaMedkit, FaHospital, FaWeight, FaStethoscope, FaPlusCircle } from 'react-icons/fa'; // Import relevant icons
+import {FaFire, FaHeartbeat, FaMedkit, FaWeight, FaStethoscope, FaPlusCircle } from 'react-icons/fa'; // Import relevant icons
 import { GiKidneys,GiLiver } from "react-icons/gi";
 
 const Section3 = () => {
