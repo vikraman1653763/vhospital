@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const toggleservices = () => {
     setMini(!mini);
-    setTypes(null); // Reset types when toggling services
+    setTypes(null); 
   };
 
   const toggleTypes = () => {
@@ -61,7 +61,7 @@ const Navbar = () => {
           )}
 
           </li>
-          <li><Link to="/Contact">CONTACT</Link></li>
+          <li><Link to="/contact">CONTACT</Link></li>
         </ul>
       </div>
 

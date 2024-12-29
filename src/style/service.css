@@ -567,19 +567,21 @@
         flex-direction: column;
         justify-content: space-between;
         font-size: var(--fs-s);
-        color: #333;
+        color: aliceblue;
         margin-bottom: 0.8rem;
         display: flex;
         align-items: center;
         gap: 1rem;
         border: 3px solid #105e3c;
-        border-radius: 10px;
+        border-radius: 50% 50%  0 0%  ;
         text-align: center;
+        box-shadow: 3px 3px 5px black;
         padding: .5em;
+        background-color: #105e3c;
       }
       
       .service-sec-8-points li svg {
-          color: #105e3c;
+          color: aliceblue;
           font-size:var(--fs-xxl);
         }
         
