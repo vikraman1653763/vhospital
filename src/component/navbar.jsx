@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
         <ul>
           <li><Link to="/about">ABOUT</Link></li>
-          <li><Link to="/services">SERVICES</Link></li>
+          <li><Link to="/service">SERVICES</Link></li>
           <li onClick={toggleservices}>
             <span>SPECIALITIES & CONSULTANTS</span>
           </li>

@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  font-family: 'varela', sans-serif;
+  font-family: 'Rubik', sans-serif;
   background-color: #ffffff;
   position: relative;
   -ms-overflow-style: -ms-autohiding-scrollbar; 
@@ -39,8 +39,8 @@ body {
   padding: 0;
 }
 
-main{
-  margin-top: 3rem;
+.main{
+  margin-top: 4rem;
   
 }
 

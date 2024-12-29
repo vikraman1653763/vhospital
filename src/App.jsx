@@ -8,26 +8,30 @@ import Footer from './component/Footer.jsx';
 import SpecialityPage from './component/SpecialityPage.jsx';
 import specialityData from './speciality.json'; 
 import './App.css';
+import Service from './component/service.jsx';
 
 function App() {
   return (
     <Router>
       <Navbar />
+        <div className='main'>
       <Routes>
+
         {/* Static Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-
+        <Route path='/service' element={<Service/>}/>
         {/* Dynamic Routes for Specialties */}
         {specialityData.map((speciality) => (
           <Route
-            key={speciality.id}
+          key={speciality.id}
             path={`/speciality/${speciality.id}`}
             element={<SpecialityPage data={speciality} />}
-          />
-        ))}
+            />
+          ))}
       </Routes>
+          </div>
       <Footer />
     </Router>
   );

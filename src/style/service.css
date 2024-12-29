@@ -1,0 +1,223 @@
+.service-sec-1 {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .service-sec-1-banner {
+    background-image: url('/path-to-your-banner-image.jpg'); /* Set your banner image path */
+    background-size: cover;
+    background-color: #00000048;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .service-sec-1-content {
+    max-width: 100%;
+    padding: 2em 13rem;
+  }
+  
+  .service-sec-1-title {
+    font-size: var(--fs-xl);
+    margin-bottom: 20px;
+  }
+  
+  .service-sec-1-description {
+    font-size: var(--fs-s);
+    line-height: 1.6;
+  }
+
+
+  /*###################section-2########################### */
+  .service-sec-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 13rem;
+    position: relative;
+  }
+  
+  .service-sec-2-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0em;
+  }
+  
+  .service-sec-2-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .service-sec-2-title {
+    font-size:var(--fs-xl);
+    margin-bottom: 20px;
+    color: #105e3c;
+  }
+  
+  .service-sec-2-description {
+    font-size:var(--fs-s);
+    line-height: 1.6;
+  }
+  .service-sec-2-image{
+    flex: 1;
+  }
+  .service-sec-2-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+ 
+  .service-sec-2-equipment {
+    margin-top: 20px;
+    position: relative;
+
+  }
+  .service-sec-2-icon {
+    
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    bottom: 0%;
+    left: 0%;
+    overflow: hidden;
+  }
+  .service-sec-2-icon svg{
+    
+    width: 100%;
+    height: 100%;
+    color: #105e3c41;
+    z-index: -1;
+  }
+  .service-sec-2-equipment h3 {
+    font-size: var(--fs-l);
+    margin-bottom: 15px;
+  }
+
+  
+  .service-sec-2-equipment ul {
+    list-style-type: none;
+    padding: 0;
+    gap: 1em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    font-size: var(--fs-s);
+    flex-wrap: wrap;
+    transition: all .3s ease-in-out;
+}
+
+.service-sec-2-equipment li {
+      box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+    font-size: var(--fs-s);
+    margin-bottom: 10px;
+    border: 2px solid #105e3c;
+    border-radius: 5px;
+    width: calc(33.33% - 1em); /* Ensures 3 items in a row with some space between them */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Center text for better alignment */
+    box-sizing: border-box; /* Ensures padding does not affect width calculation */
+    padding:1em ;
+    gap: 1em;
+  }
+    .service-sec-2-equipment ul svg{
+        font-size: var(--fs-xl);
+    }
+    .service-sec-2-equipment ul :hover{
+        background-color: #105e3c;
+        color: aliceblue;
+        transition: all .3s ease-in-out;
+        box-shadow: 5px 5px 3px rgba(255, 255, 255, 0.3);
+
+    }
+  
+    /* ##########section3######### */
+    .service-sec-3 {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 13rem;
+      }
+      
+      .service-sec-3-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .service-sec-3-text {
+        flex: 1;
+        padding-left: 20px; /* Added padding for spacing */
+      }
+      
+      .service-sec-3-title {
+        font-size: var(--fs-xl);
+        color: #105e3c;
+        margin-bottom: 20px;
+      }
+      
+      .service-sec-3-description {
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+      .service-sec-3-image{
+        flex: 1;
+      }
+      .service-sec-3-image img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      
+      .service-sec-3-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+      
+      .service-sec-3-card {
+        width: calc(33.33% - 1em); /* 3 cards per row */
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        padding: 2em;
+        box-sizing: border-box;
+        text-align: center;
+        box-shadow: 0 6px 6px #105e3c;
+        border-radius: 50% 0 50% 0  ;
+        overflow: hidden;
+      }
+      
+      .service-sec-3-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+      
+      .service-sec-3-card p {
+        font-size: 1rem;
+        color: #555;
+      }
+      
+      .service-sec-3-card-icon {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #105e3c; /* Green color for icons */
+      }
+      
+      @media (max-width: 768px) {
+        .service-sec-3-card {
+          width: calc(50% - 1em); /* 2 cards per row on medium screens */
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .service-sec-3-card {
+          width: 100%; /* 1 card per row on small screens */
+        }
+      }
+      
