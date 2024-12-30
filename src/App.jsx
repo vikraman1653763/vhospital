@@ -14,7 +14,6 @@ import useMediaLoader from './component/useMediaLoader.jsx';
 function App() {
   const isLoaded = useMediaLoader();
 
-  // Show loader until all media is loaded
   if (!isLoaded) {
     return <Loader />;
   }

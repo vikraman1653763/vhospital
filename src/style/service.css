@@ -66,8 +66,8 @@
     flex: 1;
   }
   .service-sec-2-image img {
-    width: 100%;
-    border-radius: 8px;
+    width: 70%;
+    border-radius: 10px;
   }
   
  
@@ -169,8 +169,8 @@
         flex: 1;
       }
       .service-sec-3-image img {
-        width: 100%;
-        border-radius: 8px;
+        width: 70%;
+        border-radius: 10px;
       }
       
       .service-sec-3-cards {
@@ -259,9 +259,9 @@
       }
       
       .service-sec-4-image img {
-        width: 100%;
+        width: 70%;
         height: auto;
-        border-radius: 8px;
+        border-radius: 10px;
       }
       .service-sec-4-icon {
     
@@ -380,7 +380,7 @@
       }
       
       .service-sec-5-image img {
-        max-width: 100%;
+        max-width: 70%;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
@@ -424,10 +424,10 @@
         width: 50%;
       }
       .service-sec-6-image img{
-        width: 100%;
+        width: 70%;
         object-fit: contain;
         object-position: center;
-
+        border-radius: 10px;
       }
       
       .service-sec-6-points {
