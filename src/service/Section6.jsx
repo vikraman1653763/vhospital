@@ -14,7 +14,7 @@ const Section6 = () => {
         <div className='service-sec-6-details'>
 
         <div className="service-sec-6-image">
-          <img src="/specialityimg/counsel.png" alt="Health Checkups" />
+          <img src="/assets/xray.webp" alt="xray" />
         </div>
         <div className="service-sec-6-points">
           <ul>

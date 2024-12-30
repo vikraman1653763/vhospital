@@ -13,7 +13,7 @@ const Section2 = () => {
           </p>
         </div>
         <div className="service-sec-2-image">
-          <img src="/specialityimg/counsel.png" alt="Ambulance" /> {/* Set your ambulance image path */}
+          <img src="/assets/ambulance.webp" alt="Ambulance" /> {/* Set your ambulance image path */}
         </div>
       </div>
      

@@ -10,7 +10,7 @@ const Section5 = () => {
         </div>
       <div className="service-sec-5-content">
         <div className="service-sec-5-image">
-          <img src="/specialityimg/counsel.png" alt="Health Checkups" />
+          <img src="/assets/checkup.webp" alt="Health Checkups" />
         </div>
         <div className="service-sec-5-text">
           <h2 className="service-sec-5-title">HEALTH CHECKUPS</h2>

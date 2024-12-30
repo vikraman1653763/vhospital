@@ -1,19 +1,299 @@
 [
-    {
-      "id": "allergy-asthma",
-      "title": "Allergy & Asthma",
-      "description1": "Allergies and asthma, two conditions that usually occur together and affect the patient gravely. These two conditions have many symptoms and side effects in common.The same substance that may trigger your allergic reactions and symptoms, such as pollen dust, pet dander, etc., may also be the reason behind the appearance of asthma-related signs and symptoms. In some people, skin or food-related allergies may be instrumental in causing asthma symptoms. This condition can also be termed as allergic asthma or allergy-induced asthma.",
-      "image": "/specialityimg/counsel.png",
-      "description2": "The Department of Allergy and Immunology at Venkataeswara Hospitals treats a wide range of conditions, including eye infections like allergic conjunctivitis, respiratory tract disorders such as allergic rhinitis, asthma, hypersensitivity pneumonitis, sinusitis, and occupational lung diseases. It also manages gastrointestinal disorders caused by allergic reactions to various foods, as well as skin allergies like contact dermatitis, atopic dermatitis, and both acute and chronic urticaria. The department addresses adverse reactions to different food items, drugs, vaccines, and other agents, along with diseases affecting the immune system.",
-      "description3": "Additionally, the department treats systemic conditions such as anaphylaxis and diseases involving mast cells or eosinophils. It specializes in autoimmune diseases related to the immune response to self-antigens, including auto-inflammatory syndromes, and provides care for patients undergoing stem cell, bone marrow, or organ transplantation."
+  {
+    "id": "allergy-asthma",
+    "title": "Allergy & Asthma",
+    "image": "/specialityimg/allergy_asthma.png",
+    "description1": "Allergies and asthma often occur together, sharing symptoms and triggers that can significantly affect health. Common allergens like pollen, dust, and pet dander not only trigger allergic reactions but may also lead to asthma symptoms. In some cases, skin or food allergies can contribute to asthma, a condition known as allergic or allergy-induced asthma.",
+    "description2": "The Department of Allergy and Immunology at Venkataeswara Hospitals provides specialized care for various immune-related disorders. These include respiratory issues like allergic rhinitis, asthma, and sinusitis, eye conditions such as allergic conjunctivitis, gastrointestinal allergies, and skin problems like dermatitis and urticaria. The department also addresses food and drug allergies, immune system disorders, and occupational lung diseases.",
+    "description3": "Our department is equipped to manage systemic allergic reactions like anaphylaxis and diseases involving mast cells or eosinophils. We treat autoimmune disorders linked to immune system malfunctions and provide care for patients requiring stem cell, bone marrow, or organ transplants. Comprehensive evaluations and personalized treatments ensure effective management of these conditions."
     },
+    {
+      "id": "anaesthesiology",
+      "title": "Anaesthesiology",
+      "image": "/specialityimg/anaesthesia.png",
+      "description1": "The surgical team at Venkataeswara Hospitals is supported by a dedicated team of anaesthetists who monitor patient vitals before, during, and after surgery. Anaesthesiologists specialize in perioperative care, creating anaesthetic plans and administering anaesthesia to ensure patient comfort and safety.",
+      "description2": "Our Anaesthesiology Department focuses on providing comprehensive care for patients undergoing surgical procedures. From pre-operative assessments and anaesthesia planning to intraoperative monitoring and post-operative pain management, we prioritize patient comfort and safety at every step.",
+      "description3": "With advanced technologies and experienced professionals, our anaesthesiology team is equipped to handle routine and complex cases. We ensure minimal discomfort and seamless recovery, making surgical procedures as smooth and painless as possible for our patients."
+    },    
     {
       "id": "cardiology",
       "title": "Cardiology",
-      "description1": "Cardiology focuses on heart health and related conditions.",
-      "image": "/specialityimg/counsel.png",
-      "description2": "Our cardiologists are experts in treating cardiovascular diseases.",
-      "description3": "We provide state-of-the-art facilities for heart care."
-    }
+      "image": "/specialityimg/cardiology.png",
+      "description1": "Venkataeswara Hospitals is home to a dedicated team of cardiologist consultants, led by Dr. Su. Thillai Vallal, providing 24×7 cover for all cardiac emergencies. Supported by intensivists, nurses, and dietitians, the team promotes preventive and curative cardiac care, striving to prevent heart diseases and promote heart health.",
+      "description2": "Our services include advanced diagnostic tools like 2D Echocardiogram (Echo), Electrocardiogram (ECG), Treadmill Testing (TMT), 24-hour ECG monitoring (Holter), 24-hour Ambulatory BP Recording, and Master Health Checkups. We maintain 24-hour computer recordings of ECGs and vital signs to monitor and detect cardiac abnormalities.",
+      "description3": "Venkataeswara Hospitals emphasizes preventive cardiology, offering educational programs and health camps, including those held on World Heart Day. With approval from The Tamil Nadu Dr. M.G.R. Medical University, we also run a Fellowship Programme in Preventive Cardiology, aiming to make heart diseases predictable and preventable."
+      },
+      {
+        "id": "cardiothoracic-surgery",
+        "title": "Cardiothoracic Surgery",
+        "image": "/specialityimg/cardiothoracic.png",
+        "description1": "Venkataeswara Hospitals offers expert cardiothoracic surgical care for patients suffering from various heart and lung conditions. Our experienced surgeons provide precise and compassionate treatment, focusing on the vital organs within the thorax, which require exceptional skill and care due to their complexity.",
+        "description2": "Our Cardiothoracic Surgery Department works closely with the Cardiology Department to deliver comprehensive care. We perform advanced surgical procedures, including heart and lung surgeries, along with diagnostic and exploratory interventions to address complex thoracic conditions.",
+        "description3": "With state-of-the-art facilities and a dedicated team of specialists, Venkataeswara Hospitals ensures safe and effective surgical treatment for thoracic and cardiovascular diseases. Our focus is on providing high-quality care, rapid recovery, and optimal outcomes for our patients."
+        },
+        {
+          "id": "counselling",
+          "title": "Counselling",
+          "image": "/specialityimg/counselling.png",
+          "description1": "Mental health is just as vital as physical health, yet many individuals do not prioritize their mental wellness. At Venkataeswara Hospitals, our counsellors are dedicated to helping patients manage mental health issues such as depression, learning disorders, and stress through compassionate care and professional support.",
+          "description2": "Our qualified counsellors diagnose and alleviate mental stress, providing personalized care that includes counselling, psychotherapy, and medication when needed. We address a range of mental health challenges, including coping with traumatic life events, stress, and identity issues, to promote holistic wellness.",
+          "description3": "Venkataeswara Hospitals offers comprehensive mental health support with a team of counsellors, psychologists, and psychiatrists. Our integrated approach ensures patients receive the care they need to improve their emotional well-being and lead healthier, happier lives."
+        },
+        {
+          "id": "dental-surgery",
+          "title": "Dental Surgery",
+          "image": "/specialityimg/dental_surgery.png",
+          "description1": "Venkataeswara Hospitals offers expert surgical dental care to keep your smile bright and your teeth healthy. Our experienced dental surgeons provide round-the-clock support for routine and specialized procedures, ensuring holistic patient care.",
+          "description2": "Our team is equipped with advanced training, expertise, and technology to perform a wide range of dental surgeries. These include root canal treatments, tooth extractions, wisdom teeth removal, dental implants, and cleft lip and palate repair.",
+          "description3": "At Venkataeswara Hospitals, we focus on patient comfort and safety, delivering high-quality dental surgical care. Whether it’s a routine procedure or a complex surgery, our skilled surgeons are dedicated to restoring and enhancing your oral health."
+        },
+        {
+          "id": "dental-maxillofacial-surgery",
+          "title": "Dental and Maxillofacial Surgery",
+          "image": "/specialityimg/dental_maxillofacial_surgery.png",
+          "description1": "Venkataeswara Hospitals offers comprehensive care in dental and maxillofacial surgery, treating diseases, injuries, and deformities of the mouth, face, and jaw. Our expert team provides both functional and aesthetic surgical solutions.",
+          "description2": "From cleft lip repairs to facial trauma reconstruction, our experienced surgeons use advanced techniques to address a wide range of conditions, ensuring both recovery and improvement in appearance.",
+          "description3": "Our multidisciplinary team is committed to restoring oral health and facial harmony, utilizing the latest technology and ensuring patient safety and comfort throughout the surgical process."
+        },
+        {
+          "id": "dermatology",
+          "title": "Dermatology",
+          "image": "/specialityimg/dermatology.png",
+          "description1": "Venkataeswara Hospitals offers expert dermatology care, treating conditions of the skin, hair, nails, and mucous membranes. Our specialists provide both medical and cosmetic treatments for a range of skin issues.",
+          "description2": "From acne and psoriasis to skin cancer diagnosis and treatment, our dermatology team is equipped with advanced tools and techniques to ensure effective care.",
+          "description3": "Our services include cryosurgery, excisions, injections, and cosmetic treatments for scars and age-related skin concerns, delivering personalized care to restore your skin's health and appearance."
+        },
+        {
+          "id": "diabetology",
+          "title": "Diabetology",
+          "image": "/specialityimg/diabetology.png",
+          "description1": "Venkataeswara Hospitals provides expert care for diabetes management, focusing on prevention, early detection, and treatment. Our team of diabetologists works to improve the overall health and well-being of our patients.",
+          "description2": "Our comprehensive diabetes care includes personalized treatment plans involving diet, exercise, and medication, designed to manage the condition effectively and prevent complications.",
+          "description3": "We offer expert advice and support through regular screenings and check-ups, empowering patients to make the necessary lifestyle changes to manage their diabetes and live healthier lives."
+        },
+        {
+          "id": "endoscopy",
+          "title": "Endoscopy",
+          "image": "/specialityimg/endoscopy.png",
+          "description1": "Venkataeswara Hospitals offers expert endoscopy services to diagnose conditions in the upper gastrointestinal tract. Our skilled endoscopist consultants ensure safe, minimally invasive procedures for accurate results.",
+          "description2": "Endoscopies can be performed with or without anesthesia, depending on the patient’s condition, allowing for quick diagnosis and timely medical intervention.",
+          "description3": "Our endoscopist team works in collaboration with gastroenterologists to improve patient care and provide effective treatment options based on diagnostic findings."
+        },
+        {
+          "id": "ent-surgery",
+          "title": "ENT Surgery",
+          "image": "/specialityimg/ent_surgery.png",
+          "description1": "Venkataeswara Hospitals offers specialized ENT surgery services, addressing conditions like chronic infections, nasal allergies, and tonsillitis to prevent long-term complications such as asthma and hearing loss.",
+          "description2": "Our experienced ENT surgeons perform a range of procedures to treat ear, nose, and throat disorders, ensuring effective treatment and speedy recovery with the latest medical technologies.",
+          "description3": "We focus on providing personalized care through timely and appropriate surgeries, preventing the development of chronic conditions and improving the quality of life for our patients."
+        },
+        {
+          "id": "gastro-surgery",
+          "title": "Gastroenterological Surgery",
+          "image": "/specialityimg/gastro_surgery.png",
+          "description1": "Venkataeswara Hospitals offers expert surgical care for a wide range of gastrointestinal and colorectal diseases, using advanced techniques like laparoscopic surgery for faster recovery.",
+          "description2": "Our skilled surgeons perform complex surgeries on the liver, pancreas, intestines, and esophagus, including treatments for colorectal cancer, portal hypertension, and trauma injuries.",
+          "description3": "With 24/7 coverage and a commitment to minimally invasive procedures, we ensure comprehensive care and optimal outcomes for our patients, from diagnosis to recovery."
+        },
+        {
+          "id": "gastroenterology",
+          "title": "Gastroenterology",
+          "image": "/specialityimg/gastroenterology.png",
+          "description1": "Venkataeswara Hospitals offers expert gastroenterology services, focusing on the diagnosis and treatment of a wide range of gastrointestinal and colorectal diseases, from common stomach issues to complex conditions.",
+          "description2": "Our experienced gastroenterologists treat conditions like bleeding ulcers, liver diseases, pancreatitis, hepatitis, and gastrointestinal cancers, providing accurate diagnoses and tailored treatment plans.",
+          "description3": "Equipped with advanced technology and expertise, we offer both medical and interventional care to manage and cure gastrointestinal disorders, ensuring optimal patient outcomes."
+        },
+        {
+          "id": "general-internal-medicine",
+          "title": "General and Internal Medicine",
+          "image": "/specialityimg/general_interior_medicine.png",
+          "description1": "Venkataeswara Hospitals provides expert General and Internal Medicine services, focusing on preventing lifestyle diseases like heart disease, diabetes, and hypertension through early detection and personalized care.",
+          "description2": "Our experienced consultants offer comprehensive screenings, lifestyle modification advice, and regular follow-up care to prevent heart attacks, strokes, and other chronic conditions.",
+          "description3": "We emphasize health education and awareness to improve overall wellness, and are recognized as a Centre of Excellence in disease prevention and health improvement."
+        },
+        {
+          "id": "general-laparoscopic-surgery",
+          "title": "General and Laparoscopic Surgery",
+          "image": "/specialityimg/general_laparoscopic_surgery.png",
+          "description1": "Venkataeswara Hospitals offers expert general surgery services, treating a wide range of conditions from hernias to life-threatening diseases with both traditional and laparoscopic techniques.",
+          "description2": "Our surgeons specialize in laparoscopic or keyhole surgery, allowing for minimally invasive procedures that reduce recovery time and enable same-day discharge for many patients.",
+          "description3": "With 24/7 emergency care and access to advanced surgical technology, we ensure high-quality, safe treatments for all our patients in both routine and complex cases."
+        },
+        {
+          "id": "hepatology",
+          "title": "Hepatology",
+          "image": "/specialityimg/hepatology.png",
+          "description1": "Venkataeswara Hospitals offers expert hepatology services, specializing in the diagnosis and treatment of liver, biliary, and pancreatic diseases.",
+          "description2": "Our hepatologists manage liver conditions like jaundice, hepatitis, cirrhosis, and pancreatitis, offering personalized treatment plans.",
+          "description3": "With advanced diagnostics and comprehensive care, we aim to provide patients with the best possible outcomes in liver health."
+        },
+        {
+          "id": "nephrology",
+          "title": "Nephrology",
+          "image": "/specialityimg/nephrology.png",
+          "description1": "Venkataeswara Hospitals provides expert nephrology services for the diagnosis and treatment of kidney diseases, including kidney failure, hypertension, and kidney stones.",
+          "description2": "Our nephrologists offer comprehensive care, from dialysis to kidney transplants, to ensure the best possible outcomes for kidney patients.",
+          "description3": "With advanced diagnostics and a personalized approach, we manage both acute and chronic kidney diseases for improved patient care."
+        },
+        {
+          "id": "neurology",
+          "title": "Neurology",
+          "image": "/specialityimg/neurology.png",
+          "description1": "Venkataeswara Hospitals offers expert care for a variety of neurological conditions, including stroke, Parkinson’s disease, and seizures.",
+          "description2": "Our team provides comprehensive neurological treatment and neuro-rehabilitation services, helping patients recover and improve their quality of life.",
+          "description3": "With a multidisciplinary approach, we offer personalized treatment and rehabilitation to help patients manage neurological conditions effectively."
+        },
+        {
+          "id": "neurosurgery",
+          "title": "Neurosurgery",
+          "image": "/specialityimg/neurosurgery.png",
+          "description1": "Brain surgeries are highly technical and challenging. Venkataeswara Hospitals’ neurosurgeons are experienced and qualified, capable of performing all requisite procedures with successful outcomes.",
+          "description2": "Our neurosurgical team specializes in surgeries related to the brain, spine, and pituitary glands, treating conditions such as brain cancers, intracerebral hemorrhages, disc prolapse, trauma, and more.",
+          "description3": "Operating in state-of-the-art operating theatres, our neurosurgery department offers comprehensive care to both adult and pediatric patients, ensuring optimal surgical treatment for complex brain and nervous system disorders."
+        },
+        {
+          "id": "obstetric-gynaecological-surgery",
+          "title": "Obstetric & Gynaecological Surgery",
+          "image": "/specialityimg/obstetric_gynaecological_surgery.png",
+          "description1": "Venkataeswara Hospitals offers quality personalized care for expectant mothers and women requiring gynaecological surgery, including procedures during pre- and post-pregnancy.",
+          "description2": "Our team performs routine C-section deliveries and a variety of other surgeries such as hysterectomy, oophorectomy, myomectomy, cystectomy, and ovarian biopsies, ensuring expert care throughout.",
+          "description3": "We provide support and care for women in every stage of pregnancy, from conception to postnatal care, with the highest standards of surgical care for mother and baby."
+        },
+        {
+          "id": "obstetrics-gynaecology",
+          "title": "Obstetrics and Gynaecology",
+          "image": "/specialityimg/obstetrics_gynaecology.png",
+          "description1": "Women’s health is our priority. At Venkataeswara Hospitals, we recommend regular check-ups with our gynaecologists to prevent disease and maintain overall health.",
+          "description2": "We cater to women at all stages of life, from puberty and pregnancy to menopause and beyond, addressing concerns like infertility, polycystic ovary syndrome, delayed puberty, and more.",
+          "description3": "Our expert obstetricians and gynaecologists offer personalized care throughout pregnancy and provide support for women’s health issues, ensuring well-being at every life stage."
+        },
+        {
+          "id": "oncological-surgery",
+          "title": "Oncological Surgery",
+          "image": "/specialityimg/oncological_surgery.png",
+          "description1": "Surgical oncologists at Venkataeswara Hospitals perform life-saving cancer surgeries, focusing on the removal of malignant tumors and biopsies of suspicious masses.",
+          "description2": "Our oncological team is dedicated to providing holistic care for cancer patients, ensuring comprehensive treatment through surgical interventions when necessary.",
+          "description3": "Our surgical oncologists are equipped with the latest technology to perform highly specialized surgeries, helping patients manage and treat cancers effectively."
+        },
+        {
+          "id": "medical-oncology",
+          "title": "Medical Oncology",
+          "image": "/specialityimg/medical_oncology.png",
+          "description1": "Venkataeswara Hospitals offers advanced medical oncology services for cancer diagnosis, staging, and treatment, including chemotherapy and radiotherapy.",
+          "description2": "Our team provides outpatient and inpatient care for cancer patients, delivering the latest therapies and follow-up care to reduce suffering and improve outcomes.",
+          "description3": "We also provide psychological support for patients and families, with specialized palliative care for those with advanced stages of cancer."
+        },
+        {
+          "id": "ophthalmological-surgery",
+          "title": "Ophthalmological Surgery",
+          "image": "/specialityimg/ophthalmological_surgery.png",
+          "description1": "Venkataeswara Hospitals offers comprehensive eye care, from routine check-ups to advanced surgeries for conditions like cataracts, glaucoma, and retinal detachment.",
+          "description2": "Our expert team performs LASIK surgery and treats common eye diseases and disorders through surgical methods, ensuring optimal vision and eye health.",
+          "description3": "We specialize in both minor and complex eye surgeries, helping patients improve their quality of life through effective treatment and care."
+        },
+        {
+          "id": "orthopaedic-surgery",
+          "title": "Orthopaedic Surgery",
+          "image": "/specialityimg/orthopaedic_surgery.png",
+          "description1": "Venkataeswara Hospitals provides comprehensive orthopaedic care, performing emergency and routine surgeries for bone fractures, joint replacements, and spinal issues.",
+          "description2": "Our skilled orthopaedic specialists offer treatments for fractures, sports injuries, and complex musculoskeletal conditions using state-of-the-art facilities.",
+          "description3": "We also provide pain management and rehabilitation services to ensure the fastest recovery and best possible outcomes for our patients."
+        },
+        {
+          "id": "paediatrics",
+          "title": "Paediatrics",
+          "image": "/specialityimg/paediatrics.png",
+          "description1": "Venkataeswara Hospitals offers specialized care for children, addressing their unique healthcare needs from infancy through adolescence.",
+          "description2": "Our team of paediatricians provides holistic care, managing everything from routine health checks to more complex medical conditions and emergencies.",
+          "description3": "We also run well-baby and immunization clinics, ensuring that children receive the best preventive care throughout their growth and development."
+        },
+        {
+          "id": "paediatric-anaesthesiology",
+          "title": "Paediatric Anaesthesiology",
+          "image": "/specialityimg/paediatric_anaesthesiology.png",
+          "description1": "Paediatric anaesthesiologists at Venkataeswara Hospitals provide anesthesia care for children undergoing surgery, ensuring safety and comfort during procedures.",
+          "description2": "Our team specializes in pain management for children of all ages, monitoring their vital signs during surgery and providing care in the ICU as needed.",
+          "description3": "With the right equipment and support, we ensure that our youngest patients receive the highest standard of anaesthesia care."
+        },
+        {
+          "id": "plastic-surgery",
+          "title": "Plastic Surgery",
+          "image": "/specialityimg/plastic_surgery.png",
+          "description1": "Venkataeswara Hospitals provides both reconstructive and cosmetic plastic surgery services, addressing both physical deformities and aesthetic concerns.",
+          "description2": "Our team offers a range of services, including reconstructive surgery for accident victims and cosmetic procedures like liposuction, tummy tucks, and facelifts.",
+          "description3": "We also specialize in cleft lip and palate repair, craniofacial surgery, and microsurgery, providing multidisciplinary care for patients requiring plastic surgery."
+        },
+        {
+          "id": "psychiatry",
+          "title": "Psychiatry",
+          "image": "/specialityimg/psychiatry.png",
+          "description1": "Psychiatric care at Venkataeswara Hospitals addresses mental health disorders with the same care as physical ailments, providing diagnosis, treatment, and support.",
+          "description2": "Our psychiatrists specialize in complex mental conditions like schizophrenia and bipolar disorder, offering medical treatments and working closely with psychologists and counselors.",
+          "description3": "We provide comprehensive mental healthcare, ensuring patients receive the right treatment for their psychological and emotional well-being."
+        },
+        {
+          "id": "psychology",
+          "title": "Psychology",
+          "image": "/specialityimg/psychology.png",
+          "description1": "Venkataeswara Hospitals’ psychologists offer psychotherapy for patients suffering from conditions like depression and anxiety, focusing on non-medical interventions.",
+          "description2": "Our psychological services emphasize healing through therapy, helping patients cope with mental health challenges without the need for medications.",
+          "description3": "Our psychologists work alongside psychiatrists and counselors to provide holistic mental health care, supporting patients through their recovery journey."
+        },
+        {
+          "id": "pulmonology",
+          "title": "Pulmonology",
+          "image": "/specialityimg/pulmonology.png",
+          "description1": "Pulmonologists specialize in diseases of the lungs and respiratory tract. At Venkataeswara Hospitals, our team offers care for respiratory health, treating conditions such as asthma, COPD, and lung diseases.",
+          "description2": "We provide advanced treatment for chest and respiratory diseases, offering diagnostic services, care plans, and reducing the suffering of patients with advanced lung conditions.",
+          "description3": "Our pulmonologists work with patients to manage chronic respiratory conditions, especially with the increasing incidence of smoking-related diseases and environmental factors."
+        },
+        {
+          "id": "rheumatology",
+          "title": "Rheumatology",
+          "image": "/specialityimg/rheumatology.png",
+          "description1": "Rheumatology deals with joint, bone, and connective tissue diseases. Venkataeswara Hospitals provides diagnosis and treatment for rheumatoid arthritis, spondylosis, and other musculoskeletal disorders.",
+          "description2": "Our rheumatologists manage a wide range of conditions including joint pain, arthritis, and other degenerative diseases, helping patients maintain mobility and reduce inflammation.",
+          "description3": "With expertise in over 100 rheumatic diseases, our team focuses on preventive care, regular checks, and targeted treatments to manage pain and improve quality of life."
+        },
+        {
+          "id": "speech-therapy",
+          "title": "Speech Therapy",
+          "image": "/specialityimg/speech_therapy.png",
+          "description1": "Speech therapists at Venkataeswara Hospitals work with individuals, especially children, to treat speaking and hearing impairments, using speech pathology techniques for correction.",
+          "description2": "Our speech therapy consultants specialize in helping children with auditory and psychological challenges, providing them with the support they need to lead a more normal life.",
+          "description3": "Through expert consultation, we address various speech and communication disorders, supporting both children and adults in improving their speech capabilities."
+        },
+        {
+          "id": "urological-surgery",
+          "title": "Urological Surgery",
+          "image": "/specialityimg/urological_surgery.png",
+          "description1": "Urological surgery involves procedures to treat diseases of the urinary tract and male reproductive organs. Venkataeswara Hospitals performs various urological surgeries including prostate removal and laparoscopic procedures.",
+          "description2": "Our urology department handles a wide range of conditions, including kidney stones, urinary tract infections, and prostate issues, with expert surgical care and treatment.",
+          "description3": "We provide specialized urological surgery services, ensuring patient comfort and effective treatment of diseases affecting the urinary and reproductive systems."
+        },
+        {
+          "id": "urology",
+          "title": "Urology",
+          "image": "/specialityimg/urology.png",
+          "description1": "Urology focuses on the treatment of urinary tract diseases and male reproductive health. Our team at Venkataeswara Hospitals treats conditions like kidney disease, urinary infections, and prostate problems.",
+          "description2": "We offer diagnostic and surgical interventions for urological conditions, such as kidney stones, incontinence, and male infertility, with both medical and surgical treatments.",
+          "description3": "Our team also specializes in pediatric urology, ensuring that children with urological issues receive the best care possible through targeted treatments and surgeries."
+        },
+        {
+          "id": "vascular-surgery",
+          "title": "Vascular Surgery",
+          "image": "/specialityimg/vascular_surgery.png",
+          "description1": "Vascular surgery at Venkataeswara Hospitals specializes in diagnosing and treating conditions affecting the arteries, veins, and circulatory system, excluding the brain and heart.",
+          "description2": "Our vascular surgeons manage diseases such as peripheral artery disease and varicose veins, offering treatments ranging from medication to surgical procedures as needed.",
+          "description3": "With a focus on long-term health, our vascular team ensures comprehensive care for patients, emphasizing both surgical and non-surgical treatment options for circulatory diseases."
+        },
+        {
+          "id": "visiting-consultants",
+          "title": "Visiting Consultants",
+          "image": "/specialityimg/visiting_consultants.png",
+          "description1": "In addition to our in-house specialists, Venkataeswara Hospitals welcomes visiting consultants who provide additional expertise across various medical fields.",
+          "description2": "These experienced visiting doctors offer their services at our hospital, providing specialized care and ensuring that patients receive the best possible treatment.",
+          "description3": "Our network of visiting consultants helps us provide expert care for a wide range of medical conditions, allowing patients access to top-tier specialists from around the world."
+        }           
   ]
   

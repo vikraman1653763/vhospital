@@ -18,9 +18,7 @@ const Section1 = () => {
     return (
         <Carousel 
             showArrows={true} 
-            onChange={onChange} 
-            onClickItem={onClickItem} 
-            onClickThumb={onClickThumb}
+          
             autoPlay={true}       
             interval={3000}        
             infiniteLoop={true}    

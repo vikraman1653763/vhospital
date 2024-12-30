@@ -19,7 +19,7 @@ const Section3 = () => {
     <section className="service-sec-3">
       <div className="service-sec-3-content">
         <div className="service-sec-3-image">
-          <img src="/specialityimg/counsel.png" alt="Dietary Services" />
+          <img src="/assets/diet.webp" alt="Dietary Services" />
         </div>
         <div className="service-sec-3-text">
           <h2 className="service-sec-3-title">DIETARY SERVICES</h2>

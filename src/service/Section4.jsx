@@ -23,7 +23,7 @@ const Section4 = () => {
           </p>
         </div>
         <div className="service-sec-4-image">
-          <img src="/specialityimg/counsel.png" alt="Emergency and Trauma" />
+          <img src="/assets/emergencyser.webp" alt="Emergency and Trauma" />
         </div>
       </div>
     </section>

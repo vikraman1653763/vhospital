@@ -24,7 +24,7 @@ const Section9 = () => {
             </ul>
         </div>
         <div className="service-sec-6-image">
-          <img src="/specialityimg/counsel.png" alt="Health Checkups" />
+          <img src="/assets/operation.webp" alt="Health Checkups" />
         </div>
         </div>
       </div>
