@@ -6,28 +6,28 @@ import serviceLinks from '../speciality.json'; // Import the JSON data
 
 const Navbar = () => {
   const [mini, setMini] = useState(false);
-  const [types, setTypes] = useState(null);
+  const [subs, setSubs] = useState(false);
   const [academicOpen, setAcademicOpen] = useState(false); // State for toggling Academic submenu
   const location = useLocation();
 
+  const toggleSubs= () => {
+    setSubs(!subs);
+    if(mini){
+      setMini(false);
+    }
+  };
+  
+  const toggleAcademic = () => {
+    setAcademicOpen(!academicOpen); 
+  };
   const toggleservices = () => {
     setMini(!mini);
-    setTypes(null); 
   };
-
-  const toggleTypes = () => {
-    setTypes(!types); // Toggle the display of the individual types
-  };
-
-  const toggleAcademic = () => {
-    setAcademicOpen(!academicOpen); // Toggle the Academic submenu
-  };
-
-  // Close dropdowns when the route changes
+  
   useEffect(() => {
     setMini(false);
-    setTypes(null);
-    setAcademicOpen(false); // Close Academic submenu when route changes
+    setSubs(null);
+    setAcademicOpen(false);
   }, [location]);
 
   return (
@@ -42,7 +42,7 @@ const Navbar = () => {
         <ul>
           <li><Link to="/about">ABOUT</Link></li>
           <li><Link to="/service">SERVICES</Link></li>
-          <li onClick={toggleservices}>
+          <li onClick={toggleSubs} >
             <span>SPECIALITIES & CONSULTANTS</span>
           </li>
           <li className="menu-item" onClick={toggleAcademic}>
@@ -66,6 +66,23 @@ const Navbar = () => {
       </div>
 
       <AnimatePresence>
+        {subs && (
+          <motion.div
+            className="sub-container"
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -100 }}
+            transition={{ duration: 0.3 }}
+          >
+     
+            <li onClick={toggleservices}>SPECIALITIES</li>
+            <li>CONSULTANTS</li>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+
+      <AnimatePresence>
         {mini && (
           <motion.div
             className="types-box"
@@ -74,6 +91,7 @@ const Navbar = () => {
             exit={{ opacity: 0, y: -100 }}
             transition={{ duration: 0.3 }}
           >
+
             <div className="indi-type-container">
               {serviceLinks.map((speciality) => (
                 <li key={speciality.id}>

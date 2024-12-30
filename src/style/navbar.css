@@ -2,7 +2,7 @@
 
 
 nav{
-    background-color:#105e3c;
+    background-color:#105e3c00;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -75,27 +75,12 @@ nav{
   margin: 0%;
 }
 
-.submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  min-width: 160px;
-  padding: 10px 0;
-  
-}
-.submenu {
-  display: flex;
-  flex-direction: column;
-  background-color: #105e3c;
-  align-items: flex-start;
-}
+
 
   .types-box{
       width: 100%;
     }
-    .services-container{
+    .sub-container{
         width: 100%;
         height: auto;
         padding: 2em 0em;
@@ -104,8 +89,12 @@ nav{
         justify-content: space-evenly;
         color:  white;
         z-index: 8;
-        background-color:#0c422b62;
+        background-color:#0f6d44;
   
+  }
+  .sub-container li{
+    list-style: none;
+    text-decoration: none;
   }
   .service-link{
     text-decoration: none;
@@ -128,6 +117,8 @@ nav{
     z-index: 7;
     list-style: none;
     text-decoration: none;
+    background-color: #105e3c;
+
   }
   
   .indi-type-container a {
@@ -135,7 +126,7 @@ nav{
     text-decoration: none;
     color: #fff;
     text-decoration: none; /* Optional: Remove underline from links */
-    font-size: 1.1em; /* Optional: Adjust font size */
+    font-size: var(--fs-s); /* Optional: Adjust font size */
   }
   
  
