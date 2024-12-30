@@ -9,8 +9,15 @@ import SpecialityPage from './component/SpecialityPage.jsx';
 import specialityData from './speciality.json'; 
 import './App.css';
 import Service from './component/service.jsx';
-
+import Loader from './component/Loader.jsx'; // Import the Loader component
+import useMediaLoader from './component/useMediaLoader.jsx'; 
 function App() {
+  const isLoaded = useMediaLoader();
+
+  // Show loader until all media is loaded
+  if (!isLoaded) {
+    return <Loader />;
+  }
   return (
     <Router>
       <Navbar />
