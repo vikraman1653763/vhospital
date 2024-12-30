@@ -1,17 +1,9 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the CSS for the carousel
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 const Section1 = () => {
-    const onChange = (index) => {
-        console.log("Changed to:", index);
-    };
-    const onClickItem = (index) => {
-        console.log("Item clicked:", index);
-    };
-    const onClickThumb = (index) => {
-        console.log("Thumbnail clicked:", index);
-    };
+    
     const cards = [
         {
           image: "/assets/banner1.webp",
