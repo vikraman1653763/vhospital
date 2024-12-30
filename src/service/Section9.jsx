@@ -23,7 +23,7 @@ const Section9 = () => {
             <li><WiStars/>Adequate Surgical instruments </li>
             </ul>
         </div>
-        <div className="service-sec-6-image">
+        <div className="service-sec-6-image service-sec-9-image">
           <img src="/assets/operation.webp" alt="Health Checkups" />
         </div>
         </div>

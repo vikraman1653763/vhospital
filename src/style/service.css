@@ -74,7 +74,6 @@
   .service-sec-2-equipment {
     margin-top: 20px;
     position: relative;
-
   }
   .service-sec-2-icon {
     position: absolute;
@@ -387,7 +386,7 @@
       /* #############section6############### */
       .service-sec-6 {
         padding: 2rem 13rem;
-        background-color: #f8f8f8; /* Light background for contrast */
+        background-color: #f8f8f8; 
       }
       
       .service-sec-6-content {
@@ -417,10 +416,12 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content:space-between;
+        justify-content:center;
       }
       .service-sec-6-image{
         width: 50%;
+        display: flex;
+        justify-content:flex-end;
       }
       .service-sec-6-image img{
         width: 70%;
@@ -614,7 +615,9 @@
       
 
       /* ######################section9############# */
-
+.service-sec-9-image{
+  justify-content: flex-start;
+}
       .service-sec-9-point{
         display: flex;
         justify-content: center;
