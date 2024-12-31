@@ -36,7 +36,6 @@ const Navbar = () => {
         <div className='nav-logo'>
           <Link to="/">
             <img className="logooimg" src="/assets/logo.webp" alt="logo" />
-            <img className="logooimg" src="/assets/emergency.webp" alt="logo" />
           </Link>
         </div>
         <ul>
@@ -49,7 +48,7 @@ const Navbar = () => {
             <span>ACADEMIC</span>
             {academicOpen && (
             <motion.ul 
-              className="submenu"
+              className="submenu-item"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
