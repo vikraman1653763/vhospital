@@ -1,9 +1,14 @@
-import React from 'react';
-// import { GiPolarStar } from "react-icons/gi";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { FaHandHoldingHeart } from "react-icons/fa6";
 import { GiHeartPlus } from "react-icons/gi";
 
 const Section5 = () => {
+  useEffect(() => {
+    AOS.init({ duration: 600 }); 
+  }, []);
+
   return (
     <section className="ins-sec-5">
       <div className="ins-sec-5-content">
@@ -18,7 +23,7 @@ const Section5 = () => {
             <h3>List of TPAs We Partner With:</h3>
             <div className='ins-pt-container'>
 
-            <ul>
+            <ul data-aos="fade-up">
               <li><FaHandHoldingHeart /> TTK Healthcare TPA Pvt. Ltd.</li>
               <li><FaHandHoldingHeart /> Medi Assist India Pvt. Ltd.</li>
               <li><FaHandHoldingHeart /> Raksha Health Insurance TPA Pvt. Ltd.</li>
@@ -29,7 +34,7 @@ const Section5 = () => {
               <li><FaHandHoldingHeart /> MedSave Health Insurance TPA Ltd.</li>
               <li><FaHandHoldingHeart /> Family Health Plan TPA Ltd.</li>
               </ul>
-              <ul>
+              <ul data-aos="fade-up">
               <li><FaHandHoldingHeart /> E-Meditek (TPA) Services Ltd.</li>
               <li><FaHandHoldingHeart /> Paramount Health Services & Insurance TPA Pvt. Ltd.</li>
               <li><FaHandHoldingHeart /> Medicare TPA Pvt. Ltd.</li>
@@ -45,7 +50,7 @@ const Section5 = () => {
           </div>
           <div className="ins-sec-5-point ins-point-2">
             <h3>List of Insurance Companies:</h3>
-            <ul>
+            <ul data-aos="fade-up">
               <li><GiHeartPlus /> Star Health and Allied Insurance</li>
               <li><GiHeartPlus /> Future Generali Insurance</li>
               <li><GiHeartPlus /> Chola MS General Insurance</li>

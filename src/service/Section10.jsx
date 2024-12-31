@@ -4,7 +4,7 @@ const Section10 = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleIndexClick = (index) => {
-    setActiveIndex(index === activeIndex ? null : index); // Toggle visibility of points
+    setActiveIndex(index === activeIndex ? index : index); // Toggle visibility of points
   };
 
   const sections = [

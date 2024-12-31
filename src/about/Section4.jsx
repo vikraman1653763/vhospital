@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Section4 = () => {
+  useEffect(() => {
+    AOS.init({ duration: 600 }); 
+  }, []);
   return (
     <div className="sec-4-container">
       <div className="sec-4-content">

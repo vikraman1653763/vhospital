@@ -9,7 +9,7 @@ import SpecialityPage from './component/SpecialityPage.jsx';
 import specialityData from './speciality.json'; 
 import './App.css';
 import Service from './component/service.jsx';
-import Loader from './component/Loader.jsx'; // Import the Loader component
+import Loader from './component/Loader.jsx';
 import useMediaLoader from './component/useMediaLoader.jsx'; 
 function App() {
   const isLoaded = useMediaLoader();
@@ -19,7 +19,7 @@ function App() {
   }
   return (
     <Router>
-      <Navbar />
+      <Navbar/>
         <div className='main'>
       <Routes>
 

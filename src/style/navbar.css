@@ -16,7 +16,9 @@ nav{
   
   
   .navbar{
-    background-color: #105e3c;
+    /* background-color: #105e3c; */
+    background: rgb(2,0,36);
+background: linear-gradient(60deg, rgba(252, 252, 255, 0) 0%, #18a86a 40%, #105e3c 100%);
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -30,7 +32,7 @@ nav{
   .navbar .nav-logo a{
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: #524d4d00;
     height:auto;
     border-radius: 5px;
     padding: .2em;

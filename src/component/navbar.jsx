@@ -7,7 +7,7 @@ import serviceLinks from '../speciality.json'; // Import the JSON data
 const Navbar = () => {
   const [mini, setMini] = useState(false);
   const [subs, setSubs] = useState(false);
-  const [academicOpen, setAcademicOpen] = useState(false); // State for toggling Academic submenu
+  const [academicOpen, setAcademicOpen] = useState(false); 
   const location = useLocation();
 
   const toggleSubs= () => {

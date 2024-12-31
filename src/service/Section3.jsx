@@ -1,8 +1,21 @@
-import React from 'react';
-import {FaFire, FaHeartbeat, FaMedkit, FaWeight, FaStethoscope, FaPlusCircle } from 'react-icons/fa'; // Import relevant icons
-import { GiKidneys,GiLiver } from "react-icons/gi";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import {
+  FaFire,
+  FaHeartbeat,
+  FaMedkit,
+  FaWeight,
+  FaStethoscope,
+  FaPlusCircle,
+} from 'react-icons/fa'; // Import relevant icons
+import { GiKidneys, GiLiver } from 'react-icons/gi';
 
 const Section3 = () => {
+  useEffect(() => {
+    AOS.init({ duration: 600 }); // Initialize AOS with a duration of 600ms
+  }, []);
+
   const clinicalAreas = [
     { name: 'Cardiology', icon: <FaHeartbeat /> },
     { name: 'Diabetes', icon: <FaMedkit /> },
@@ -17,21 +30,37 @@ const Section3 = () => {
 
   return (
     <section className="service-sec-3">
+      {/* Content Section */}
       <div className="service-sec-3-content">
-        <div className="service-sec-3-image">
+        <div
+          className="service-sec-3-image"
+          data-aos="fade-right" // Animation for the image
+        >
           <img src="/assets/diet.webp" alt="Dietary Services" />
         </div>
-        <div className="service-sec-3-text">
+        <div
+          className="service-sec-3-text"
+          data-aos="fade-left" // Animation for the text
+        >
           <h2 className="service-sec-3-title">DIETARY SERVICES</h2>
           <p className="service-sec-3-description">
-            Our full-time dietary department at Venkataeswara Hospitals is responsible for providing the healthiest food possible for both patients and visitors.
-            Our dietitians have the expertise to advise patients undergoing treatment in the following clinical areas:
+            Our full-time dietary department at Venkataeswara Hospitals is
+            responsible for providing the healthiest food possible for both
+            patients and visitors. Our dietitians have the expertise to advise
+            patients undergoing treatment in the following clinical areas:
           </p>
         </div>
       </div>
+
+      {/* Cards Section */}
       <div className="service-sec-3-cards">
         {clinicalAreas.map((area, index) => (
-          <div className="service-sec-3-card" key={index}>
+          <div
+            className="service-sec-3-card"
+            key={index}
+            data-aos="fade-up" // Animation for each card
+            data-aos-delay={index * 100} // Staggered animation delay
+          >
             <div className="service-sec-3-card-icon">{area.icon}</div>
             <h3>{area.name}</h3>
             <p>Expert dietary guidance for patients with {area.name.toLowerCase()}.</p>

@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { GiPolarStar } from "react-icons/gi";
 
 const Section7 = () => {
+  useEffect(() => {
+    AOS.init({ duration: 600 }); 
+  }, []);
+
   return (
     <section className="service-sec-7">
       <div className="service-sec-7-content">
@@ -12,10 +18,10 @@ const Section7 = () => {
             </p>
 
         </div>
-        <div className="service-sec-7-points">
-        <div className="service-sec-7-point">
+        <div className="service-sec-7-points"  >
+        <div className="service-sec-7-point" >
           <h3>Procedures :</h3>
-          <ul>
+          <ul >
             <li><GiPolarStar/>Internal jugular vein ventilatory support</li>
             <li><GiPolarStar/>External jugular vein ventilatory support</li>
             <li><GiPolarStar/>Subclavian catheterisation</li>
@@ -31,7 +37,7 @@ const Section7 = () => {
             <li><GiPolarStar/>Suprapubic cystostomy</li>
           </ul>
           </div>
-          <div className="service-sec-7-point">
+          <div className="service-sec-7-point" >
 
           <h3>Cardinal Principles:</h3>
           <ul>

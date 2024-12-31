@@ -1,4 +1,6 @@
 import React,{useEffect, useState} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import {useNavigate}from 'react-router-dom';
 
 const Section4 = () => {
@@ -36,9 +38,12 @@ const Section4 = () => {
         //   setIsSubmitting(false)
         // }
       }
+      useEffect(() => {
+          AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
+        }, []);
     return (
         <div className="contact-sec-4">
-            <div className="contact-sec-4-container">
+            <div className="contact-sec-4-container" data-aos="fade-up">
                   <form className="contact_form"
                         onSubmit={handleSubmit}
                         style={{ cursor: isSubmitting ? 'wait' : 'auto' }} >

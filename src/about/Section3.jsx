@@ -1,6 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Section3 = () => {
+  useEffect(() => {
+      AOS.init({ duration: 600 }); 
+    }, []);
   const visionPoints = [
     {
       title: "Trusted Lifesavers",
@@ -55,7 +61,7 @@ const Section3 = () => {
       <h2 className="vision-heading">OUR VISION</h2>
       <div className="vision-cards">
         {visionPoints.map((point, index) => (
-          <div key={index} className="vision-card">
+          <div key={index} className="vision-card" data-aos="fade-up">
             <h3>{point.title}</h3>
             <p>{point.description}</p>
           </div>
@@ -65,7 +71,7 @@ const Section3 = () => {
       <h2 className="vision-heading">OUR MISSION</h2>
       <div className="vision-cards">
         {missionPoints.map((point, index) => (
-          <div key={index} className="vision-card">
+          <div key={index} className="vision-card"data-aos="fade-up">
             <h3>{point.title}</h3>
             <p>{point.description}</p>
           </div>
@@ -75,7 +81,7 @@ const Section3 = () => {
       <h2 className="vision-heading">OUR VALUES</h2>
       <div className="vision-cards">
         {valuesPoints.map((point, index) => (
-          <div key={index} className="vision-card">
+          <div key={index} className="vision-card"data-aos="fade-up">
             <h3>{point.title}</h3>
             <p>{point.description}</p>
           </div>

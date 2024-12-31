@@ -585,13 +585,7 @@
           font-size:var(--fs-xxl);
         }
         
-        .service-sec-8-point :hover{
-          background-color: #105e3c;
-          border: 3px solid aliceblue;
-            color: aliceblue;
-            border-radius: 10px;
-
-        }
+        
       /* Media Query for responsiveness */
       @media (max-width: 768px) {
         .service-sec-8-content {

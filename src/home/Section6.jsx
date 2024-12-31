@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Section6 = () => {
   // Data for the cards
+  useEffect(() => {
+    AOS.init({ duration: 600 }); 
+  }, []);
+
   const cardsData = [
     {
       image: "/assets/qu-1.webp", 
@@ -23,8 +29,8 @@ const Section6 = () => {
   return (
     <div className="home-sec-6-container">
       <div className="home-sec-6-cards">
-        {cardsData.map((card, index) => (
-          <div key={index} className="home-sec-6-card">
+        {cardsData.map((card, index) => ( 
+          <div key={index} className="home-sec-6-card" data-aos="zoom-out"  >
             <img src={card.image} alt={`Card ${index + 1}`} className="home-sec-6-card-image" />
             
             <div className='home-sec-6-card-container'>

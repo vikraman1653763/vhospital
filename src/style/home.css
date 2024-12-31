@@ -33,8 +33,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:3px solid #105e3c;
+    background-color: rgb(221, 248, 226);
+    /* border:3px solid #105e3c; */
     overflow: hidden;
+    box-shadow: -3px 3px 27px -5px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: -3px 3px 27px -5px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: -3px 3px 27px -5px rgba(0,0,0,0.75) inset;
   }
   
   .home-sec-2-logo img {
