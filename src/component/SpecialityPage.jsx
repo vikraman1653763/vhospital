@@ -30,7 +30,7 @@ const SpecialityPage = ({ data }) => {
           {/* Second Section */}
           <div className="special-section">
             <div className="special-logo">
-            <img src='/assets/logo-2.png'/>
+            <img src={validData.logo}alt={validData.title} />
             </div>
             <div className="special-text-2">{validData.description2}</div>
           </div>

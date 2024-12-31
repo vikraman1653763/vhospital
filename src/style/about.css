@@ -32,7 +32,7 @@
   }
 
   /* Section 2*/
-  .sec-2-container {
+  .about-sec-2-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -40,7 +40,7 @@
     flex-direction: column; /* Allow stacking of content */
   }
   
-  .sec-2-content {
+  .about-sec-2-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,14 +49,14 @@
     gap: 2rem;
   }
   
-  .sec-2-title {
+  .about-sec-2-title {
     font-size: var(--fs-xl); /* Adjusted for better responsiveness */
     color: #105e3c;
     margin-bottom: 1rem;
     text-align: center; /* Ensures the title is centered */
   }
   
-  .sec-2-body {
+  .about-sec-2-body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -65,12 +65,12 @@
     gap: 1rem;
   }
   
-  .sec-2-text {
+  .about-sec-2-text {
     flex: 1;
     max-width: 50%; /* Added for controlling text width */
   }
   
-  .sec-2-description {
+  .about-sec-2-description {
     font-size: 1rem; /* Adjust font size */
     color: #555;
     margin-bottom: 1rem;
@@ -79,13 +79,13 @@
     line-height: 1.6;
   }
   
-  .sec-2-imgcontainer {
+  .about-sec-2-imgcontainer {
     flex: 1;
     text-align: center;
     max-width:40%;
   }
   
-  .sec-2-img {
+  .about-sec-2-img {
     width: 90%;
     max-width: 500px;
     border-radius: 8px;
@@ -149,7 +149,7 @@
 
 /* Section 4 */
 
-.sec-4-container {
+.about-sec-4-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -157,7 +157,7 @@
   flex-direction: column; /* Allow stacking of content */
 }
 
-.sec-4-content {
+.about-sec-4-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,14 +166,14 @@
   gap: 2rem;
 }
 
-.sec-4-title {
+.about-sec-4-title {
   font-size: var(--fs-xl); /* Adjusted for better responsiveness */
   color: #105e3c;
   margin-bottom: 1rem;
   text-align: center; /* Ensures the title is centered */
 }
 
-.sec-4-body {
+.about-sec-4-body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -182,12 +182,12 @@
   gap: 1rem;
 }
 
-.sec-4-text {
+.about-sec-4-text {
   flex: 1;
   max-width: 50%; /* Added for controlling text width */
 }
 
-.sec-4-description {
+.about-sec-4-description {
   font-size: 1rem; /* Adjust font size */
   color: #555;
   margin-bottom: 1rem;
@@ -195,13 +195,13 @@
   text-align: justify;
 }
 
-.sec-4-imgcontainer {
+.about-sec-4-imgcontainer {
   flex: 1;
   text-align: center;
   max-width:40%;
 }
 
-.sec-4-img {
+.about-sec-4-img {
   width: 90%;
   max-width: 500px;
   border-radius: 8px;
@@ -211,7 +211,7 @@
 /* Section5 */
 
 .ins-sec-5 {
-  padding: 2rem 10rem;
+  padding: 2rem 13rem;
   background-color: #f8f8f8;
 }
 
@@ -378,8 +378,8 @@ color: #105e3c;
   margin-right: 20px; /* Spacing between items in the marquee */
 }
 .tie-up-logo {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   margin-right: 10px;
   vertical-align: middle;
   border-radius: 50%;

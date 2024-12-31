@@ -39,13 +39,13 @@ const Navbar = () => {
           </Link>
         </div>
         <ul>
-          <li><Link to="/about">ABOUT</Link></li>
-          <li><Link to="/service">SERVICES</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/service">Services</Link></li>
           <li onClick={toggleSubs} >
-            <span>SPECIALITIES & CONSULTANTS</span>
+            <span>Specialities & Consultants</span>
           </li>
           <li className="menu-item" onClick={toggleAcademic}>
-            <span>ACADEMIC</span>
+            <span>Academic</span>
             {academicOpen && (
             <motion.ul 
               className="submenu-item"
@@ -54,13 +54,13 @@ const Navbar = () => {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.5 }}
             >
-              <li><a href="https://venkataeswaraalliedhealthsciences.com/">Enroll Online</a></li>
+              <li><a href="https://venkataeswaraalliedhealthsciences.com/" target="_blank" rel="noopener noreferrer">Enroll Online</a></li>
               <li><a href="/assets/Enroll-Online.pdf" target="_blank" rel="noopener noreferrer">Download Form</a></li>
               </motion.ul>
           )}
 
           </li>
-          <li><Link to="/contact">CONTACT</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
 
@@ -74,8 +74,8 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           >
      
-            <li onClick={toggleservices}>SPECIALITIES</li>
-            <li>CONSULTANTS</li>
+            <li onClick={toggleservices}>Specialities</li>
+            <li>Consultants</li>
           </motion.div>
         )}
       </AnimatePresence>

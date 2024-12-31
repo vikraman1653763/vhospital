@@ -25,7 +25,7 @@ const Footer = () => {
             <li><Link to="/about" className="footer-link">About</Link></li>
             <li><Link to="/service" className="footer-link">Service</Link></li>
             <li><Link to="/contact" className="footer-link">Contact</Link></li>
-            <li><Link to="https://venkataeswaraalliedhealthsciences.com/" className="footer-link">Academic</Link></li>
+            <li><Link to="https://venkataeswaraalliedhealthsciences.com/"  className="footer-link" target="_blank" rel="noopener noreferrer">Academic</Link></li>
           </ul>
         </div>
 

@@ -107,6 +107,7 @@
     font-size: var(--fs-s);
     flex-wrap: wrap;
     transition: all .3s ease-in-out;
+   
 }
 
 .service-sec-2-equipment li {
@@ -123,6 +124,7 @@
     box-sizing: border-box; /* Ensures padding does not affect width calculation */
     padding:1em ;
     gap: 1em;
+    z-index: 1;
   }
     .service-sec-2-equipment ul svg{
         font-size: var(--fs-xl);
