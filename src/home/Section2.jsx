@@ -19,7 +19,7 @@ const Section2 = () => {
       </div>
       <div className="home-sec-2-logo"   >
       <img
-          src="/assets/logo-2.png"
+          src="/assets/hero.webp"
           alt="Venkataeswara Hospitals Logo"
           data-aos="fade-up"
         />

@@ -1,0 +1,127 @@
+.err-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f9f9;
+  }
+  
+  /* Card styling */
+  .err-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 27rem;
+    height:25rem;
+    padding: 2em;
+    background: #bed5cd;
+    box-shadow: 0 8px 32px rgba(71, 71, 71, 0.37);
+    backdrop-filter: blur(16.5px);
+    -webkit-backdrop-filter: blur(16.5px);
+    border-radius: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .err-title {
+    font-size: var(--fs-l);
+    margin-top: 20px;
+    color: var(--text-primary);
+  }
+  
+  /* Description styling */
+  .err-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: black;
+    line-height: 1.5;
+  }
+    
+  .err-icon {
+    /* width: 30%; */
+    height: auto;
+    justify-content: center;
+    border-radius: 10px;
+    color: #105e3c;
+    font-size: 5rem;
+   /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+  }
+  .err-button {
+    padding: 12px 25px;
+    font-size: var(--fs-s);
+    background-color: #105e3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .err-button:hover {
+    background-color: transparent;
+    color: #042a19;
+    border: 2px solid #105e3c;
+  }
+
+  /* Tablet (768px - 1024px) */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .err-container {
+      height: 80vh;
+      padding: 1em;
+    }
+  
+    .err-content {
+      width: 25rem;
+      height:20rem;
+      padding: 1.5em;
+    }
+  
+    .err-title {
+      font-size: 1.8rem;
+    }
+  
+    .err-description {
+      font-size: 1rem;
+    }
+  
+    .err-img {
+      max-width: 250px;
+    }
+  
+    .err-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  /* Mobile (426px - 767px) */
+  @media screen and (max-width: 767px) {
+    .err-container {
+      height: auto;
+      padding: 2em 0;
+    }
+  
+    .err-content {
+      width: 18rem;
+      height:15rem;
+      padding: 0.8em;
+    }
+  
+    .err-title {
+      font-size: 1.5rem;
+    }
+  
+    .err-description {
+      font-size: 0.8rem;
+    }
+  
+    .err-img {
+      max-width: 200px;
+    }
+  
+    .err-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }

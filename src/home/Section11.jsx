@@ -5,29 +5,29 @@ const DoctorsData = {
   heading: 'Meet Our Specialists',
   doctors: [
     {
-      img: '/assets/Doctors/doc1.png',
+      img: '/assets/doc1.webp',
       name: 'Dr. John Smith',
       job: 'Cardiologist',
     },
     {
-      img: '/assets/Doctors/doc2.png',
+      img: '/assets/doc2.webp',
       name: 'Dr. Kristin Watson',
       job: 'Dentist',
     },
     {
-      img: '/assets/Doctors/doc3.png',
+      img: '/assets/doc3.webp',
       name: 'Dr. Robert Flores',
       job: 'Surgeon',
     },
     {
-      img: '/assets/Doctors/doc4.png',
+      img: '/assets/doc4.webp',
       name: 'Dr. Katherine Allen',
       job: 'Neurologist',
     },
   ],
   heading2: 'Who Are We?',
   desc: 'A collaborative hospital service website is a digital platform that brings together healthcare professionals, patients and administrators to streamline and engage the delivery of healthcare services. This innovative platform allows for seamless communication and coordination among healthcare teams, enabling them to provide more efficient and personalized care to patients.',
-  img: '/assets/Doctors/banner2.png',
+  img: '/assets/banner4.webp',
 };
 
 const SectionWrapper = ({ id, children }) => {
@@ -50,19 +50,19 @@ const Doctor = ({ doc }) => {
 
 const Doctors = () => {
   return (
-    <SectionWrapper id="doctors">
+    <section className="doctors">
       <h3 className="doctors-heading">{DoctorsData.heading}</h3>
       <div className="doctors-list">
         {DoctorsData.doctors.map((doctor, index) => (
           <Doctor key={index} doc={doctor} />
         ))}
       </div>
-      <h4 className="doctors-subheading">{DoctorsData.heading2}</h4>
+      {/* <h4 className="doctors-subheading">{DoctorsData.heading2}</h4>
       <div className="doctors-description">
         {DoctorsData.desc}
       </div>
-      <img className="doctors-banner" src={DoctorsData.img} alt="Banner" />
-    </SectionWrapper>
+      <img className="doctors-banner" src={DoctorsData.img} alt="Banner" /> */}
+    </section>
   );
 };
 

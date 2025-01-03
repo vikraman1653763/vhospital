@@ -1,6 +1,6 @@
 import React from 'react';
-import bannerImg from '/assets/banner1.png'; // Fixed path
-import { FaStethoscope } from 'react-icons/fa';
+import bannerImg from '/assets/banner5.webp'; // Fixed path
+import { MdOutlineSanitizer } from "react-icons/md";
 
 const Section9 = () => {
   const Banner1Data = {
@@ -22,7 +22,7 @@ const Section9 = () => {
         <ul className="banner-list">
           {Banner1Data.texts.map((text, index) => (
             <li key={index} className="list-item"> {/* Added key */}
-              <FaStethoscope className="list-icon" />
+              <MdOutlineSanitizer className="list-icon" />
               <p className="list-text">{text}</p>
             </li>
           ))}

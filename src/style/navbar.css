@@ -119,6 +119,10 @@ background: linear-gradient(60deg, rgba(252, 252, 255, 0) 0%, #18a86a 40%, #105e
   .sub-container li{
     list-style: none;
     text-decoration: none;
+    cursor: pointer;
+  }
+  .sub-container li:hover{
+    color: black;
   }
   .service-link{
     text-decoration: none;
@@ -146,7 +150,7 @@ background: linear-gradient(60deg, rgba(252, 252, 255, 0) 0%, #18a86a 40%, #105e
   }
   
   .indi-type-container a {
-    text-transform: uppercase;
+    text-transform: capitalize;
     list-style: none;
     text-decoration: none;
     color: #fff;

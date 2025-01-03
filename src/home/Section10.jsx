@@ -1,156 +1,184 @@
 import React, { useState } from 'react';
-// import './Services.css'; // Import external CSS file
+import { FaAmbulance, FaHeartbeat, FaXRay, FaStethoscope } from 'react-icons/fa';
+import { GiFruitBowl, GiSiren, GiLoveInjection, GiHeartBeats } from 'react-icons/gi';
+import { MdScience } from 'react-icons/md';
+import { FaBedPulse, FaUserDoctor  } from "react-icons/fa6";
+import { LiaStethoscopeSolid } from "react-icons/lia";
 
 const ServicesData = [
   {
-    img: '/assets/Icons/Neurology.png',
-    title: 'Neurology',
-    id: 'neurology',
-    heading: 'Neurology Department',
+    icon: <FaAmbulance />,
+    title: 'Ambulance',
+    id: 'ambulance',
+    heading: 'Ambulance',
     texts: [
-      'Expert neurological consultations',
-      'Comprehensive brain and nerve care',
-      'Advanced neuroimaging services',
-      'Treatment for epilepsy and seizures',
-      'Memory and cognitive assessments',
-      'Pediatric neurology expertise',
-      'Movement disorders management',
+      "24/7 Emergency Services",
+      "Advanced Life Support Equipment",
+      "Continuous Oxygen Supply",
+      "Expert Medical Team",
+      "Patient Transfers",
+      "Event Coverage & First Aid Support",
+      "Comfortable & Fully Air-Conditioned Ambulance",
+      "Defibrillators & Ventilators Onboard",
+      "Infusion Pumps for Critical Care",
+      "Rapid Response for Emergencies"
     ],
   },
   {
-    img: '/assets/Icons/Cardiology.png',
-    title: 'Cardiology',
-    id: 'cardiology',
-    heading: 'Cardiology Department',
+    icon: <GiFruitBowl />,
+    title: 'Dietary',
+    id: 'dietary',
+    heading: 'Dietary',
     texts: [
-      'Electrocardiogram (ECG)',
-      'Echocardiogram',
-      'Color Doppler Echo',
-      'Dobutamine Stress Echo (DSE)',
-      'Transesophageal Echo (TEE)',
-      'Exercise Tolerance Test (ETT/TMT)',
-      'Halter monitor',
-      '24 Hour Ambulatory BP monitor',
-      'Tilt Test/Tilt Table Test',
+      "Expert Dietitians",
+      "Personalized Meal Plans",
+      "Nutritional Counseling",
+      "Therapeutic Diets",
+      "Post-Surgical Nutrition",
+      "Weight Management Programs",
+      "Parenteral and Enteral Nutrition",
+      "Immune-Boosting Diets",
+      "Metabolic Health Support",
+      "Pediatric and Prenatal Nutrition"
     ],
   },
   {
-    img: '/assets/Icons/Orthopoedics.png',
-    title: 'Orthopedics',
-    id: 'orthopedics',
-    heading: 'Orthopedics Department',
+    icon: <GiSiren />,
+    title: 'Emergency',
+    id: 'emergency',
+    heading: 'Emergency and Trauma',
     texts: [
-      'Orthopedic surgery and joint replacements',
-      'Sports injury and trauma care',
-      'Physical therapy and rehabilitation',
-      'Spine and back pain solutions',
-      'Arthritis and joint disorder treatment',
-      'Orthopedic consultations',
-      'Customized orthopedic care plans',
+      "24/7 Emergency & Trauma Care",
+      "Advanced Life Support Systems",
+      "Expert Trauma Specialists",
+      "Rapid Response Team",
+      "Polytrauma & Mass Trauma Management",
+      "Cardiac & Poisoning Emergencies",
+      "Dedicated Emergency Ward",
+      "Systematic Assessment & Rapid Mobilization",
+      "Skilled Medical Officers & Nurses",
+      "Comprehensive Critical Care Support"
     ],
   },
   {
-    img: '/assets/Icons/Surgery.png',
-    title: 'Surgery',
-    id: 'surgery',
-    heading: 'Surgery Department',
+    icon: <GiLoveInjection />,
+    title: 'Health Checkups',
+    id: 'healthcheckups',
+    heading: 'Health Checkups',
     texts: [
-      'Minimally invasive and laparoscopic surgery',
-      'Gastrointestinal surgery and endoscopy',
-      'Plastic and reconstructive surgery',
-      'Cancer and tumor resection',
-      'Post-operative care and recovery',
-      'Surgical consultations',
-      'Emergency surgical interventions',
+      "Comprehensive Health Checkups",
+      "Customized Screening Programs",
+      "Expert Supervision & Care",
+      "Early Detection of Health Risks",
+      "Holistic Wellness Approach",
+      "Personalized Packages for All Age Groups",
+      "Focus on Preventive Care",
+      "Prompt Diagnosis & Treatment",
+      "Advanced Diagnostic Technology",
+      "Journey to Better Health Starts Here"
     ],
   },
   {
-    img: '/assets/Icons/Dentistry.png',
-    title: 'Dentistry',
-    id: 'dentistry',
-    heading: 'Dentistry Department',
+    icon: <FaXRay />,
+    title: 'Imaging',
+    id: 'imaging',
+    heading: 'Imaging',
     texts: [
-      'Routine dental check-ups and cleanings',
-      'Cosmetic dentistry and teeth whitening',
-      'Oral surgery and extractions',
-      'Dental implants and restorations',
-      'Pediatric and family dentistry',
-      'Gum disease treatment',
-      'Orthodontic and braces options',
+      "Advanced Imaging Technology",
+      "Comprehensive Imaging Services",
+      "X-rays & Radiography",
+      "Ultrasound & Echocardiography",
+      "CT Scans & Angiography",
+      "Mammography & Obstetric Scanning",
+      "Vascular Doppler Studies",
+      "Emergency Imaging Support",
+      "Collaborations with Leading Scan Centers",
+      "Personalized Care with Precision Diagnosis"
     ],
   },
   {
-    img: '/assets/Icons/Radiology.png',
-    title: 'Radiology',
-    id: 'radiology',
-    heading: 'Radiology Department',
+    icon: <GiHeartBeats />,
+    title: 'ICU',
+    id: 'icu',
+    heading: 'Intensive Care Unit',
     texts: [
-      'Advanced diagnostic imaging services',
-      'Mammography and breast health screening',
-      'Interventional radiology procedures',
-      'Virtual colonoscopy and body scans',
-      'Radiology consultations',
-      'Fast and accurate imaging results',
-      'State-of-the-art radiology technology',
+      "9-Bedded Closed ICU",
+      "24/7 Intensivist Monitoring",
+      "1:1 Nurse-Patient Ratio",
+      "Advanced Multi-Parameter Monitoring",
+      "Ventilator Support & Defibrillators",
+      "Bedside Imaging - X-ray, USG, 2-D Echo",
+      "Specialized Procedures & Post-Operative Care",
+      "Sterile Environment & Infection Control",
+      "Nutritional Support & Parenteral Feeding",
+      "Evidence-Based Treatment Protocols"
     ],
   },
   {
-    img: '/assets/Icons/Urology.png',
-    title: 'Urology',
-    id: 'urology',
-    heading: 'Urology Department',
+    icon: <MdScience />,
+    title: 'Laboratory',
+    id: 'laboratory',
+    heading: 'Laboratory',
     texts: [
-      'Urinary tract and kidney evaluations',
-      'Urologic surgery and stone removal',
-      "Men's and women's urological health",
-      'Prostate and bladder care',
-      'Incontinence and pelvic floor therapy',
-      'Urological consultations',
-      'Comprehensive urology solutions',
+      "Comprehensive diagnostic testing",
+      "Expert specimen interpretation",
+      "In-house access to resources",
+      "Collaboration for better care",
+      "Efficient laboratory operations",
+      "Services for all patient types",
+      "Compassionate patient care",
+      "Specialized testing for long-term care",
+      "Routine testing with collection support",
+      "Quality Assurance for reliable results"
     ],
   },
   {
-    img: '/assets/Icons/Medicine.png',
-    title: 'Medicine',
-    id: 'medicine',
-    heading: 'Medicine Department',
+    icon: <FaBedPulse />,
+    title: 'Operation Theatre',
+    id: 'operationtheatre',
+    heading: 'Operation Theatre',
     texts: [
-      'Primary care and internal medicine',
-      'Chronic disease management and prevention',
-      'Immunizations and wellness checks',
-      'Holistic and integrative medicine',
-      'Geriatric and pediatric medicine',
-      'Health education and lifestyle coaching',
-      'Individualized medical treatment plans',
+      "3 Operation Theatres for different procedures",
+      "Orthopaedic, Neurological, Cardiothoracic, Plastic, Ophthalmological",
+      "Laparoscopic, General, OBG, Gastroenterological",
+      "Endoscopic, Minor surgeries",
+      "0.3-micron filter with laminar airflow",
+      "Equipped with Harmonic Scalpel, C-Arm, Anaesthesia Ventilator",
+      "Laparoscopy Instruments, Diathermy, Surgical tools",
+      "Round-the-clock operations with power backup",
+      "Strict bio-medical waste segregation",
+      "Efficient waste disposal system"
     ],
   },
   {
-    img: '/assets/Icons/seeMoreImage.png',
-    title: 'See More',
-    id: 'seemore',
-    heading: 'Explore Our Services',
+    icon: <FaStethoscope />,
+    title: 'Physiotherapy',
+    id: 'physiotherapy',
+    heading: 'Physiotherapy and Rehabilitation',
     texts: [
-      'Explore additional healthcare options',
-      'Specialized medical services for all needs',
-      'Discover a world of medical solutions',
-      'Find the right care for you',
-      'Comprehensive healthcare offerings',
-      'More than meets the eye',
-      'Healthcare beyond expectations',
+      "Pain reduction and rehabilitation",
+      "Orthopaedic, Neurological, Cardiopulmonary care",
+      "Efficient team for assessment and treatment",
+      "Equipped with latest physiotherapy tools",
+      "Musculoskeletal pain relief",
+      "Orthopaedic trauma rehabilitation",
+      "Post-operative pain management",
+      "Ambulation, mobilisation, stroke rehab",
+      "Chest physiotherapy, ICU care",
+      "Modalities: Diathermy, Ultrasound, IFT, TENS, etc.",
+      "Manipulative Physiotherapy, Soft Tissue Mobilisation"
     ],
   },
 ];
 
 const Button = ({ children }) => {
-  return (
-    <button className="appointment-button">{children}</button>
-  );
+  return <button className="appointment-button">{children}</button>;
 };
 
 const ListItem = ({ text }) => {
   return (
     <li className="service-list-item">
-      <span className="service-list-icon">*</span>
+      <span className="service-list-icon"><LiaStethoscopeSolid /></span>
       <p>{text}</p>
     </li>
   );
@@ -166,18 +194,14 @@ const Service = ({ SelectService, setSelectService, service }) => {
       onClick={() => setSelectService(lowerCaseService)}
       className={`service-card ${isSelected ? 'selected' : ''}`}
     >
-      <img
-        className="service-icon"
-        src={service.img}
-        alt={service.title}
-      />
+      <div className="service-icon">{service.icon}</div>
       <p className="service-title">{service.title}</p>
     </div>
   );
 };
 
 const Services = () => {
-  const [SelectService, setSelectService] = useState('cardiology');
+  const [SelectService, setSelectService] = useState('ambulance');
 
   const selectedServiceData = ServicesData.find(
     (service) => service.id === SelectService
@@ -198,16 +222,14 @@ const Services = () => {
           ))}
         </div>
         <div className="service-details">
-          <h3 className="service-details-heading">
-            {selectedServiceData?.heading}
-          </h3>
+          <h3 className="service-details-heading">{selectedServiceData?.heading}</h3>
           <ul className="service-details-list">
             {selectedServiceData?.texts.map((text, index) => (
               <ListItem key={index} text={text} />
             ))}
           </ul>
           <div className="appointment-button-container">
-            <Button>Appointment Now</Button>
+            <Button>Know More</Button>
           </div>
         </div>
       </div>

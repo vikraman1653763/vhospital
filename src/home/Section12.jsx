@@ -26,7 +26,7 @@ const FeedbackData = {
 };
 
 const SectionWrapper = ({ id, children }) => {
-  return <section className="section-wrapper" id={id}>{children}</section>;
+  return <section className="review-container" id={id}>{children}</section>;
 };
 
 const Review = ({ user, index }) => {
