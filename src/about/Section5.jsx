@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaHandHoldingHeart } from "react-icons/fa6";
 import { GiHeartPlus } from "react-icons/gi";
+import { LuDiamond } from "react-icons/lu";
 
 const Section5 = () => {
   useEffect(() => {
@@ -11,6 +12,8 @@ const Section5 = () => {
 
   return (
     <section className="ins-sec-5">
+      <LuDiamond className="diamond-icon" />
+
       <div className="ins-sec-5-content">
         <div className="ins-sec-5-text">
           <h2 className="ins-sec-5-title">INSURANCE SERVICES</h2>

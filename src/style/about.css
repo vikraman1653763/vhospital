@@ -97,11 +97,26 @@
   /* vision  */
 
 .vision-section {
-  background-color: #ffffff;
+  background-color: transparent;
   padding: 2em 13rem;
   text-align: center;
+  position: relative;
 }
-
+.vision-section::before{
+  content: '';
+  position: absolute;
+  top: 55%;
+  left: 50%;    
+  transform: translate(-50%,-50%);
+  filter: blur(5em);
+  z-index: -1;
+  background: 
+    radial-gradient(ellipse at 50% 50%, #52e9a7 20%, transparent 100%), 
+    radial-gradient(ellipse at  40% 50%, #1ac0dd 30%, transparent 20%);
+  background-position: center;
+  height: 90%;
+  width: 80%;
+}
 .vision-heading {
   font-size: var(--fs-xl);
   color: #105e3c;
@@ -119,8 +134,8 @@
 
 .vision-card {
   background-color: #fefefe;
-  box-shadow: 0 6px 6px #105e3c;
-  border: 2px solid #105e3c;
+  box-shadow: 3px 3px 3px #6362622d , -3px -3px 3px #e2e2e257;
+  /* border: 2px solid #105e3c; */
   border-radius: 10px;
   padding: 1.5em;
   flex: 1;
@@ -209,11 +224,20 @@
 }
 
 /* Section5 */
-
 .ins-sec-5 {
   padding: 2rem 13rem;
-  background-color: #f8f8f8;
+  background-color: transparent;
+  position: relative;
 }
+
+.diamond-icon{
+font-size: 90vw;
+color: #105e3c11;
+position: absolute;
+top: 0%;
+left: -60%;
+}
+
 
 .ins-sec-5-content {
   display: flex;
@@ -382,7 +406,7 @@ color: #105e3c;
   height: 60px;
   margin-right: 10px;
   vertical-align: middle;
-  border-radius: 50%;
+  border-radius: 10%;
   object-fit: contain;
 }
 .tie-ups-list {

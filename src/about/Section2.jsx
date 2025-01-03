@@ -11,7 +11,7 @@ const Section2 = () => {
     <div className="about-sec-2-container">
       <div className="about-sec-2-content">
         {/* Section Title */}
-        <h2 className="sec-2-title">Founder of Venkataeswara Hospitals<br></br>-Dr. Thillai Vallal</h2>
+        <h2 className="about-sec-2-title">Founder of Venkataeswara Hospitals<br></br>-Dr. Thillai Vallal</h2>
 
         {/* Content Container */}
         <div className="about-sec-2-body">

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { FaHeartbeat, FaSearch, FaHandsHelping, FaClinicMedical } from 'react-icons/fa';
+import { FaHeartbeat, FaSearch, FaHandsHelping, FaClinicMedical ,FaHandHoldingHeart } from 'react-icons/fa';
 import { IoDiamond } from "react-icons/io5";
 
 const Section5 = () => {
@@ -12,7 +12,7 @@ const Section5 = () => {
   return (
     <section className="service-sec-5">
       <div className="service-sec-5-bg">
-        <IoDiamond />
+      <FaHandHoldingHeart data-aos="zoom-in" />
       </div>
       <div className="service-sec-5-content">
         <div className="service-sec-5-image" data-aos="fade-right">

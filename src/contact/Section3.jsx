@@ -1,8 +1,11 @@
 import React from 'react';
+import { BiShapeCircle } from "react-icons/bi";
 
 const Section3 = () => {
   return (
     <section className="contact-sec-3">
+      <BiShapeCircle className='design-icon-1'/>
+      <BiShapeCircle className='design-icon-2'/>
       <h2>Our Location</h2>
       <div className="contact-sec-3__map">
         <iframe

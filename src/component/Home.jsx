@@ -9,7 +9,7 @@ import Section6 from '../home/Section6';
 import Section7 from '../home/Section7';
 function Home() {
   return (
-    <div>
+    <div id='homepage'>
 
       <Section1/>
       <Section2/>

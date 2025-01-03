@@ -224,7 +224,7 @@
       /* #######Section4######## */
       .service-sec-4 {
         padding: 2rem 13rem;
-        background-color: #f9f9f9;
+        background-color: transparent;
         color: #333;
         position: relative;
         width: 99vw;
@@ -323,7 +323,7 @@
         
         width: 100%;
         height: 100%;
-        color: white;
+        color: rgba(255, 255, 255, 0.315);
         opacity: .2;
         z-index: -1;
       }
@@ -387,10 +387,10 @@
       
       /* #############section6############### */
       .service-sec-6 {
+        position: relative;
         padding: 2rem 13rem;
-        background-color: #f8f8f8; 
       }
-      
+
       .service-sec-6-content {
         display: flex;
         flex-direction: column;
@@ -451,7 +451,7 @@
       .service-sec-6-points li {
         font-size: var(--fs-s);
         margin-bottom: 0.5rem;
-        color: #555;
+        color: black;
       }
       .service-sec-6-points svg{
         color: #105e3c;
@@ -521,7 +521,7 @@
 
       .service-sec-8 {
         padding: 2rem 13rem;
-        background-color: white;
+        background-color: transparent;
       }
       
       .service-sec-8-content {
@@ -574,12 +574,12 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-        border: 3px solid #105e3c;
+        /* border: 3px solid #105e3c; */
         border-radius: 50% 50%  0 0%  ;
         text-align: center;
-        box-shadow: 3px 3px 5px black;
+        box-shadow: inset 0px 3px 9px black;
         padding: .5em;
-        background-color: #105e3c;
+        background-color: #1d5c41;
       }
       
       .service-sec-8-points li svg {
@@ -623,10 +623,27 @@
       /* #############################sectionn10########################### */
       .service-sec-10{
         padding: 2em 13rem;
-      }.service-sec-10-title{
+        position: relative;
+      }
+      .service-sec-10::before{
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: 0%;    
+        filter: blur(5em);
+        z-index: -1;
+        background: 
+        radial-gradient(ellipse at 50% 50%, #52e9a8be 20%, transparent 100%), 
+        radial-gradient(ellipse at bottom left, #1ac0dd7a 30%, transparent 20%);
+        background-position: center;
+        height: 100vh;
+        width: 50vw;
+      }
+      .service-sec-10-title{
     font-size: var(--fs-xl);
     color: #105e3c;
-}
+    background-color: transparent; 
+    }
       .service-sec-10-index-list ul {
         list-style-type: none;
         padding: 0;
@@ -669,7 +686,8 @@
         text-align: center;
       }
       .service-sec-10-card{
-        border: 3px solid #105e3c;
+        background-color: #fff;
+        box-shadow:  3px 3px 3px rgba(0, 0, 0, 0.1) ;
         width: calc(33.33% - 1em);
         padding: 1em;
         border-radius: 5px;

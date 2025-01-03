@@ -41,7 +41,7 @@ body {
 
 .main{
   margin-top: 4.3rem;
-  
+  position: relative;
 }
 
 /* Scroll */
