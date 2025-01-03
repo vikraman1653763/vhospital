@@ -102,22 +102,14 @@
   
   .design-icon-1{
     position: absolute;
-    top: 0%;
-    left: -50%;
-    width: 100%;
-    height: 100%;
-    color: #105e3c25;
+    top: -25%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    color: rgba(0, 0, 0, 0.03);
     z-index: -1;
   }
-  .design-icon-2{
-    position: absolute;
-    top: 0%;
-    right: -50%;
-    width: 100%;
-    height: 100%;
-    color: #105e3c25;
-    z-index: -1;
-  }
+  
   .contact-sec-3 h2 {
     font-size: var(--fs-xl);
     margin-bottom: 20px;

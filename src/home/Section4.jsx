@@ -20,7 +20,7 @@ function Section4() {
   return (
     <div className='home-sec-4'>
         <div className='home-sec-4-cards'>
-        <Marquee autoFill={true} pauseOnHover={true} speed={30} gradient={true} gradientColor="#ffffff">
+        <Marquee autoFill={true} pauseOnHover={true} speed={30} gradient={true} gradientColor="#f8f8f8">
         {specialties.map((specialty, index) => (
           <div key={index} className='home-sec-4-card'>
             <div className='home-sec-4-icon'>{specialty.icon}</div>

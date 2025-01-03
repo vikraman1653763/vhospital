@@ -1,35 +1,33 @@
 
 
+  /* #########Section2############# */
 
-
-
-/* #########Section2############# */
-
-.home-sec-2-container {
-  position: relative;
-  background-color: transparent;
-  padding: 2rem 13rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: max-content;
-}
-
-.home-sec-2-container::before {
-  content: '';
-  position: absolute;
-  top: 45%;
-  right:5%;
-  filter: blur(10em);
-  z-index: -1;
-  background: 
-    radial-gradient(ellipse at 50% 100%, #52e9a7 20%, transparent 100%), 
-    radial-gradient(ellipse at 70% 60%, #1ac0dd 70%, transparent 10%);
-  background-position: center;
-  background-attachment: fixed;
-  width: 50vw;
-  height: 50vh;
-}
+  .home-sec-2-container {
+    position: relative;
+    background-color: transparent;
+    padding: 2rem 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: max-content;
+  }
+  
+  .home-sec-2-container::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    right:5%;
+    filter: blur(10em);
+    z-index: -1;
+    background: 
+      radial-gradient(ellipse at 50% 100%, #52e9a7 20%, transparent 100%), 
+      radial-gradient(ellipse at 70% 60%, #1ac0dd 70%, transparent 10%);
+    background-position: center;
+    background-attachment: fixed;
+    width: 50vw;
+    height: 50vh;
+  }
+  
   .home-sec-2-content {
     max-width: 50%;
   }
@@ -52,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: rgb(221, 248, 226);
     /* border:3px solid #105e3c; */
     overflow: hidden;
     box-shadow: -3px 3px 27px -5px rgba(0,0,0,0.75) inset;
@@ -71,7 +69,7 @@
   /* ############section3################# */
 
   .home-sec-3-container {
-    background-color: transparent;
+    background-color: #f8f8f8;
     padding: 2rem 13rem;
     text-align: center;
     display: flex;
@@ -122,7 +120,7 @@
   /* #########section4######## */
 
   .home-sec-4{
-    background-color: transparent;
+    background-color: #f8f8f8;
     padding: 2rem 13rem;
     text-align: center;
     display: flex;
@@ -197,26 +195,27 @@
 
 
     /* ############section6############# */
+
     .home-sec-6-container {
-        padding: 2em 13rem;
-        text-align: center;
-        height: 50vh;
-        background-color: transparent;
-        position: relative;
-      }
-      .home-sec-6-container::before{
-        content: '';
-        position: absolute;
-        top: 45%;
-        left: 0%;    
-        filter: blur(5em);
-        z-index: -1;
-        background: 
-          radial-gradient(ellipse at 50% 50%, #52e9a7 20%, transparent 100%), 
-          radial-gradient(ellipse at bottom left, #1ac0dd 30%, transparent 20%);
-        background-position: center;
-        height: 40vh;
-        width: 60vw;
+      padding: 2em 13rem;
+      text-align: center;
+      height: 50vh;
+      background-color: transparent;
+      position: relative;
+    }
+    .home-sec-6-container::before{
+      content: '';
+      position: absolute;
+      top: 45%;
+      left: 0%;    
+      filter: blur(5em);
+      z-index: -1;
+      background: 
+        radial-gradient(ellipse at 50% 50%, #52e9a7 20%, transparent 100%), 
+        radial-gradient(ellipse at bottom left, #1ac0dd 30%, transparent 20%);
+      background-position: center;
+      height: 40vh;
+      width: 60vw;
 }
       
       .home-sec-6-cards {
@@ -224,7 +223,7 @@
         height: 100%;
         gap: 20px;
         justify-content: center;
-        align-items: stretch; /* Ensures all cards stretch to the same height */
+        align-items: stretch;
       }
       
       .home-sec-6-card {
@@ -245,7 +244,6 @@
       }
       
       .home-sec-6-card-image {
-        object-position: center;
         width: 100%;
         height: 200px; /* Fixed height for image */
         object-fit: cover; /* Ensure the image covers the space properly */
@@ -274,12 +272,11 @@
         text-align: justify;
       }
       
-      
+
       .home-sec-7-container {
-        position: relative;
         padding: 3em 13rem;
         text-align: center;
-        background-color: transparent
+        background-color: #f4f4f4;
       }
       
       .home-sec-7-content {
@@ -317,3 +314,474 @@
         border: 1px solid #105e3c;
         background-color: #fff;
       }
+      
+/*desnums section */
+
+.descnums-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding: 2em 10rem;
+}
+
+.descnum-card {
+  background-color: #bed5cd;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0.2, 0.1);
+  padding: 34px;
+  text-align: center;
+  width: 200px; /* Fixed width for consistency */
+  margin-bottom: 1rem;
+}
+
+.descnum-card h3 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.descnum-card p {
+  font-size: 0.875rem; /* 14px */
+}
+
+/* Responsive styles */
+@media (min-width: 640px) {
+  .descnum-card {
+    width: 180px; /* Adjust for small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .descnum-card {
+    width: 160px; /* Adjust for medium screens */
+  }
+
+  .descnum-card h3 {
+    font-size: 2rem; /* 32px */
+  }
+
+  .descnum-card p {
+    font-size: 1rem; /* 16px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .descnum-card {
+    width: 220px; /* Larger size for desktops */
+  }
+}
+
+/*services */
+
+/* Banner1 Styles */
+.banner-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+@media (min-width: 640px) {
+  .banner-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.banner-heading {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+.banner-list {
+  font-size: 0.875rem;
+  margin-left: 1.25rem;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-image-container {
+  background-color: #bed5cd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+/* ListItem Styles */
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.list-item-icon {
+  height: 0.75rem;
+  width: 0.75rem;
+  color: #1e7052;
+}
+
+/* Service Styles */
+.service-container {
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-selected {
+  background-color: #a0c2b6;
+  border-top-left-radius: 25px;
+}
+
+.service-hover:hover {
+  background-color: #a0c2b6;
+}
+
+.service-image {
+  max-width: 50px;
+}
+
+.service-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Banner Container */
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f4f9f9;
+}
+
+.banner-content {
+  width: 50%;
+}
+
+.banner-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.banner-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.list-icon {
+  font-size: 1.5rem;
+  color: #065014;
+  margin-right: 10px;
+}
+
+.banner-image-container {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .banner-heading {
+    font-size: 2rem;
+  }
+
+  .banner-image-container {
+    width: 100%;
+  }
+
+  .banner-image {
+    max-width: 400px;
+  }
+}
+
+/* services */
+
+
+/* Services Section */
+.services-section {
+  padding: 2em 13rem;
+}
+
+.services-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services-container {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 40%;
+}
+
+.service-card {
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.service-card.selected {
+  background-color: #a0c2b6;
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.service-title {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Service Details */
+.service-details {
+  width: 50%;
+}
+
+.service-details-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.service-details-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-list-icon {
+  color: #1e7052;
+  font-weight: bold;
+}
+
+/* Button Styles */
+.appointment-button-container {
+  margin-top: 1.5rem;
+}
+
+.appointment-button {
+  background-color: #015e3c;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.appointment-button:hover {
+  background-color: #014e30;
+}
+
+/* Doctors */
+
+.section-wrapper {
+  padding: 2em 13rem;
+}
+
+.doctors-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.doctors-list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0 1.25rem;
+}
+
+.doctors-subheading {
+  font-size: 1.875rem;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2.5rem 0 2.5rem;
+}
+
+.doctors-description {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 28rem;
+  font-size: 1rem;
+}
+
+.doctors-banner {
+  display: block;
+  margin: 0 auto;
+}
+
+.doctor-card {
+  background-color: #bed5cd;
+  padding: 1rem;
+  padding-bottom: 0;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+}
+
+.doctor-image {
+  width: 180px;
+}
+
+.doctor-img {
+  width: 100%;
+}
+
+.doctor-info {
+  padding-top: 1rem;
+  padding-bottom: 1.25rem;
+}
+
+.doctor-name {
+  font-weight: bold;
+}
+
+.doctor-job {
+  font-size: 0.875rem;
+}
+
+/* Reviews */
+
+
+/* Section Styles */
+/* .section-wrapper {
+  padding-top: 24px;
+  padding-bottom: 32px;
+} */
+
+/* Heading Style */
+.reviews-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* Reviews List */
+.reviews-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+/* Review Card Styles */
+.review-card {
+  padding: 1.25rem;
+  max-width: 300px;
+  background-color: #a0c2b6;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-card--mb {
+  margin-bottom: 4rem;
+}
+
+/* Review Header */
+.review-header {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.review-img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.review-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-name {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.review-job {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* Review Description */
+.review-desc {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+}
