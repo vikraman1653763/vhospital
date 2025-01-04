@@ -76,8 +76,8 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           >
      
-            <li onClick={toggleservices}>Specialities</li>
-            <li>Consultants</li>
+            <li onClick={toggleservices} className={ `${mini ? 'sub-active':''}`}>Specialities</li>
+            <li >Consultants</li>
           </motion.div>
         )}
       </AnimatePresence>
