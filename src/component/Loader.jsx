@@ -1,12 +1,20 @@
-// Loader.jsx
 import React from 'react';
-import '../style/loader.css'
-const Loader = () => {
-  return (
-    <div className="loader">
-      <div className="spinner"></div>
-    </div>
-  );
-};
+import { ThreeCircles } from 'react-loader-spinner';
+import '../style/Loader.css';
+
+const Loader = () => (
+  <div className="loader-container">
+   <ThreeCircles
+  visible={true}
+  height="100"
+  width="100"
+  color="#105e3c"
+  ariaLabel="three-circles-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  />
+  </div>
+);
 
 export default Loader;
+
