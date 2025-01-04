@@ -10,7 +10,6 @@ import Section7 from '../service/Section7';
 import Section8 from '../service/Section8';
 import Section9 from '../service/Section9';
 import Section10 from '../service/Section10';
-
 function Service() {
   return (
     <div>
