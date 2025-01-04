@@ -18,7 +18,7 @@ nav{
   .navbar{
     /* background-color: #105e3c; */
     background: rgb(2,0,36);
-background: linear-gradient(60deg, rgba(252, 252, 255, 0) 0%, #18a86a 40%, #105e3c 100%);
+    background: linear-gradient(60deg, rgba(252, 252, 255, 0) 0%, #18a86a 40%, #105e3c 100%);
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -27,7 +27,10 @@ background: linear-gradient(60deg, rgba(252, 252, 255, 0) 0%, #18a86a 40%, #105e
     padding: .5em 0;
     z-index: 9;
     height: auto;
-    
+  }
+  .navbar.active {
+    background: rgb(42,153,105);
+    background: linear-gradient(260deg, rgba(42,153,105,1) 0%, rgba(20,103,67,1) 21%, rgba(16,94,60,1) 59%, rgba(42,153,105,1) 100%);
   }
   .navbar .nav-logo a{
     display: flex;
@@ -113,8 +116,9 @@ background: linear-gradient(60deg, rgba(252, 252, 255, 0) 0%, #18a86a 40%, #105e
         justify-content: space-evenly;
         color:  white;
         z-index: 8;
-        background-color:#0f6d44;
-  
+        background: rgb(42,153,105);
+        background: linear-gradient(260deg, rgba(42,153,105,1) 0%, rgba(20,103,67,1) 21%, rgba(16,94,60,1) 59%, rgba(42,153,105,1) 100%);
+          
   }
   .sub-container li{
     list-style: none;
@@ -145,8 +149,9 @@ background: linear-gradient(60deg, rgba(252, 252, 255, 0) 0%, #18a86a 40%, #105e
     z-index: 7;
     list-style: none;
     text-decoration: none;
-    background-color: #105e3c;
-
+    background: rgb(42,153,105);
+    background: linear-gradient(260deg, rgba(42,153,105,1) 0%, rgba(20,103,67,1) 21%, rgba(16,94,60,1) 59%, rgba(42,153,105,1) 100%);
+    box-shadow:  0px 6px 5px rgba(0, 0, 0, 0.185);
   }
   
   .indi-type-container a {

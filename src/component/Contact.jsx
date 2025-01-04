@@ -7,7 +7,7 @@ import Section4 from '../contact/Section4';
 
 function Contact() {
   return (
-    <div>
+    <div className='contact-page'>
       <Section1/>
       <Section2/>
       <Section3/>

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import '../style/navbar.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import serviceLinks from '../speciality.json'; // Import the JSON data
+import { sub } from 'framer-motion/client';
 
 const Navbar = () => {
   const [mini, setMini] = useState(false);
@@ -32,7 +33,8 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="navbar">
+      <div className={`navbar ${subs ? 'active' : ''}`}>
+
         <div className='nav-logo'>
           <Link to="/">
             <img className="logooimg" src="/assets/logo.webp" alt="logo" />
