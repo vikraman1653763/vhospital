@@ -21,7 +21,7 @@ const Section2 = () => {
   }, []);
 
   return (
-    <section className="service-sec-2">
+    <section className="service-sec-2" id='ambulance'>
       {/* Content Section */}
       <div className="service-sec-2-content">
         <div

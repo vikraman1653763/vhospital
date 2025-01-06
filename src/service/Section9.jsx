@@ -8,7 +8,7 @@ const Section9 = () => {
     AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
   }, []);
   return (
-    <section className="service-sec-6">
+    <section className="service-sec-6" id='operation'>
       <div className="service-sec-6-content">
         <div className="service-sec-6-text">
           <h2 className="service-sec-6-title" data-aos="fade-right">OPERATION THEATRES</h2>

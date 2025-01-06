@@ -10,7 +10,7 @@ const Section5 = () => {
   }, []);
 
   return (
-    <section className="service-sec-5">
+    <section className="service-sec-5" id='health'>
       <div className="service-sec-5-bg">
       <FaHandHoldingHeart data-aos="zoom-in" />
       </div>

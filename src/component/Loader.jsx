@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThreeCircles } from 'react-loader-spinner';
-import '../style/Loader.css';
+import '../style/loader.css';
 
 const Loader = () => (
   <div className="loader-container">

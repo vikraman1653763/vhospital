@@ -29,7 +29,7 @@ const Section3 = () => {
   ];
 
   return (
-    <section className="service-sec-3">
+    <section className="service-sec-3" id='diet'>
       {/* Content Section */}
       <div className="service-sec-3-content">
         <div

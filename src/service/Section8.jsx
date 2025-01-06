@@ -11,7 +11,7 @@ const Section8 = () => {
   }, []);
 
   return (
-    <section className="service-sec-8">
+    <section className="service-sec-8" id='lab'>
       <div className="service-sec-8-content">
         <div className="service-sec-8-text"  >
           <h2 className="service-sec-8-title">LABORATORY SERVICES</h2>

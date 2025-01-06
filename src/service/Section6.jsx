@@ -9,7 +9,7 @@ const Section6 = () => {
   }, []);
 
   return (
-    <section className="service-sec-6">
+    <section className="service-sec-6" id='image'>
       <div className="service-sec-6-content">
         <div className="service-sec-6-text">
           <h2 className="service-sec-6-title" data-aos='fade-right'>IMAGING SERVICES</h2>

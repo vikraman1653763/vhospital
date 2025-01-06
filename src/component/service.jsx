@@ -1,5 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { useLocation } from 'react-router-dom';
 import '../style/service.css';
+
 import Section1 from '../service/section1';
 import Section2 from '../service/Section2';
 import Section3 from '../service/Section3';
@@ -14,6 +16,7 @@ function Service() {
   return (
     <div>
       <Section1/>
+      <Section9/>
       <Section2/>
       <Section3/>
       <Section4/>
@@ -21,7 +24,6 @@ function Service() {
       <Section6/>
       <Section7/>
       <Section8/>
-      <Section9/>
       <Section10/>
     </div>
   )

@@ -9,7 +9,7 @@ const Section4 = () => {
   }, []);
 
   return (
-    <section className="service-sec-4">
+    <section className="service-sec-4" id='emergency'>
       <div
         className="service-sec-4-icon"
         data-aos="zoom-in" // Animation for the icon

@@ -9,7 +9,7 @@ const Section7 = () => {
   }, []);
 
   return (
-    <section className="service-sec-7">
+    <section className="service-sec-7" id='icu'>
       <div className="service-sec-7-content">
         <div className="service-sec-7-text">
           <h2 className="service-sec-7-title">INTENSIVE CARE UNIT</h2>

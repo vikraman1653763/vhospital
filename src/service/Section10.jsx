@@ -56,7 +56,7 @@ const Section10 = () => {
   ];
 
   return (
-    <section className="service-sec-10">
+    <section className="service-sec-10" id='physio'>
       <div className="service-sec-10-content">
         <h2 className="service-sec-10-title">PHYSIOTHERAPY & REHABILITATION</h2>
         <p className="service-sec-10-description">

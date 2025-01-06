@@ -4,6 +4,7 @@ import { GiFruitBowl, GiSiren, GiLoveInjection, GiHeartBeats } from 'react-icons
 import { MdScience } from 'react-icons/md';
 import { FaBedPulse, FaUserDoctor  } from "react-icons/fa6";
 import { LiaStethoscopeSolid } from "react-icons/lia";
+import { useNavigate } from 'react-router-dom';
 
 const ServicesData = [
   {
@@ -171,8 +172,8 @@ const ServicesData = [
   },
 ];
 
-const Button = ({ children }) => {
-  return <button className="appointment-button">{children}</button>;
+const Button = ({ children, onClick }) => {
+  return <button className="appointment-button" onClick={onClick}>{children}</button>;
 };
 
 const ListItem = ({ text }) => {
@@ -202,11 +203,35 @@ const Service = ({ SelectService, setSelectService, service }) => {
 
 const Services = () => {
   const [SelectService, setSelectService] = useState('ambulance');
+  const navigate = useNavigate(); // For redirection
 
   const selectedServiceData = ServicesData.find(
     (service) => service.id === SelectService
   );
 
+
+  // Map Service ID to Section IDs
+  const serviceToSectionMap = {
+    ambulance: 'ambulance',
+    dietary: 'diet',
+    emergency: 'emergency',
+    healthcheckups: 'health',
+    imaging: 'image',
+    icu: 'icu',
+    laboratory: 'lab',
+    operationtheatre: 'operation',
+    physiotherapy: 'physio',
+  };
+
+  // Handle "Know More" Button Click
+  const handleKnowMoreClick = () => {
+    const sectionId = serviceToSectionMap[SelectService]; // Map selected service ID
+  
+    // Redirect to service page with hash
+    navigate(`/service#${sectionId}`);
+  };
+  
+  
   return (
     <section id="services" className="services-section">
       <h2 className="services-heading">Services</h2>
@@ -229,7 +254,7 @@ const Services = () => {
             ))}
           </ul>
           <div className="appointment-button-container">
-            <Button>Know More</Button>
+            <Button onClick={handleKnowMoreClick}>Know More</Button>
           </div>
         </div>
       </div>
