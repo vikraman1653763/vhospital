@@ -9,7 +9,7 @@ import { BiDna } from 'react-icons/bi';
 const specialties = [
   { icon: <GiHealthNormal />, name: 'Dermatology', id: 'dermatology' },
   { icon: <FaBrain />, name: 'Neurology', id: 'neurology' },
-  { icon: <FaChild />, name: 'Pediatrics', id: 'pediatrics' },
+  { icon: <FaChild />, name: 'Pediatrics', id: 'paediatrics' },
   { icon: <FaStethoscope />, name: 'Internal Medicine', id: 'general-internal-medicine' },
   { icon: <GiStomach />, name: 'Gastroenterology', id: 'gastroenterology' },
   { icon: <MdOutlineCoronavirus />, name: 'Rheumatology', id: 'rheumatology' },

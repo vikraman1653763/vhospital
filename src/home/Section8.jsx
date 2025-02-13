@@ -13,7 +13,7 @@ const Section8 = () => {
       text: "Happy Patients",
     },
     {
-      num: 24,
+      num: 23,
       text: "Emergency Service",
     },
     {

@@ -7,7 +7,7 @@
     "description1": "Allergies and asthma often occur together, sharing symptoms and triggers that can significantly affect health. Common allergens like pollen, dust, and pet dander not only trigger allergic reactions but may also lead to asthma symptoms. In some cases, skin or food allergies can contribute to asthma, a condition known as allergic or allergy-induced asthma.",
     "description2": "The Department of Allergy and Immunology at Venkataeswara Hospitals provides specialized care for various immune-related disorders. These include respiratory issues like allergic rhinitis, asthma, and sinusitis, eye conditions such as allergic conjunctivitis, gastrointestinal allergies, and skin problems like dermatitis and urticaria. The department also addresses food and drug allergies, immune system disorders, and occupational lung diseases.",
     "description3": "Our department is equipped to manage systemic allergic reactions like anaphylaxis and diseases involving mast cells or eosinophils. We treat autoimmune disorders linked to immune system malfunctions and provide care for patients requiring stem cell, bone marrow, or organ transplants. Comprehensive evaluations and personalized treatments ensure effective management of these conditions."
-    },
+  },
     {
       "id": "anaesthesiology",
       "title": "Anaesthesiology",
@@ -24,7 +24,19 @@
       "logo": "/specialityimg/cardiologo.webp",
       "description1": "At Venkataeswara Hospitals, we believe the key to a healthy heart lies in preventive and curative care. Our expert cardiology team, led by renowned cardiologist Dr. Su. Thillai Vallal, offers round-the-clock support for cardiac emergencies. With advanced technology and a patient-focused approach, we strive to deliver comprehensive heart care that saves lives.",
       "description2": "Our experienced cardiologists are supported by a skilled team of intensivists, nurses, and dietitians who provide holistic care. From intensive cardiac monitoring to practical dietary advice, we help patients adopt heart-healthy lifestyles. We focus on both preventing heart diseases and treating existing conditions with cutting-edge techniques and personalized care.",
-      "description3": "Venkataeswara Hospitals actively promotes heart health through awareness programs and free cardiac camps, particularly on World Heart Day. Our mission is to educate the public on preventing heart attacks and cardiovascular diseases, making cardiac care accessible and effective for everyone."
+      "description3": "Venkataeswara Hospitals actively promotes heart health through awareness programs and free cardiac camps, particularly on World Heart Day. Our mission is to educate the public on preventing heart attacks and cardiovascular diseases, making cardiac care accessible and effective for everyone.",
+      "doctors": [
+        {
+          "doctor_name": "Dr. Su. Thillai Vallal",
+          "specialist": "Senior Cardiologist",
+          "time": "11.30 AM – 3.30 PM, & 5.30 PM – 8.00 PM"
+        },
+        {
+          "doctor_name": "Dr. T. Subash Chandhar",
+          "specialist": "Cardiologist",
+          "time": "5.00 PM – 7.00 PM"
+        }
+      ]  
       },
       {
         "id": "cardiothoracic-surgery",
@@ -69,7 +81,14 @@
           "logo": "/specialityimg/dermatologylogo.webp",
           "description1": "Dermatology focuses on diagnosing and treating conditions of the skin, hair, nails, and mucous membranes. Given that the skin is the body's largest organ, proper care is essential for overall health. At Venkataeswara Hospitals, our dermatology specialists provide comprehensive care for both medical and cosmetic skin issues, offering advanced treatments for conditions like acne, psoriasis, eczema, and more.",
           "description2": "Our dermatology team is equipped with the latest technology and techniques to manage a wide range of skin conditions. Whether you're struggling with acne, eczema, or more serious issues like skin cancer, we are here to help. In addition to treating common skin diseases, we also address cosmetic concerns like wrinkles, scars, and sun damage, using treatments such as cryosurgery, excisions, and injectable therapies.",
-          "description3": "One of our key focuses is the early diagnosis and treatment of skin cancer, including melanoma and non-melanoma skin cancers. Our dermatologists provide thorough examinations for moles and other suspicious lesions, ensuring prompt and effective treatment. With our expertise in both medical and cosmetic dermatology, we offer personalized care to improve both the health and appearance of your skin."
+          "description3": "One of our key focuses is the early diagnosis and treatment of skin cancer, including melanoma and non-melanoma skin cancers. Our dermatologists provide thorough examinations for moles and other suspicious lesions, ensuring prompt and effective treatment. With our expertise in both medical and cosmetic dermatology, we offer personalized care to improve both the health and appearance of your skin.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. Vijay Karthick",
+              "specialist": "Dermatologist",
+              "time": "1.00 PM - 2.00 PM"
+            }
+          ]  
         },
         {
           "id": "diabetology",
@@ -78,7 +97,19 @@
           "logo": "/specialityimg/diabeteslogo.webp",
           "description1": "Diabetes has become a major health concern, with an increasing number of individuals being diagnosed every year. In fact, one in eight Indians was at risk of developing diabetes mellitus in 2010. At Venkataeswara Hospitals, we understand the importance of early detection and prevention. Our experienced team of diabetologists works to screen, diagnose, and treat diabetes, helping individuals take control of their health and avoid complications.",
           "description2": "Our holistic approach to healthcare emphasizes lifestyle changes, including diet and exercise, as essential components of managing diabetes. We also offer specialized care, including personalized diet plans and medication management, to ensure optimal control of blood sugar levels. Our dedicated team is committed to providing comprehensive diabetes care, helping patients lead healthier lives and prevent the progression of the disease.",
-          "description3": "At Venkataeswara Hospitals, we strive to improve the health and well-being of our community through preventive measures, education, and ongoing support. By promoting a healthier lifestyle, we aim to build a diabetes-free future for Chennai and India."
+          "description3": "At Venkataeswara Hospitals, we strive to improve the health and well-being of our community through preventive measures, education, and ongoing support. By promoting a healthier lifestyle, we aim to build a diabetes-free future for Chennai and India.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. Anjan Prasad Chakraborty",
+              "specialist": "Consultant Physician & Diabetologist",
+              "time": "1.30 PM - 2.30 PM"
+            },
+            {
+              "doctor_name": "Dr. I. Periyandavar",
+              "specialist": "Diabetologist",
+              "time": "5.00 PM - 7.00 PM"
+            }
+          ]  
         },
         {
           "id": "endoscopy",
@@ -105,7 +136,14 @@
           "logo": "/specialityimg/gastrologo.webp",
           "description1": "At Venkataeswara Hospitals, our Medical Gastroenterology team specializes in diagnosing, treating, and managing gastrointestinal and colorectal diseases. If you're experiencing persistent stomach pains or digestive issues, our expert gastroenterologists are here to provide the care and treatment you need.",
           "description2": "Our hospital is equipped with the latest technology to ensure comprehensive care in gastroenterology. Our experienced team of doctors offers expert diagnosis and treatment for a wide range of conditions, including stomach ulcers, gastrointestinal bleeding, liver diseases, pancreatitis, and malignancies. We also provide advanced management for conditions like acute and chronic hepatitis and varices.",
-          "description3": "Whether it's a simple stomach ache or a complex gastrointestinal disorder, our dedicated team works tirelessly to ensure the best possible care for every patient. We focus on providing personalized treatment plans that address the root cause of the issue, and we collaborate with other specialists to offer holistic care. Our goal is to improve your digestive health and quality of life, with the latest treatments and compassionate care."
+          "description3": "Whether it's a simple stomach ache or a complex gastrointestinal disorder, our dedicated team works tirelessly to ensure the best possible care for every patient. We focus on providing personalized treatment plans that address the root cause of the issue, and we collaborate with other specialists to offer holistic care. Our goal is to improve your digestive health and quality of life, with the latest treatments and compassionate care.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. S. Raghavendra",
+              "specialist": "Medical Gastrology",
+              "time": "6.00 PM - 7.30 PM"
+            }
+          ]  
         },
         {
           "id": "gastro-surgery",
@@ -114,7 +152,14 @@
           "logo": "/specialityimg/gastrosurglogo.webp",
           "description1": "The Surgical Gastroenterology Department at Venkataeswara Hospitals is equipped with state-of-the-art technology to perform a range of advanced surgical procedures for the management of gastrointestinal and colorectal diseases. Our highly skilled surgeons specialize in complex gastrointestinal surgeries, ensuring comprehensive care for conditions affecting the digestive system.",
           "description2": "We perform a variety of intricate procedures, including surgeries on the hepatobiliary tract, pancreas, colorectal system, gastro-oesophageal resections, and surgeries for portal hypertension. Additionally, we treat major blunt and penetrating trauma to the gastrointestinal organs. Our team is experienced in laparoscopic surgery (keyhole or buttonhole surgery) and other minimal access techniques, which reduce recovery time and improve patient outcomes.",
-          "description3": "With three consultants on call, our department provides 24/7 surgical coverage, ensuring that patients receive immediate and expert care at all times. Our dedicated team is committed to delivering the highest standard of care, using the latest techniques and technology to enhance patient recovery. We strive to offer minimally invasive options wherever possible, reducing discomfort and promoting faster healing."
+          "description3": "With three consultants on call, our department provides 24/7 surgical coverage, ensuring that patients receive immediate and expert care at all times. Our dedicated team is committed to delivering the highest standard of care, using the latest techniques and technology to enhance patient recovery. We strive to offer minimally invasive options wherever possible, reducing discomfort and promoting faster healing.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. M. Gnanasekar",
+              "specialist": "Surgical Gastroenterology",
+              "time": "6.30 PM - 7.30 PM"
+            }
+          ]  
         },
         {
           "id": "general-internal-medicine",
@@ -123,7 +168,24 @@
           "logo": "/specialityimg/generallogo.webp",
           "description1": "At Venkataeswara Hospitals, we are committed to preventing lifestyle diseases, especially heart attacks, by identifying early risk factors like physical inactivity, obesity, and high cholesterol. Our General Medicine Consultants focus on proactive care to reduce these risks through regular health check-ups and lifestyle modifications.",
           "description2": "Our General Medicine team provides comprehensive care through early screenings, medical treatment, and personalized lifestyle guidance to help patients prevent chronic diseases like heart disease and diabetes. We empower patients to take charge of their health and make long-term changes that reduce the need for emergency interventions.",
-          "description3": "Venkataeswara Hospitals is recognized as a Centre of Excellence, where we emphasize health education alongside medical care. By educating both patients and healthcare professionals, we promote preventive measures to control lifestyle diseases, ensuring better health outcomes for our community through regular check-ups and awareness."
+          "description3": "Venkataeswara Hospitals is recognized as a Centre of Excellence, where we emphasize health education alongside medical care. By educating both patients and healthcare professionals, we promote preventive measures to control lifestyle diseases, ensuring better health outcomes for our community through regular check-ups and awareness.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. Girija Ramamoorthy",
+              "specialist": "General Physician",
+              "time": "10.00 AM - 12.00 PM"
+            },
+            {
+              "doctor_name": "Dr. C.A. Lokhesh",
+              "specialist": "General Medicine",
+              "time": "9.00 AM - 5.00 PM"
+            },
+            {
+              "doctor_name": "Dr.  Jyotsna Murali",
+              "specialist": "General Medicine",
+              "time": "9.00 AM - 4.00  PM"
+            }
+          ]  
         },
         {
           "id": "general-laparoscopic-surgery",
@@ -132,7 +194,39 @@
           "logo": "/specialityimg/laposurglogo.webp",
           "description1": "General Surgery is a vital specialty that addresses a wide range of conditions requiring surgical intervention. At Venkataeswara Hospitals, our skilled General Surgeons provide expert care for disorders from hernias and appendicitis to complex, life-threatening conditions, ensuring safe and effective treatments in a fully equipped operating theatre with round-the-clock care.",
           "description2": "Venkataeswara Hospitals offers comprehensive general surgical services, from routine to complex procedures, managed with precision and expertise. Our General Surgeons use advanced technology to provide reliable, high-quality care, available 24/7 for emergency surgical needs.",
-          "description3": "Our Laparoscopic Surgery team specializes in minimally invasive procedures, providing faster recovery times, reduced complications, and shorter hospital stays. These outpatient procedures offer less pain and quicker recovery compared to traditional surgery, ensuring a comfortable and patient-friendly experience."
+          "description3": "Our Laparoscopic Surgery team specializes in minimally invasive procedures, providing faster recovery times, reduced complications, and shorter hospital stays. These outpatient procedures offer less pain and quicker recovery compared to traditional surgery, ensuring a comfortable and patient-friendly experience.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. S. Karthikeyam",
+              "specialist": "General & Lap Surgeon",
+              "time": "3.00 PM - 4.00 PM"
+            },
+            {
+              "doctor_name": "Dr. P. Harishwaran",
+              "specialist": "General & Lap Surgeon",
+              "time": "11.00 PM - 12.30 PM"
+            },
+            {
+              "doctor_name": "Dr. K. Preethi Mrinalini",
+              "specialist": "General Surgeon ",
+              "time": "5.30 PM - 6.30 PM"
+            },
+            {
+              "doctor_name": "Dr. M. Banu",
+              "specialist": "General & Lap Surgeon",
+              "time": "5.30 PM - 6.30 PM"
+            },
+            {
+              "doctor_name": "Dr. Rajesh Daniel",
+              "specialist": "General & Lap Surgeon",
+              "time": "4.30 PM - 5.30 PM"
+            },
+            {
+              "doctor_name": "Dr. Sripriya Rajan",
+              "specialist": "Surgical Oncologist & Laparascopic",
+              "time": "2.00 PM - 3.00 PM ( Mon, Wed, Fri)"
+            }
+          ]  
         },
         {
           "id": "hepatology",
@@ -150,7 +244,19 @@
           "logo": "/specialityimg/nephrologylogo.webp",
           "description1": "Nephrologists at Venkataeswara Hospitals specialize in diagnosing and treating kidney-related diseases in both adults and children. They manage conditions such as hypertension, diabetes, kidney stones, and electrolyte imbalances, using advanced diagnostic techniques and treatment options to preserve kidney function and health.",
           "description2": "Kidney disorders such as glomerular diseases, acute and chronic kidney disease, and kidney failure are common and require expert care. Our experienced nephrologists provide comprehensive treatment, including medication, dialysis, and palliative care, tailored to each patient's condition to improve their quality of life.",
-          "description3": "For patients requiring kidney transplantation, our nephrologists are skilled in managing the entire process, from pre-surgery care to post-operative support. Whether managing chronic renal conditions or acute kidney failures, we offer personalized care with the latest medical advancements to ensure optimal kidney health."
+          "description3": "For patients requiring kidney transplantation, our nephrologists are skilled in managing the entire process, from pre-surgery care to post-operative support. Whether managing chronic renal conditions or acute kidney failures, we offer personalized care with the latest medical advancements to ensure optimal kidney health.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. P. Sampath Kumar",
+              "specialist": "Nephrologist",
+              "time": "5.00 PM - 6.00 PM ( Wed & Sat only)"
+            },
+            {
+              "doctor_name": "Dr. G. Sakthi Ram",
+              "specialist": "Nephrologist",
+              "time": "6.00 PM - 7.00PM"
+            }
+          ]
         },
         {
           "id": "neurology",
@@ -159,7 +265,24 @@
           "logo": "/specialityimg/neurologylogo.webp",
           "description1": "At Venkataeswara Hospitals, we provide expert care for a wide range of neurological conditions affecting both adults and children. Our neurologists are highly skilled in treating stroke, Parkinson’s disease, seizures, and peripheral neuropathies, offering comprehensive care for patients with neurological disorders.",
           "description2": "Our experienced team also manages complex conditions such as intracerebral haemorrhages, meningoencephalitis, and encephalopathies, ensuring each patient receives tailored treatment. We specialize in the care of comatose patients, providing critical support to stabilize and improve their neurological health.",
-          "description3": "Neuro-rehabilitation is a core part of our approach, offering multidisciplinary care from neurologists, physiotherapists, and speech and occupational therapists. We focus on rehabilitation solutions that help patients with physical disabilities regain optimal function and quality of life."
+          "description3": "Neuro-rehabilitation is a core part of our approach, offering multidisciplinary care from neurologists, physiotherapists, and speech and occupational therapists. We focus on rehabilitation solutions that help patients with physical disabilities regain optimal function and quality of life.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. S. Kaushik",
+              "specialist": "Neurologist",
+              "time": "4.00 PM - 5.00  PM"
+            },
+            {
+              "doctor_name": "Dr. V. Natarajan",
+              "specialist": "Neurologist",
+              "time": "8.30 AM - 12.30 PM ( Tues, Thurs, Sat)"
+            },
+            {
+              "doctor_name": "Dr. K. Mukundhan",
+              "specialist": "Neurologist",
+              "time": "3.00 PM - 4.00 PM"
+            }
+          ]
         },
         {
           "id": "neurosurgery",
@@ -168,7 +291,19 @@
           "logo": "/specialityimg/neurosurglogo.webp",
           "description1": "Neurosurgery involves complex and delicate procedures, and at Venkataeswara Hospitals, our skilled neurosurgeons are equipped to handle surgeries on the brain, spine, and pituitary glands. We provide expert care for conditions like brain cancers, intracerebral haemorrhages, and disc prolapse, ensuring optimal patient outcomes.",
           "description2": "Our team specializes in addressing critical conditions that threaten patient health, such as trauma, intracerebral haemorrhages, and surgical trauma. With three fully equipped operation theatres, we deliver comprehensive neurosurgical care to both adult and paediatric patients in need.",
-          "description3": "Using the latest equipment and technical support, Venkataeswara Hospitals ensures high standards in neurosurgical care. Our expert neurosurgeons provide life-saving surgeries, achieving excellent results through advanced techniques and holistic treatment approaches for neurological disorders."
+          "description3": "Using the latest equipment and technical support, Venkataeswara Hospitals ensures high standards in neurosurgical care. Our expert neurosurgeons provide life-saving surgeries, achieving excellent results through advanced techniques and holistic treatment approaches for neurological disorders.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. T. Surensh Babu",
+              "specialist": "Neuro Surgeon",
+              "time": "2.00 PM - 3.00 PM"
+            },
+            {
+              "doctor_name": "Dr. Vijay Iyer",
+              "specialist": "Neuro Surgeon",
+              "time": "10.00 AM - 11.00 AM"
+            }
+          ]
         },
         {
           "id": "obstetrics-gynaecology",
@@ -177,7 +312,34 @@
           "logo": "/specialityimg/gynologo.webp",
           "description1": "At Venkataeswara Hospitals, we encourage women to prioritize their health with regular visits to a gynaecologist, even if there are no immediate concerns. Preventive healthcare is vital for maintaining overall well-being, and our expert team is here to guide women through every stage of life, from adolescence to menopause.",
           "description2": "Our team of obstetricians and gynaecologists provides comprehensive care for various women’s health issues, including pregnancy, infertility, polycystic ovary syndrome (PCOS), and menstrual disorders. We offer personalized treatment for women and girls of all ages, ensuring their health and comfort every step of the way.",
-          "description3": "During pregnancy, regular check-ups with an OB-GYN are essential to monitor the health of both the mother and the child. Our experienced obstetricians provide dedicated care throughout the nine months of pregnancy, ensuring a safe and healthy journey to motherhood for both mother and baby."
+          "description3": "During pregnancy, regular check-ups with an OB-GYN are essential to monitor the health of both the mother and the child. Our experienced obstetricians provide dedicated care throughout the nine months of pregnancy, ensuring a safe and healthy journey to motherhood for both mother and baby.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. Sangeetha Visweswar",
+              "specialist": "Obstetrician & Gynaecologist",
+              "time": "3.00 PM - 4.00 PM"
+            },
+            {
+              "doctor_name": "Dr. Mallika Samuel",
+              "specialist": "Obstetrician & Gynaecologist",
+              "time": "10.00 PM - 12.00 AM"
+            },
+            {
+              "doctor_name": "Dr. Cecy J Manjula",
+              "specialist": "Obstetrician & Gynaecologist",
+              "time": "11.00 AM - 1.00 PM"
+            },
+            {
+              "doctor_name": "Dr. Shanthi Sanjay",
+              "specialist": "Gynaecologist",
+              "time": "11.00 AM - 1.00 PM /  5.00 PM - 7.00 PM"
+            },
+            {
+              "doctor_name": "Dr. Akilandeswari",
+              "specialist": "Gynaecologist",
+              "time": "5.00 PM - 6.00 PM"
+            }
+          ]
         },
         {
           "id": "gynaecology-surgery",
@@ -195,7 +357,19 @@
           "logo": "/specialityimg/oncologylogo.webp",
           "description1": "At Venkataeswara Hospitals, our Medical Oncology team is dedicated to the diagnosis, staging, and treatment of various cancers. We offer both inpatient and outpatient care, including chemotherapy, radiotherapy, and comprehensive follow-up through our specialized department.",
           "description2": "With the rise in cancer cases, our medical oncologists are committed to providing cutting-edge treatments, including novel therapies that can cure or significantly reduce suffering. Our services include day care or outpatient chemotherapy and radiotherapy, as well as surgery aftercare for cancer patients.",
-          "description3": "Our experienced team of senior medical oncologists works closely with specialists to ensure the best possible care for each patient. We provide psychological support through counseling, and for advanced-stage patients, we offer compassionate palliative care to improve their quality of life."
+          "description3": "Our experienced team of senior medical oncologists works closely with specialists to ensure the best possible care for each patient. We provide psychological support through counseling, and for advanced-stage patients, we offer compassionate palliative care to improve their quality of life.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. Madhupriya Sundaram",
+              "specialist": "Consultant Surgical Oncologist",
+              "time": "2.00 PM - 3.00 PM"
+            },
+            {
+              "doctor_name": "Dr. K. Siva Subramaniam",
+              "specialist": "Medical Oncologist & Radiation Oncologist",
+              "time": ""
+            }
+          ]
         },
         {
           "id": "oncological-surgery",
@@ -204,7 +378,14 @@
           "logo": "/specialityimg/oncologysurglogo.webp",
           "description1": "At Venkataeswara Hospitals, our surgical oncologists play a crucial role in the treatment of cancer, providing expert surgical interventions for various types of malignant tumors. With advanced techniques and experience, we focus on improving patient outcomes through precise and effective surgeries.",
           "description2": "We offer holistic care to cancer patients, addressing both the physical and emotional challenges that come with cancer treatment. Our surgical oncology team is dedicated to performing tumor removal surgeries and biopsies, working alongside other specialists to ensure comprehensive care.",
-          "description3": "Our Surgical Oncologist Consultants are highly trained and equipped with state-of-the-art technology, ensuring that each patient receives the best possible care. Whether it's for tumor resection or diagnostic biopsies, our team is committed to providing expert surgical care in the fight against cancer."
+          "description3": "Our Surgical Oncologist Consultants are highly trained and equipped with state-of-the-art technology, ensuring that each patient receives the best possible care. Whether it's for tumor resection or diagnostic biopsies, our team is committed to providing expert surgical care in the fight against cancer.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. Sripriya Rajan",
+              "specialist": "Surgical Oncologist & Laparascopic",
+              "time": "2.00 PM - 3.00 PM ( Mon, Wed, Fri)"
+            }
+          ]
         },
         {
           "id": "ophthalmology",
@@ -213,7 +394,24 @@
           "logo": "/specialityimg/ophthalmologylogo.webp",
           "description1": "At Venkataeswara Hospitals, our Ophthalmology Department offers comprehensive eye care, treating both basic refractive issues and complex eye conditions. From vision correction with spectacles and contact lenses to advanced treatments for diseases like cataracts, glaucoma, and retinopathy, we ensure the best care for your eyes.",
           "description2": "We provide expert treatment for a variety of eye disorders, such as eye infections, astigmatism, vision impairment, and more. Our experienced ophthalmologists are dedicated to diagnosing and managing conditions like double vision, eye injuries, and family history-related concerns to preserve and improve your vision.",
-          "description3": "Beyond refractive care, we specialize in surgical treatments for eye diseases and disorders. With services including LASIK for vision correction, we offer a comprehensive approach to maintaining and restoring eye health, ensuring long-term eye comfort and clarity for our patients."
+          "description3": "Beyond refractive care, we specialize in surgical treatments for eye diseases and disorders. With services including LASIK for vision correction, we offer a comprehensive approach to maintaining and restoring eye health, ensuring long-term eye comfort and clarity for our patients.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. Mohan Kannan",
+              "specialist": "Opthalmologist",
+              "time": "2.30 PM - 3.30 PM"
+            },
+            {
+              "doctor_name": "Dr. B. Malini",
+              "specialist": "Opthalmologist",
+              "time": "11.00 AM - 12.00 PM"
+            },
+            {
+              "doctor_name": "Dr. Sheela Babu",
+              "specialist": "Opthalmologist",
+              "time": "5.30 PM - 6.30 PM"
+            }
+          ]
         },
         {
           "id": "ophthalmological-surgery",
@@ -232,7 +430,34 @@
           "logo": "/specialityimg/orthopaediclogo.webp",
           "description1": "At Venkataeswara Hospitals, our Orthopaedic Surgery team provides round-the-clock care for trauma and orthopaedic cases. With five specialists on duty, we perform emergency and routine procedures, including fracture fixation, hip replacements, and arthroscopic surgeries, ensuring that patients receive prompt and expert care.",
           "description2": "Our orthopaedic surgeons treat a wide range of conditions, from sports injuries to complex spinal surgeries. We offer advanced treatments, such as hip and knee arthroplasty, closed and open reduction, and epidural steroid injections for back pain relief. Our state-of-the-art operating theatre ensures safe and infection-free surgeries.",
-          "description3": "Venkataeswara Hospitals’ Orthopaedic Surgery team is equipped with advanced technology, including a high-quality Image Intensifier and a laminar flow operation theatre. We specialize in treating fractures, joint replacements, and spinal conditions, offering comprehensive care to ensure the best outcomes for our patients."
+          "description3": "Venkataeswara Hospitals’ Orthopaedic Surgery team is equipped with advanced technology, including a high-quality Image Intensifier and a laminar flow operation theatre. We specialize in treating fractures, joint replacements, and spinal conditions, offering comprehensive care to ensure the best outcomes for our patients.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. Vishnu Senthil",
+              "specialist": "Orthopaedics",
+              "time": "5.30 PM - 6.30 PM"
+            },
+            {
+              "doctor_name": "Dr.  Nalli. R. Gopinath",
+              "specialist": "Orthopaedic Surgeon",
+              "time": "4.30 PM - 5.30 PM"
+            },
+            {
+              "doctor_name": "Dr. R. Krishna Kumar",
+              "specialist": "Orthopaedic Surgeon",
+              "time": "2.00 PM - 3.00 PM"
+            },
+            {
+              "doctor_name": "Dr. R. Krishnamoorthy",
+              "specialist": "Orthopaedics",
+              "time": "11.00 AM - 2.00 PM"
+            },
+            {
+              "doctor_name": "Dr. V. Vijay Narasimman Reddy",
+              "specialist": "Orthopaedics",
+              "time": "5.00 PM - 6.00 PM"
+            }
+          ]
         },
         {
           "id": "paediatrics",
@@ -241,7 +466,24 @@
           "logo": "/specialityimg/paediatriclogo.webp",
           "description1": "At Venkataeswara Hospitals, we prioritize the health and well-being of children, offering specialized care tailored to their unique physical, emotional, and medical needs. Our experienced paediatric consultants provide holistic healthcare to our youngest patients, ensuring they receive the best care possible.",
           "description2": "Our paediatricians provide regular baby and child care, addressing illnesses and injuries with expertise and compassion. With a focus on prevention, our Well Baby and Immunisation Clinics are well-attended, ensuring that children stay healthy as they grow and develop.",
-          "description3": "We offer comprehensive inpatient and outpatient paediatric services seven days a week. At Venkataeswara Hospitals, our team is dedicated to meeting the unique healthcare needs of children, making sure they receive expert care at every stage of their development."
+          "description3": "We offer comprehensive inpatient and outpatient paediatric services seven days a week. At Venkataeswara Hospitals, our team is dedicated to meeting the unique healthcare needs of children, making sure they receive expert care at every stage of their development.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. Sharadha Srinivasan",
+              "specialist": "Paediatrics",
+              "time": "12.00 AM - 1.00 PM (Wed & Sat only)"
+            },
+            {
+              "doctor_name": "Dr. Praveena Lionel",
+              "specialist": "Paediatrics",
+              "time": "5.00 PM - 7.00 PM"
+            },
+            {
+              "doctor_name": "Dr. Sowmya Sridharan",
+              "specialist": "Infectious Disease",
+              "time": "8.30 AM - 9.30 AM"
+            }
+          ]
         },
         {
           "id": "paediatric-anaesthesiology",
@@ -259,7 +501,14 @@
           "logo": "/specialityimg/plasticsurglogo.webp",
           "description1": "At Venkataeswara Hospitals, our Plastic Surgery Department offers both reconstructive and cosmetic surgeries. Reconstructive procedures help restore lost skin or correct deformities, while cosmetic surgeries enhance physical appearance. We specialize in aesthetic surgeries tailored to individual needs, including facial rejuvenation and body contouring.",
           "description2": "Plastic surgery at Venkataeswara Hospitals includes a range of procedures, from life-changing reconstructive surgeries for accident victims to elective cosmetic surgeries that enhance appearance. We also offer non-surgical treatments like Botox and fillers for facial aesthetics, as well as body procedures like liposuction and tummy tucks.",
-          "description3": "Our skilled team performs specialized surgeries in various areas of plastic surgery, including cleft lip and palate correction, craniofacial surgery, and burn reconstruction. At Venkataeswara Hospitals, we provide comprehensive care with the latest equipment and techniques to ensure safe and effective outcomes for all patients."
+          "description3": "Our skilled team performs specialized surgeries in various areas of plastic surgery, including cleft lip and palate correction, craniofacial surgery, and burn reconstruction. At Venkataeswara Hospitals, we provide comprehensive care with the latest equipment and techniques to ensure safe and effective outcomes for all patients.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. T. Mathivanan",
+              "specialist": "Plastic Surgeon",
+              "time": "11.00 AM - 1.00 PM"
+            }
+          ]
         },
         {
           "id": "psychiatry",
@@ -268,7 +517,24 @@
           "logo": "/specialityimg/psychiatrylogo.webp",
           "description1": "At Venkataeswara Hospitals, we treat mental disorders with the same precision and care as any physical condition. Our expert psychiatrists focus on diagnosing and treating complex mental health issues such as schizophrenia and bipolar disorder, offering medical treatment and medication tailored to each patient’s needs.",
           "description2": "Our psychiatry team at Venkataeswara Hospitals works with a multidisciplinary approach to ensure comprehensive mental healthcare. Psychiatrists, psychologists, and counselors collaborate to diagnose and treat conditions like depression, anxiety, and psychosis, offering appropriate medical therapies and support.",
-          "description3": "Mental health is a critical component of overall well-being. At Venkataeswara Hospitals, our psychiatrists specialize in diagnosing and treating mental illnesses, focusing on neurochemistry and providing medical solutions. With the support of a dedicated team of mental health professionals, we offer compassionate care for a range of psychological conditions."
+          "description3": "Mental health is a critical component of overall well-being. At Venkataeswara Hospitals, our psychiatrists specialize in diagnosing and treating mental illnesses, focusing on neurochemistry and providing medical solutions. With the support of a dedicated team of mental health professionals, we offer compassionate care for a range of psychological conditions.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. C.R. Chandrasekar",
+              "specialist": "Psychiatrist",
+              "time": "10.00AM - 12.00 PM"
+            },
+            {
+              "doctor_name": "Dr. K. Lakshmi",
+              "specialist": "Psychiatrist",
+              "time": "1.30 PM - 2.30 PM ( Mon & Fri )"
+            },
+            {
+              "doctor_name": "Dr. Prabhu Thilak",
+              "specialist": "Pain Reliever",
+              "time": ""
+            }
+          ]
         },
         {
           "id": "psychology",
@@ -277,7 +543,14 @@
           "logo": "/specialityimg/psychologylogo.webp",
           "description1": "At Venkataeswara Hospitals, our psychologists specialize in diagnosing and treating mental health conditions like depression and anxiety through psychotherapy. We aim to destigmatize mental health and provide non-medical treatment options that prioritize emotional and psychological well-being.",
           "description2": "Psychologists at Venkataeswara Hospitals provide psychological assessments and therapy to help individuals cope with mental health challenges. Our team focuses on non-drug treatments, including psychotherapy, to offer long-term solutions while collaborating with psychiatrists and counselors for comprehensive care.",
-          "description3": "Psychological conditions can often be treated without medication through psychotherapy. At Venkataeswara Hospitals, our psychologists work closely with psychiatrists and counselors to offer tailored mental health care, ensuring a holistic approach that prioritizes emotional healing and recovery."
+          "description3": "Psychological conditions can often be treated without medication through psychotherapy. At Venkataeswara Hospitals, our psychologists work closely with psychiatrists and counselors to offer tailored mental health care, ensuring a holistic approach that prioritizes emotional healing and recovery.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. Nandhini Raman",
+              "specialist": "Psychologist",
+              "time": ""
+            }
+          ]
         },
         {
           "id": "pulmonology",
@@ -286,7 +559,19 @@
           "logo": "/specialityimg/pulmonologylogo.webp",
           "description1": "Pulmonologists at Venkataeswara Hospitals specialize in treating diseases related to the lungs and respiratory system. Our dedicated team provides comprehensive care for patients with advanced lung diseases, focusing on treatment and reducing discomfort.",
           "description2": "At Venkataeswara Hospitals, our expert pulmonologists offer specialized care for respiratory health, managing conditions like asthma, COPD, and pneumonia. With the increasing prevalence of lung diseases, our team is committed to providing early diagnosis, treatment, and prevention.",
-          "description3": "With rising cases of chest and respiratory diseases in India, Venkataeswara Hospitals provides top-notch pulmonology services. Our team of experienced pulmonologists helps patients manage and reduce the impact of advanced lung diseases through expert care and treatment."
+          "description3": "With rising cases of chest and respiratory diseases in India, Venkataeswara Hospitals provides top-notch pulmonology services. Our team of experienced pulmonologists helps patients manage and reduce the impact of advanced lung diseases through expert care and treatment.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. Indranil Banerjee",
+              "specialist": "Pulmonologist",
+              "time": "5.30 PM - 6.30 PM"
+            },
+            {
+              "doctor_name": "Dr. Taanya Joseph",
+              "specialist": "Pulmonologist",
+              "time": "5.30 PM - 6.30 PM"
+            }
+          ]
         },
         {
           "id": "rheumatology",
@@ -295,7 +580,24 @@
           "logo": "/specialityimg/rheumatologylogo.webp",
           "description1": "Venkataeswara Hospitals' Rheumatology Department provides expert care for a wide range of joint, bone, and connective tissue diseases. Our team specializes in diagnosing and treating rheumatic conditions, including arthritis and musculoskeletal disorders, to help patients manage their symptoms and improve quality of life.",
           "description2": "Rheumatic diseases, such as arthritis and musculoskeletal disorders, are on the rise due to lifestyle changes. At Venkataeswara Hospitals, our experienced rheumatologists offer comprehensive care to manage joint aches, inflammation, and degeneration, providing treatment and preventive care to protect your skeletal system.",
-          "description3": "The Rheumatology Department at Venkataeswara Hospitals is equipped to diagnose and treat over 100 rheumatic diseases that affect the joints and bones. With a focus on early intervention and management, our rheumatologists help prevent long-term disability and improve mobility for patients suffering from conditions like rheumatoid arthritis and spondylosis."
+          "description3": "The Rheumatology Department at Venkataeswara Hospitals is equipped to diagnose and treat over 100 rheumatic diseases that affect the joints and bones. With a focus on early intervention and management, our rheumatologists help prevent long-term disability and improve mobility for patients suffering from conditions like rheumatoid arthritis and spondylosis.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. S. Ramesh",
+              "specialist": "Rheumatologist",
+              "time": "3.30 PM - 4.30 PM ( Mon, Wed, Fri)"
+            },
+            {
+              "doctor_name": "Dr. Panchapakesa Rajendran",
+              "specialist": "Rheumatologist",
+              "time": "3.00 PM - 4.00 PM ( Tues only)"
+            },
+            {
+              "doctor_name": "Dr. Shanmuganathan",
+              "specialist": "Rheumatologist",
+              "time": "5.00 PM - 6.00 PM ( Wed  only)"
+            }
+          ]
         },
         {
           "id": "speech-therapy",
@@ -313,7 +615,14 @@
           "logo": "/specialityimg/urologylogo.webp",
           "description1": "Urology at Venkataeswara Hospitals specializes in the diagnosis, treatment, and management of diseases related to the urinary tract systems of both men and women, as well as the male reproductive organs. Our team treats conditions like urinary tract infections, kidney diseases, and prostate issues, and provides advanced urological surgeries, including laparoscopic procedures.",
           "description2": "Venkataeswara Hospitals' Urology Department offers expert care for a wide range of urological conditions, from urinary tract infections and kidney stones to prostate issues and male infertility. Our experienced team performs advanced urological surgeries, including prostate removal and laparoscopic procedures, ensuring the highest standard of care for our patients.",
-          "description3": "Our Urology Department at Venkataeswara Hospitals provides comprehensive care for both men and women suffering from urinary and reproductive tract diseases. From treating urinary incontinence to managing kidney diseases and conducting complex urological surgeries, we also offer specialized paediatric urology care to address unique needs in children."
+          "description3": "Our Urology Department at Venkataeswara Hospitals provides comprehensive care for both men and women suffering from urinary and reproductive tract diseases. From treating urinary incontinence to managing kidney diseases and conducting complex urological surgeries, we also offer specialized paediatric urology care to address unique needs in children.",
+          "doctors": [
+            {
+              "doctor_name": "Dr. K. Arun Kumar",
+              "specialist": "Urologist",
+              "time": "7.00 PM - 8.00 PM"
+            }
+          ]
         },
         {
           "id": "urological-surgery",
