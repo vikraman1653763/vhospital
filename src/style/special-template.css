@@ -96,33 +96,51 @@
 
 /* Doctor Card */
 .doctors-card {
+  position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #e2dfdf;
   border-radius: 12px;
-  padding: 0.8rem;
-  width: 350px;
+  width: 400px;
   box-shadow: 0 4px 6px #105e3c56;
   transition: transform 0.2s ease-in-out;
+  overflow: hidden; 
 }
+
+/* Circle inside the card */
+.doctors-card::before {
+  content: "";
+  position: absolute;
+  width: 200px; /* Covers 40% of the card */
+  height: 200px;
+  background-color: rgba(255, 255, 255, 1); /* Light semi-transparent circle */
+  border-radius: 50%;
+  top: -25%; 
+  right: 80%; 
+  z-index: -1; /* Keeps it behind the content */
+}
+
 
 /* Doctor Image */
 .doctors-img-container {
-  width: 20%;
-  height: 100px;
+  width: 150px;
+  height: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
+  border-radius: 100%;
+  background-color: #ffffff;
 }
 
 .doctors-img {
-  width: 70px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
   color: #105e3c;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
   padding: 2px;
   border: 2px solid #105e3c;
 }
