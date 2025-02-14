@@ -26,8 +26,7 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #105e3c #0C0C0C;
   scroll-behavior: smooth;
-  scroll-snap-type:y mandatory;
-  scroll-snap-align: start;
+
 }
 
 body {
