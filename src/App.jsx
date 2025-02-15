@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './component/navbar.jsx';
+import Navbar from './component/Navbar.jsx';
 import Loader from './component/Loader.jsx';
 import Footer from './component/Footer.jsx';
 import ScrollToTop from './component/ScrollToTop.jsx';
@@ -10,7 +10,7 @@ import './App.css';
 const Home = lazy(() => import('./component/Home.jsx'));
 const About = lazy(() => import('./component/About.jsx'));
 const Contact = lazy(() => import('./component/Contact.jsx'));
-const Service = lazy(() => import('./component/service.jsx'));
+const Service = lazy(() => import('./component/Service.jsx'));
 const SpecialityPage = lazy(() => import('./component/SpecialityPage.jsx'));
 const Success = lazy(() => import('./component/Success.jsx'));
 const Err = lazy(() => import('./component/404.jsx'));

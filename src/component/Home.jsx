@@ -17,12 +17,12 @@ function Home() {
     <div>
 
       <Section1/>
-      <Section2/>
-      <Section8/>
-      <Section3/>
+       <Section2/>
+     <Section8/>
+     <Section3/>
       <Section9/>
       <Section4/>
-      <Section10/>
+       <Section10/>
       {/* <Section6/> */}
       <Section11/>
       {/* <Section12/> */}

@@ -44,7 +44,7 @@ const SpecialityPage = ({ data }) => {
 
           {/* Third Section */}
           <div className="special-section" data-aos="fade-up">
-            <div className="special-text">{validData.description3}</div>
+            <div className="special-text-3">{validData.description3}</div>
           </div>
 
           {/* Our Doctors Section (Only if doctors are available) */}

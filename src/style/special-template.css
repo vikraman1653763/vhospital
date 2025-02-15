@@ -7,7 +7,7 @@
 }
 
 .special-page {
-  padding: 2rem;
+  padding: 1rem 10rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #f9f9f9;
@@ -22,32 +22,44 @@
 
 .special-section {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
 }
 
 .special-text {
   flex: 1;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #555;
+  font-size: var(--fs-s);
+  line-height: 1.5;
+  color: #000;
   margin-right: 1rem;
+  text-align: justify;
 }
 
 .special-text-2 {
   flex: 0.5;
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: var(--fs-s);
+  line-height: 1.5;
   color: #000;
   text-align: justify;
   padding: 0.5em;
   border-radius: 5px;
   background-color: #029b595a;
 }
-
+.special-text-3 {
+  width: 90%; /* Adjust the width as needed */
+  font-size: var(--fs-s);
+  line-height: 1.5;
+  color: #000;
+  text-align: justify;
+  margin: 0 2px; /* Centers the text */
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
 .special-image {
-  flex: 1;
+  flex: 0.9;
   text-align: center;
 }
 
@@ -62,7 +74,7 @@
 }
 
 .special-logo img {
-  width: 60%;
+  width: 50%;
   height: auto;
   border-radius: 10px;
 }
@@ -179,24 +191,115 @@
   text-align: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .doctors-list {
-    flex-direction: column; /* Stack cards on smaller screens */
-    align-items: center;
+/* #### Tablet View (768px - 1024px) #### */
+@media (max-width: 1024px) {
+  .special-page {
+    padding: 1rem 2%; /* Reduce padding for tablets */
   }
 
+  .special-section {
+    flex-direction: row; /* Keep same layout as desktop */
+  }
+  .special-title{
+    font-size: var(--fs-l);
+  }
+  .doctors-section {
+    margin-top: 0;
+    padding: 2rem;
+  }
+  .doctors-title{
+    font-size: var(--fs-l);
+    margin-bottom: 1rem;
+  }
+  .doctors-list {
+    justify-content: center; /* Align doctors' cards in center */
+    gap: 1rem;
+  }
+  .doctor-name{
+    font-size: var(--fs-s);
+  }
+  .doctor-specialist{
+    font-size: var(--fs-xs);
+  }
+  .doctor-time{
+    font-size: var(--fs-xs);
+  }
+  .doctors-img{
+    width: 80%;
+  height: 80%;
+  }
   .doctors-card {
-    width: 90%; /* Adjust width for mobile screens */
-    flex-direction: column;
+    width: 300px; /* Keep same width as desktop */
+  }
+}
+
+/* #### Mobile View (≤767px) #### */
+@media (max-width: 767px) {
+  .special-page {
+    padding: 1rem 2rem; /* Further reduce padding */
+    overflow: hidden;
+  }
+
+  .special-section {
+    flex-direction: column; /* Stack sections vertically */
     text-align: center;
   }
 
-  .doctors-img-container {
+  .special-text,
+  .special-text-2,
+  .special-text-3 {
     width: 100%;
+    text-align: justify;
+  }
+
+  .special-image img {
+    max-width: 80%;
+  }
+  .special-logo img {
+    max-width: 100%;
+  }
+  .special-title{
+    font-size: var(--fs-m);
+  }
+  .doctors-section {
+    padding: 1rem;
+  }
+  /* Doctors Section */
+  .doctors-list {
+    display: grid;
+    
+    gap: 1rem;
     justify-content: center;
   }
 
+  .doctors-card {
+    width: 220px; /* Full width within grid */
+    flex-direction: column; /* Stack doctor image & info vertically */
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .doctors-img-container {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto; /* Center align */
+  }
+  .doctors-title{
+    font-size: var(--fs-m);
+  }
+  .doctor-name{
+    font-size: var(--fs-s);
+  }
+  .doctor-specialist{
+    font-size: var(--fs-xs);
+  }
+  .doctor-time{
+    font-size: var(--fs-xs);
+  }
+  .doctors-img{
+    width: 80%;
+  height: 80%;
+  }
   .doctor-info {
     width: 100%;
     text-align: center;

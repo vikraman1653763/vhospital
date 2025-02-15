@@ -39,7 +39,50 @@
     max-width: 600px;
     margin: 0 auto;
 }
+/* Tablet View (≤1024px) */
+@media screen and (max-width: 1024px) {
+  .contact-sec-1 {
+    width: 100vw;
+    height: 70vh;
+  }
+  .contact-sec-1-content {
+    padding: 2em 5rem; /* Reduce padding for better alignment */
+  }
 
+  .contact-sec-1-title {
+    font-size: var(--fs-m); /* Slightly reduce font size */
+  }
+
+  .contact-sec-1-description {
+    font-size: var(--fs-xs);
+  }
+}
+
+/* Mobile View (≤767px) */
+@media screen and (max-width: 767px) {
+  .contact-sec-1 {
+    height: 40vh; /* Adjust height for smaller screens */
+    width: 100%;
+  }
+
+  .contact-sec-1-banner {
+    padding: 4em 2rem; /* Adjust padding for better layout */
+  }
+
+  .contact-sec-1-content {
+    padding: 2em 1.5rem; /* Further reduce padding */
+  }
+
+  .contact-sec-1-title {
+    font-size: var(--fs-m); /* Adjust title size */
+    margin-bottom: 10px;
+  }
+
+  .contact-sec-1-description {
+    font-size: var(--fs-xxs);
+    line-height: 1.4;
+  }
+}
 .contact-sec-2 {
     max-width: 100%;
     padding: 0em 13em;
@@ -95,7 +138,59 @@
     font-size: var(--fs-s);
     color: #105e3c;
   }
-  
+  /* #### Tablet View (768px - 1024px) - Align same as desktop #### */
+@media (max-width: 1024px) {
+  .contact-sec-2 {
+    padding: 0em 5em;
+    overflow: hidden;
+  }
+  .contact-sec-2 h2{
+    font-size: var(--fs-l);
+  }
+  .contact-sec-2 h3{
+    font-size: var(--fs-m);
+  }
+  .contact-sec-2-cards {
+    flex-direction: row; /* Maintain desktop alignment */
+    justify-content: space-evenly;
+  }
+
+  .contact-sec-2-card {
+    flex: 1; /* Ensures equal spacing */
+  }
+}
+
+/* #### Mobile View (≤767px) - Align 2 cards per row #### */
+@media (max-width: 767px) {
+  .contact-sec-2 {
+    padding: 1em 2em;
+    overflow: hidden;
+  }
+  .contact-sec-2 h2{
+    font-size: var(--fs-m);
+  }
+  .contact-sec-2 h3{
+    font-size: var(--fs-s);
+  }
+  .contact-sec-2 p{
+    font-size: var(--fs-xs);
+    text-align: left;
+  }
+  .contact-sec-2-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .contact-sec-2-card {
+   
+    margin: 0.5em;
+    width: 143px;
+   
+  }
+}
+
+  /*Section 3 */
   .contact-sec-3 {
     padding: 0em 10em;
     text-align: center;
@@ -123,7 +218,40 @@
     height: 450px;
     border: none;
   }
-  
+  /* #### Tablet View (768px - 1024px) #### */
+@media (max-width: 1024px) {
+  .contact-sec-3 {
+    padding: 0em 5em;
+  }
+  .contact-sec-3 h2{
+    font-size: var(--fs-l);
+  }
+  .design-icon-1 {
+    top: -20%;
+    width: 100vw;
+    height: 80vh;
+  }
+}
+
+/* #### Mobile View (≤767px) #### */
+@media (max-width: 767px) {
+  .contact-sec-3 {
+    padding: 0em 2em;
+  }
+  .contact-sec-3 h2{
+    font-size: var(--fs-m);
+  }
+  .design-icon-1 {
+    top: -15%;
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .contact-sec-3__map iframe {
+    height: 300px; /* Reduce map height for mobile */
+  }
+}
+
 
   
   
@@ -235,6 +363,7 @@
   font-size: var(--fs-xs);
   margin-top: 0.625rem;
 }
+/* Section 5 */
 
 .whatsapp-section {
   text-align: center;
@@ -279,3 +408,46 @@
 .whatsapp-button:hover {
   background-color: #128C7E; /* Darker Green */
 }
+/* #### Tablet View (768px - 1024px) #### */
+@media (max-width: 1024px) {
+  .whatsapp-section {
+    padding: 15px;
+  }
+
+  .whatsapp-title {
+    font-size: var(--fs-l);
+  }
+
+  .whatsapp-description {
+    font-size: 14px;
+  }
+
+  .whatsapp-button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
+
+/* #### Mobile View (≤767px) #### */
+@media (max-width: 767px) {
+  .whatsapp-section {
+    padding: 1em;
+    margin-top: 20px;
+  }
+
+  .whatsapp-title {
+    font-size: var(--fs-m);
+  }
+
+  .whatsapp-description {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .whatsapp-button {
+    font-size: 12px;
+    padding: 8px 15px;
+    border-radius: 6px;
+  }
+}
+

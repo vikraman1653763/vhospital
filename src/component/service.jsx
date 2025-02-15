@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import '../style/service.css';
 
-import Section1 from '../service/section1';
+import Section1 from '../service/Section1';
 import Section2 from '../service/Section2';
 import Section3 from '../service/Section3';
 import Section4 from '../service/Section4';
@@ -16,15 +16,15 @@ function Service() {
   return (
     <div>
       <Section1/>
-      <Section9/>
-      <Section2/>
-      <Section3/>
-      <Section4/>
-      <Section5/>
-      <Section6/>
-      <Section7/>
+       <Section9/> 
+     <Section2/> 
+     <Section3/>
+     <Section4/>
+        <Section5/>
+      <Section6/> 
+    <Section7/> 
       <Section8/>
-      <Section10/>
+       <Section10/>
     </div>
   )
 }

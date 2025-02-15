@@ -1,3 +1,23 @@
+/* Tablet View (768px - 1024px) */
+@media screen and (min-width: 48vw) and (max-width: 64vw) {
+  .carousel-card img {
+    width: 100vw; /* Full width */
+    height: auto;
+    max-height: 50vh; /* Adjust height for tablets */
+    object-fit: cover;
+  }
+}
+
+/* Mobile View (Below 768px) */
+@media screen and (max-width: 48vw) {
+  .carousel-card img {
+    width: 100vw; /* Ensure full width */
+    height: auto;
+    max-height: 35vh; /* Reduce height for smaller screens */
+    object-fit: cover;
+  }
+}
+
 
 
   /* #########Section2############# */
@@ -65,7 +85,72 @@
     object-fit: contain;
     object-position: center;
   }
-  
+  @media screen and (min-width: 768px){
+    .home-sec-2-container {
+      padding: 2rem 5rem;
+    }
+  } 
+/* Tablet View (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .home-sec-2-container {
+    flex-direction: row;
+    text-align: center;
+    padding: 2rem 2rem;
+    gap:1em;
+  }
+
+  .home-sec-2-content {
+    max-width: 80%;
+  }
+
+  .home-sec-2-title {
+    font-size: var(--fs-l);
+  }
+
+  .home-sec-2-description {
+    font-size: var(--fs-s);
+  }
+
+  .home-sec-2-logo {
+    width: 45rem;
+    height: 10rem;
+  }
+
+  .home-sec-2-logo img {
+    width: 80%;
+  }
+}
+
+/* Mobile View (Below 768px) */
+@media screen and (max-width: 767px) {
+  .home-sec-2-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 2rem;
+  }
+
+  .home-sec-2-content {
+    max-width: 90%;
+  }
+
+  .home-sec-2-title {
+    font-size: var(--fs-m);
+  }
+
+  .home-sec-2-description {
+    font-size: var(--fs-s);
+  }
+
+  .home-sec-2-logo {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .home-sec-2-logo img {
+    width: 75%;
+  }
+}
 
   /* ############section3################# */
 
@@ -114,11 +199,61 @@
         height: 100%;
     }
     .home-sec-3-video iframe {
-        
-        border-radius: 10px;
+    border-radius: 10px;
     border: none;
   }
-  
+  /* ######### Tablet View (768px - 1024px) ######### */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .home-sec-3-container {
+    flex-direction: row;
+    padding: 2rem 2rem;
+    gap: 0.2rem;
+  }
+
+  .home-sec-3-video iframe{
+    width: 65vh;
+  }
+
+  .home-sec-3-content {
+    max-width: 50%;
+  }
+  .home-sec-3-title {
+    font-size: var(--fs-l);
+  }
+}
+
+/* ######### Mobile View (Below 767px) ######### */
+@media screen and (max-width: 767px) {
+  .home-sec-3-container {
+    flex-direction: column;
+    padding: 1rem 1rem;
+    text-align: center;
+    gap: 2rem;
+  }
+  .home-sec-3-vide0{
+    height: 50vh;
+  }
+  .home-sec-3-video iframe {
+    max-width: 90vw;
+    height: 35vh;
+  }
+
+  .home-sec-3-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .home-sec-3-description li {
+    justify-content: center; /* Align items properly in center */
+    text-align: left;
+  }
+  .home-sec-3-title {
+    font-size: var(--fs-m);
+  }
+  .home-sec-3-description{
+    font-size: var(--fs-s);    
+  }
+}
   /* #########section4######## */
 
   .home-sec-4{
@@ -145,6 +280,43 @@
 .home-sec-4-card svg{
     color: #105e3c;
     font-size: var(--fs-xl);
+}
+/* ######### Tablet View (768px - 1024px) ######### */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .home-sec-4 {
+    padding: 1rem 2rem; /* Adjust padding for smaller screens */
+    justify-content: center;
+  }
+
+  .home-sec-4-cards {
+    width: 100%;
+  }
+
+  .home-sec-4-card {
+    padding: 1em;
+    margin: 2em;
+  }
+}
+
+/* ######### Mobile View (Below 767px) ######### */
+@media screen and (max-width: 767px) {
+  .home-sec-4 {
+    padding: 1rem 1rem;
+    justify-content: center;
+  }
+
+  .home-sec-4-cards {
+    width: 100%;
+  }
+
+  .home-sec-4-card {
+    padding: 1em;
+    margin: 1em;
+    box-shadow: rgb(204, 219, 232) 2px 2px 4px 0px inset, rgba(29, 2, 2, 0.034) -2px -2px 4px 0px inset;
+  }
+  .home-sec-4-card svg{
+    font-size: var(--fs-l);
+}
 }
 
 /* ###########section5############ */
@@ -274,7 +446,7 @@
         text-align: justify;
       }
       
-
+/* Section 7 */
       .home-sec-7-container {
         padding: 3em 13rem;
         text-align: center;
@@ -316,7 +488,41 @@
         border: 1px solid #105e3c;
         background-color: #fff;
       }
-      
+      /* Tablet View (≤1024px) */
+@media screen and (max-width: 1024px) {
+  .home-sec-7-container {
+    padding: 3em 5rem; /* Reduce padding for better fit */
+  }
+
+  .home-sec-7-title {
+    font-size: var(--fs-l); /* Slightly reduce font size */
+  }
+
+  .home-sec-7-description {
+    font-size: var(--fs-s);
+  }
+}
+
+/* Mobile View (≤767px) */
+@media screen and (max-width: 767px) {
+  .home-sec-7-container {
+    padding: 2em 2rem; /* Further reduce padding */
+  }
+
+  .home-sec-7-title {
+    font-size: var(--fs-m); /* Adjust title size */
+  }
+
+  .home-sec-7-description {
+    font-size: var(--fs-xs);
+  }
+
+  .home-sec-7-button {
+    padding: 0.75em 1.5em; /* Increase button padding for better touch */
+    font-size: var(--fs-s);
+  }
+}
+
 /*desnums section */
 
 .descnums-container {
@@ -349,30 +555,54 @@
   font-size: var(--fs-xs); /* 14px */
 }
 
-/* Responsive styles */
-@media (min-width: 640px) {
-  .descnum-card {
-    width: 180px; /* Adjust for small screens */
+/* Tablet View (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .descnums-container {
+    flex-wrap: wrap; /* Keep items in one line if space allows */
+    gap: 1rem;
+    padding: 1em 2em;
+    margin-top: 5px;
   }
-}
 
-@media (min-width: 768px) {
   .descnum-card {
-    width: 160px; /* Adjust for medium screens */
+    width: 8rem;
+    height: 7rem;
+    padding: 1.5em;
+    border-radius: 10px;
   }
 
   .descnum-card h3 {
-    font-size: var(--fs-l); /* 32px */
+    font-size: var(--fs-m);
   }
 
   .descnum-card p {
-    font-size: var(--fs-s); /* 16px */
+    font-size: var(--fs-xs);
   }
 }
 
-@media (min-width: 1024px) {
+/* Mobile View (Below 768px) */
+@media screen and (max-width: 767px) {
+  .descnums-container {
+    flex-direction: row; /* Ensure items stay horizontal */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-evenly;
+    gap: 0.2rem;
+    padding: 1em 1em;
+    margin-top: 2px;
+  }
+
   .descnum-card {
-    width: 220px; /* Larger size for desktops */
+    width: 4rem;
+    padding: 0.5em;
+    border-radius: 8px;
+  }
+
+  .descnum-card h3 {
+    font-size: var(--fs-xs);
+  }
+
+  .descnum-card p {
+    font-size: var(--fs-xxs);
   }
 }
 
@@ -429,31 +659,65 @@
   border-radius: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* ######### Tablet View (768px - 1024px) ######### */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .banner-container {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    gap: 2rem;
   }
 
   .banner-content {
-    width: 100%;
-    margin-bottom: 30px;
+    width: 50%;
+  }
+
+  .banner-image-container {
+    width: 40%;
   }
 
   .banner-heading {
     font-size: var(--fs-l);
   }
 
-  .banner-image-container {
-    width: 100%;
-  }
-
-  .banner-image {
-    max-width: 400px;
+  .list-item {
+    font-size: var(--fs-s);
   }
 }
 
+/* ######### Mobile View (Below 767px) ######### */
+@media screen and (max-width: 767px) {
+  .banner-container {
+    flex-direction: column;
+    padding: 2rem 2rem;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .banner-content {
+    width: 100%;
+  }
+
+  .banner-heading {
+    font-size: var(--fs-m);
+  }
+
+  .banner-list {
+    text-align: left;
+    padding-left: 10%;
+  }
+
+  .list-item {
+    justify-content: flex-start;
+  }
+
+  .banner-image-container {
+    width: 70%;
+  }
+
+  .banner-image {
+    max-width: 100%;
+  }
+}
 /* services */
 
 /* Services Section */
@@ -565,6 +829,107 @@
 .appointment-button:hover {
   background-color: #014e30;
 }
+/* Tablet View (Align same as desktop) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .services-section {
+    padding: 2em 1rem;
+  }
+
+  .services-container {
+    flex-direction: row; /* Keep same alignment as desktop */
+    gap: 1.5rem;
+  }
+  .services-heading {
+    font-size: var(--fs-l);
+  }
+  .service-details-heading{
+    font-size: var(--fs-m);
+  }
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    width: 40%;
+  }
+  .service-card {
+    padding: 0.8rem;
+    width:6rem;
+    height: 6rem;
+  }
+  .service-icon {
+    font-size: var(--fs-l); /* Make the icon bigger */
+    width: 30px; /* Increase the size */
+    height: 30px; /* Increase the size */
+  }
+  .service-title{
+    font-size: var(--fs-xs);
+  }
+  .service-details {
+    width: 50%;
+    margin-left: 1.5em;
+  }
+  .service-list-item{
+    font-size: var(--fs-xs);
+  }
+  .appointment-button {
+    margin-left: 3rem;
+  }
+}
+
+/* Mobile View (Services Grid on Top, Details Below) */
+@media screen and (max-width: 767px) {
+  .services-section {
+    padding: 2em 1rem;
+  }
+
+  .services-container {
+    flex-direction: column; /* Stack services grid and details */
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr); /* Adjust for smaller screens */
+    width: 100%;
+    align-items: center;
+  }
+
+  .service-details {
+    width: 100%;
+    margin-left: 1rem;
+  }
+  .services-heading {
+    font-size: var(--fs-l);
+  }
+  .service-details-heading {
+    font-size: var(--fs-s);
+  }
+  .service-card {
+    padding: 0.5rem;
+    width:5.5rem;
+    height: 5rem;
+  }
+  .service-icon {
+    font-size: var(--fs-m); /* Make the icon bigger */
+    width: 20px; /* Increase the size */
+    height: 20px; /* Increase the size */
+  }
+  .service-list-item{
+    font-size: var(--fs-xs);
+  }
+  /* .service-list-item {
+    justify-content: center;
+  } */
+  .service-title{
+    font-size: var(--fs-xxs);
+  }
+  .appointment-button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .appointment-button {
+    margin-left: 0;
+  }
+}
 
 /* Doctors */
 
@@ -638,7 +1003,65 @@
 .doctor-job {
   font-size: 0.875rem;
 }
+/* Tablet View (Align same as desktop) */
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+  .doctors {
+    padding: 2rem 2rem;
+  }
+  .doctors-heading{
+    margin-bottom: 3rem;
+    font-size: var(--fs-l);
+  }
+  .doctors-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
 
+  .doctor-card {
+    width: 8rem;
+  }
+  .doctor-image {
+    width: 110px;
+  }
+  .doctor-job {
+    font-size: 0.7rem;
+  }
+}
+
+/* Mobile View (2 doctors in a row) */
+@media screen and (max-width: 767px) {
+  .doctors {
+    padding: 1rem 1rem;
+  }
+  .doctors-heading{
+    font-size: var(--fs-m);
+    margin-bottom: 2rem;
+  }
+  .doctors-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 doctors per row */
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .doctor-card {
+    width: 7.5rem;
+    height: 10.5rem;
+  }
+  .doctor-image {
+    width: 70px;
+  }
+  .doctor-job {
+    font-size: 0.5rem;
+  }
+  .doctor-name {
+    font-size: var(--fs-xs);
+  }
+ .doctor-info {
+  padding: 0.5rem;
+}
+}
 /* Reviews */
 
 

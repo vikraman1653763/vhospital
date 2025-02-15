@@ -30,6 +30,50 @@
     font-size: var(--fs-s);
     line-height: 1.6;
   }
+/* Tablet View (≤1024px) */
+@media screen and (max-width: 1024px) {
+  .service-sec-1 {
+    width: 100vw;
+    height: 70vh;
+  }
+  .service-sec-1-content {
+    padding: 2em 5rem; /* Reduce padding */
+  }
+
+  .service-sec-1-title {
+    font-size: var(--fs-m); /* Adjust heading size */
+  }
+
+  .service-sec-1-description {
+    font-size: var(--fs-xs);
+  }
+}
+
+/* Mobile View (≤767px) */
+@media screen and (max-width: 767px) {
+  .service-sec-1 {
+    height: 40vh; /* Adjust height for smaller screens */
+    width: 100%;
+  }
+
+  .service-sec-1-banner {
+    padding: 4em 2rem; /* Adjust padding for better layout */
+  }
+
+  .service-sec-1-content {
+    padding: 2rem 1.5em; /* Adjust padding */
+  }
+
+  .service-sec-1-title {
+    font-size: var(--fs-m); /* Reduce title size */
+    margin-bottom: 10px;
+  }
+
+  .service-sec-1-description {
+    font-size: var(--fs-xxs);
+    line-height: 1.4;
+  }
+}
 
 
   /*###################section-2########################### */
@@ -136,7 +180,74 @@
         box-shadow: 5px 5px 3px rgba(255, 255, 255, 0.3);
 
     }
-  
+  /* Tablet View (≤1024px) - Keep Desktop Alignment */
+@media screen and (max-width: 1024px) {
+  .service-sec-2 {
+    padding: 1rem 5rem; /* Reduce side padding */
+    overflow: hidden;
+  }
+.service-sec-2-title{
+  font-size: var(--fs-l);
+}
+  .service-sec-2-content {
+    flex-direction: row; /* Maintain horizontal alignment */
+  }
+
+  .service-sec-2-image img {
+    width: 100%; /* Adjust image size */
+  }
+  .service-sec-2-equipment h3{
+    font-size: var(--fs-m);
+  }
+  .service-sec-2-equipment ul {
+    gap: 0.8em;
+  }
+  .service-sec-2-equipment ul svg {
+    font-size: var(--fs-l);
+  }
+
+  .service-sec-2-equipment li {
+    width: calc(33.33% - 0.8em); /* Keep three items per row */
+  }
+}
+
+/* Mobile View (≤767px) - Align Equipment Cards in 2 Columns */
+@media screen and (max-width: 767px) {
+  .service-sec-2 {
+    padding: 2rem 2rem; /* Reduce padding */
+  }
+
+  .service-sec-2-content {
+    flex-direction: column; /* Stack text and image */
+    text-align: center;
+    align-items: center;
+  }
+
+  .service-sec-2-image img {
+    width: 90%;
+  }
+
+  .service-sec-2-equipment ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .service-sec-2-equipment ul svg {
+    font-size: var(--fs-m);
+  }
+  .service-sec-2-equipment li {
+    width: calc(50% - 1em); /* Arrange 2 items per row */
+    font-size: var(--fs-xs);
+  }
+
+  .service-sec-2-title {
+    font-size: var(--fs-m);
+  }
+
+  .service-sec-2-description {
+    font-size: var(--fs-xs);
+  }
+}
+
     /* ##########section3######### */
     .service-sec-3 {
         display: flex;
@@ -194,12 +305,12 @@
       }
       
       .service-sec-3-card h3 {
-        font-size: 1.5rem;
+        font-size: var(--fs-m);
         margin-bottom: 10px;
       }
       
       .service-sec-3-card p {
-        font-size: 1rem;
+        font-size: var(--fs-s);
         color: #555;
       }
       
@@ -208,18 +319,101 @@
         margin-bottom: 10px;
         color: #105e3c; /* Green color for icons */
       }
-      
-      @media (max-width: 768px) {
-        .service-sec-3-card {
-          width: calc(50% - 1em); /* 2 cards per row on medium screens */
-        }
-      }
-      
-      @media (max-width: 480px) {
-        .service-sec-3-card {
-          width: 100%; /* 1 card per row on small screens */
-        }
-      }
+      /* Tablet View (≤1024px) - Keep Desktop Alignment */
+@media screen and (max-width: 1024px) {
+  .service-sec-3 {
+    padding: 1em 5rem; /* Reduce side padding */
+    overflow: hidden;
+  }
+
+  .service-sec-3-content {
+    flex-direction: row; /* Maintain horizontal alignment */
+  }
+
+  .service-sec-3-image img {
+    width: 100%; /* Adjust image size */
+  }
+
+  .service-sec-3-cards {
+    justify-content: center;
+  }
+  .service-sec-3-title {
+    
+    font-size: var(--fs-l);
+  }
+  .service-sec-3-card {
+    width: calc(33.33% - 1em); /* Keep three items per row */
+  }
+  .service-sec-3-card h3{
+    font-size: var(--fs-s);
+  }
+}
+/* Mobile View (≤767px) - Title at Top, Image Below */
+@media screen and (max-width: 767px) {
+  .service-sec-3 {
+    padding: 1em 1.5rem; /* Reduce padding */
+    overflow: hidden;
+  }
+
+  .service-sec-3-content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-sec-3-title {
+    
+    font-size: var(--fs-m);
+  }
+  .service-sec-3-description{
+    font-size: var(--fs-xs);
+  } 
+  .service-sec-3-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    order: -5; /* Ensure image comes after the title */
+  }
+
+  .service-sec-3-image img {
+    width: 80%; /* Centered image */
+  }
+
+  .service-sec-3-text {
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .service-sec-3-cards {
+    flex-direction: row; /* Arrange cards in 2 columns */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service-sec-3-card {
+    width: calc(50% - 1em);
+    padding: 1em;
+    border-radius: 40% 0 40% 0;
+  }
+
+  .service-sec-3-card-icon {
+    margin-bottom: 2px;
+  }
+
+  .service-sec-3-card-icon svg {
+    font-size: var(--fs-m);
+  }
+
+  .service-sec-3-card h3 {
+    font-size: var(--fs-s);
+    margin-bottom: 2px;
+  }
+
+  .service-sec-3-card p {
+    font-size: var(--fs-xxs);
+  }
+}
+
       
       /* #######Section4######## */
       .service-sec-4 {
@@ -280,27 +474,91 @@
         color: rgba(3, 3, 3, 0.105);
         z-index: -1;
       }
-      
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        .service-sec-4 {
-          padding: 2rem;
-        }
-      
-        .service-sec-4-content {
-          flex-direction: column;
-          text-align: center;
-        }
-      
-        .service-sec-4-text {
-          flex: 1 1 100%;
-        }
-      
-        .service-sec-4-image {
-          flex: 1 1 100%;
-          margin-top: 1em;
-        }
-      }
+      /* Tablet View (≥768px) - Same as Desktop */
+@media (min-width: 768px) {
+  .service-sec-4 {
+    padding: 2rem 4rem;
+    overflow: hidden;
+  }
+
+  .service-sec-4-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: wrap;
+  }
+  .service-sec-4-title {
+    font-size: var(--fs-l);
+  }
+
+  .service-sec-4-text {
+    flex: 1 1 20%;
+    max-width: 50%;
+  }
+
+  .service-sec-4-image {
+    flex: 1;
+  }
+
+  .service-sec-4-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+}
+
+/* Mobile View (≤767px) - Stack Content Vertically */
+@media (max-width: 767px) {
+  .service-sec-4 {
+    padding: 2rem 1.5rem; /* Adjust padding for smaller screens */
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .service-sec-4-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .service-sec-4-icon {
+    /* position: static; */
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto 1rem;
+  }
+
+  .service-sec-4-icon svg {
+    width: 100%;
+    height: 100%;
+    color: rgba(10, 0, 0, 0.315);
+    z-index: -1;
+  }
+  .service-sec-4-title {
+    font-size: var(--fs-m);
+  }
+  .service-sec-4-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .service-sec-4-description {
+    font-size: var(--fs-xs);
+  }
+  .service-sec-4-image {
+    flex: 1 1 100%;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .service-sec-4-image img {
+    width: 90%; /* Make image more prominent */
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
       
       /* ########Section5########### */
       .service-sec-5 {
@@ -384,6 +642,73 @@
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
+      /* #### Tablet View (768px - 1024px) - Align same as desktop #### */
+@media (max-width: 1024px) {
+  .service-sec-5 {
+    padding: 2rem 4rem;
+    overflow: hidden;
+  }
+
+  .service-sec-5-content {
+    flex-direction: row; /* Maintain side-by-side alignment */
+    align-items: center;
+  }
+  .service-sec-5-bg svg{
+        
+    width: 80%;
+    height: 80%;
+  }
+  .service-sec-5-title {
+    font-size: var(--fs-l);
+  }
+
+  .service-sec-5-description {
+    font-size: var(--fs-s);
+  }
+}
+
+/* #### Mobile View (≤767px) - Stack Content Vertically #### */
+@media (max-width: 767px) {
+  .service-sec-5 {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .service-sec-5-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-sec-5-text {
+    width: 100%;
+  }
+
+  .service-sec-5-title {
+    font-size: var(--fs-m);
+  }
+
+  .service-sec-5-description {
+    font-size: var(--fs-xs);
+  }
+
+  .service-sec-5-points li {
+    /* flex-direction: column; */
+    text-align: left;
+    gap: 0.5rem;
+    font-size: var(--fs-xs);
+  }
+
+  .service-sec-5-image {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .service-sec-5-image img {
+    width: 90%;
+    height: auto;
+  }
+}
       
       /* #############section6############### */
       .service-sec-6 {
@@ -456,6 +781,102 @@
       .service-sec-6-points svg{
         color: #105e3c;
       }
+
+            /* ######################section9############# */
+.service-sec-9-image{
+  justify-content: flex-start;
+}
+      .service-sec-9-point{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      /* Tablet View (≤1024px) - Keep Desktop Alignment */
+@media screen and (max-width: 1024px) {
+  .service-sec-6 {
+    padding: 1rem 3rem; /* Reduce side padding */
+    overflow: hidden;
+  }
+
+  .service-sec-6-details {
+    flex-direction: row; /* Keep horizontal alignment */
+  }
+
+  .service-sec-6-image {
+    width: 50%; /* Maintain width */
+  }
+
+  .service-sec-6-image img {
+    width: 70%;
+  }
+
+  .service-sec-6-points {
+    flex: 2;
+  }
+
+  .service-sec-6-title {
+    font-size: var(--fs-l);
+  }
+
+  .service-sec-6-description {
+    font-size: var(--fs-s);
+  }
+}
+
+/* Mobile View (≤767px) - Align Vertically */
+@media screen and (max-width: 767px) {
+  .service-sec-6 {
+    padding: 1rem 1rem; /* Reduce padding */
+    overflow: hidden;
+  }
+
+  .service-sec-6-content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-sec-6-details {
+    flex-direction: column; /* Stack image and text */
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .service-sec-6-points {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .service-sec-6-points li {
+    font-size: var(--fs-xs);
+  }
+  .service-sec-6-points ul {
+    padding: 0;
+  }
+
+  .service-sec-6-image {
+    width: 100%; /* Full width */
+    justify-content: center;
+  }
+
+  .service-sec-6-image img {
+    width: 80%;
+  }
+
+  .service-sec-6-title {
+    font-size: var(--fs-m);
+  }
+  .service-sec-9-image{
+    justify-content: center;
+  }
+  .service-sec-6-description {
+    font-size: var(--fs-xs);
+  }
+}
+
+      /* Section 7 */
       .service-sec-7 {
         padding: 2rem 13rem;
         background-color: #f8f8f8;
@@ -515,7 +936,90 @@
         margin-bottom: 1rem;
         color: white;
       }
-      
+      /* #### Tablet View (768px - 1024px) - Align same as desktop #### */
+@media (max-width: 1024px) {
+  .service-sec-7 {
+    padding: 2rem 5rem;
+  }
+
+  .service-sec-7-content {
+   
+    align-items: center;
+  }
+
+  .service-sec-7-text {
+    padding-right: 1rem;
+  }
+
+  .service-sec-7-title {
+    font-size: var(--fs-l);
+  }
+
+  .service-sec-7-description {
+    font-size: var(--fs-s);
+  }
+
+  .service-sec-7-points {
+    flex-direction: row; /* Keep side-by-side layout */
+    gap: 1rem;
+  }
+  .service-sec-7-points h3{
+    font-size: var(--fs-m);
+  }
+  .service-sec-7-point {
+    width: 48%;
+  }
+}
+
+/* #### Mobile View (≤767px) - Stack Content Vertically #### */
+@media (max-width: 767px) {
+  .service-sec-7 {
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .service-sec-7-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-sec-7-text {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .service-sec-7-title {
+    font-size: var(--fs-m);
+  }
+
+  .service-sec-7-description {
+    font-size: var(--fs-xs);
+    padding: 1em;
+  }
+
+  .service-sec-7-points {
+    flex-direction: column; /* Stack points vertically */
+    align-items: center;
+    gap: 1rem;
+    padding: 1em;
+  }
+
+  .service-sec-7-point {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .service-sec-7-point h3 {
+    font-size: var(--fs-s);
+  }
+  .service-sec-7-point li {
+    font-size: var(--fs-xs);
+  }
+  .service-sec-7-point ul {
+    text-align: left;
+  }
+}
+
 
       /* ##############section8############### */
 
@@ -586,39 +1090,80 @@
           color: aliceblue;
           font-size:var(--fs-xxl);
         }
-        
-        
-      /* Media Query for responsiveness */
-      @media (max-width: 768px) {
-        .service-sec-8-content {
-          flex-direction: column;
-          align-items: center;
-        }
-      
-        .service-sec-8-text,
-        .service-sec-8-points {
-          width: 100%;
-        }
-      
-        .service-sec-8-title {
-          font-size: var(--fs-l);
-        }
-      
-        .service-sec-8-description {
-          font-size: var(--fs-xs);
-        }
-      }
-      
+      /* #### Tablet View (768px - 1024px) - Align same as desktop #### */
+@media (max-width: 1024px) {
+  .service-sec-8 {
+    padding: 2rem 5rem;
+    overflow: hidden;
+  }
 
-      /* ######################section9############# */
-.service-sec-9-image{
-  justify-content: flex-start;
+  .service-sec-8-content {
+    flex-direction: row; /* Maintain desktop alignment */
+    align-items: center;
+  }
+
+  .service-sec-8-title {
+    font-size: var(--fs-l);
+  }
+
+  .service-sec-8-description {
+    font-size: var(--fs-s);
+  }
+
+  .service-sec-8-points ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .service-sec-8-points li svg {
+    font-size: var(--fs-l);
+  }
+  .service-sec-8-point {
+    width: calc(33.33% - 1em); /* Maintain three cards per row */
+  }
 }
-      .service-sec-9-point{
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-      }
+
+/* #### Mobile View (≤767px) - Align 2 Cards Per Row #### */
+@media (max-width: 767px) {
+  .service-sec-8 {
+    overflow: hidden;
+    padding: 1rem 1.5rem;
+    text-align: center;
+  }
+
+  .service-sec-8-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-sec-8-text {
+    width: 100%;
+  }
+
+  .service-sec-8-title {
+    font-size: var(--fs-m);
+  }
+
+  .service-sec-8-description {
+    font-size: var(--fs-xs);
+  }
+
+  .service-sec-8-points ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .service-sec-8-points li svg {
+    font-size: var(--fs-m);
+  }
+  .service-sec-8-point {
+    width: calc(50% - 1em); /* Display 2 cards per row */
+    gap: 0.2em;
+    font-size: var(--fs-xs);
+  }
+}
+
+
+
 
       /* #############################sectionn10########################### */
       .service-sec-10{
@@ -701,3 +1246,69 @@
         color: #105e3c;
         margin: .5em;
       }
+    /* #### Tablet View (768px - 1024px) - Align same as desktop #### */
+@media (max-width: 1024px) {
+  .service-sec-10 {
+    padding: 2em 5rem;
+  }
+
+  .service-sec-10-index-list ul {
+    flex-direction: row; /* Maintain desktop alignment */
+    justify-content: space-evenly;
+  }
+  .service-sec-10-title {
+    font-size: var(--fs-l);
+  }
+  .service-sec-10-card h3 {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .service-sec-10-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service-sec-10-card {
+    width: calc(33.33% - 1em); /* Maintain three cards per row */
+  }
+}
+
+/* #### Mobile View (≤767px) - Align same as desktop #### */
+@media (max-width: 767px) {
+  .service-sec-10 {
+    padding: 1em 1rem;
+  }
+  .service-sec-10-title {
+    font-size: var(--fs-m);
+  }
+  .service-sec-10-description{
+    font-size: var(--fs-xs);
+  }
+  .service-sec-10-index-list ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+  }
+  .service-sec-10-index-list li {
+  padding: 5px;
+  font-size: 0.7rem;
+  }
+  .service-sec-10-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .service-sec-10-card h3 {
+  font-size: 0.7rem;
+  }
+  .service-sec-10-card p {
+  font-size: var(--fs-xxs);
+  width: fit-content;
+  }
+  .service-sec-10-card {
+   width: calc(50% - 1em);
+    width: 125px;
+  }
+}
