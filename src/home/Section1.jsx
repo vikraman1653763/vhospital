@@ -6,28 +6,29 @@ const Section1 = () => {
     
     const cards = [
         {
-          image: "/assets/banner1.webp",
+          image: "/assets/hosp/vh 09.webp",
         },
         {
-          image: "/assets/banner2.webp",
+          image: "/assets/hosp/vh 08.webp",
         },
         {
-          image: "/assets/banner3.webp",
+          image: "/assets/hosp/vh 07.webp",
         },
     ];
+    
     return (
-        <Carousel 
-            showArrows={true} 
-          
-            autoPlay={true}       
-            interval={3000}        
-            infiniteLoop={true}    
-            stopOnHover={false}   
-            showThumbs={false}  
+        <Carousel
+            showArrows={true}
+            autoPlay={true}
+            interval={4000}
+            infiniteLoop={true}
+            stopOnHover={false}
+            showThumbs={false}
             showStatus={false}
+            transitionTime={10}  
         >
             {cards.map((card, index) => (
-                <div key={index} className='carousel-card'>
+                <div key={index} className="carousel-card">
                     <img src={card.image} alt={`Banner ${index + 1}`} />
                 </div>
             ))}

@@ -1,5 +1,11 @@
+.carousel-card img {
+  width: 100vw; /* Full width */
+  height: auto;
+  max-height: 90vh; /* Adjust height for tablets */
+  object-fit: cover;
+}
 /* Tablet View (768px - 1024px) */
-@media screen and (min-width: 48vw) and (max-width: 64vw) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .carousel-card img {
     width: 100vw; /* Full width */
     height: auto;
@@ -9,7 +15,7 @@
 }
 
 /* Mobile View (Below 768px) */
-@media screen and (max-width: 48vw) {
+@media screen and (max-width: 767px) {
   .carousel-card img {
     width: 100vw; /* Ensure full width */
     height: auto;

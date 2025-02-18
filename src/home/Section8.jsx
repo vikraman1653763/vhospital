@@ -5,23 +5,23 @@ import ScrollTrigger from "react-scroll-trigger";
 const Section8 = () => {
   const descNums = [
     {
-      num: 500,
+      num: 50,
       text: "Expert Doctors",
     },
     {
-      num: 20000,
+      num: 50000,
       text: "Happy Patients",
     },
     {
       num: 23,
       text: "Emergency Service",
     },
+    // {
+    //   num: 100,
+    //   text: "Operation Theatres",
+    // },
     {
       num: 100,
-      text: "Operation Theatres",
-    },
-    {
-      num: 850,
       text: "Hospital Rooms",
     },
   ];

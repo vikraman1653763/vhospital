@@ -4,9 +4,9 @@
   }
   
   .service-sec-1-banner {
-    background-image: url('/path-to-your-banner-image.jpg'); /* Set your banner image path */
+    background-image: url('/assets/hosp/vh 03.webp'); /* Set your banner image path */
     background-size: cover;
-    background-color: #00000048;
+    /* background-color: #00000048; */
     background-position: center;
     display: flex;
     justify-content: center;
@@ -14,8 +14,8 @@
     color: white;
     text-align: center;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
   }
-  
   .service-sec-1-content {
     max-width: 100%;
     padding: 2em 13rem;
