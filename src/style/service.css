@@ -1,26 +1,30 @@
-.service-sec-1 {
+
+  .service-sec-1 {
     width: 100%;
     height: 100vh;
+    background-image: url('/assets/hosp/vh 03.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .service-sec-1-banner {
-    background-image: url('/assets/hosp/vh 03.webp'); /* Set your banner image path */
-    background-size: cover;
-    /* background-color: #00000048; */
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
-  }
-  .service-sec-1-content {
-    max-width: 100%;
-    padding: 2em 13rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
+  .service-sec-1-content {
+    text-align: center;
+    color: #fff;
+    padding: 2em 13rem;
+}
   .service-sec-1-title {
     font-size: var(--fs-xl);
     margin-bottom: 20px;
