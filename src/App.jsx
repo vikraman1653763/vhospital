@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './component/Navbar.jsx';
+import Navbar from './component/navbar.jsx';
 import Loader from './component/Loader.jsx';
 import Footer from './component/Footer.jsx';
 import ScrollToTop from './component/ScrollToTop.jsx';
