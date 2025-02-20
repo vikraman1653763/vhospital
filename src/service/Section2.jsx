@@ -40,7 +40,7 @@ const Section2 = () => {
           className="service-sec-2-image"
           data-aos="fade-left" // Animation for the image
         >
-          <img src="/assets/hosp/vh 02.webp" alt="Ambulance" /> {/* Set your ambulance image path */}
+          <img src="/assets/hosp/vh02.webp" alt="Ambulance" /> {/* Set your ambulance image path */}
         </div>
       </div>
 

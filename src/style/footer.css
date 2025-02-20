@@ -119,7 +119,7 @@
   .footer-divider {
     border: 0;
     height: 1px;
-    background: linear-gradient(56deg, rgba(202,255,0,1) 0%, rgba(9,121,120,1) 27%, rgba(116,255,0,1) 100%);
+    background: linear-gradient(56deg, rgba(202,255,0,1) 0%, #097978 27%, rgba(116,255,0,1) 100%);
     background-position: 50% 100%;
     margin: .4em 0;
   }
@@ -164,6 +164,14 @@
     color: black;
     background-color: #fff;
     border-radius: 5px;
+  }
+  .footer-developer-link{
+    border: none;
+    background-color: transparent;
+    font-weight: 900;
+    font-size: var(--fs-s);
+    text-decoration:double;
+    text-transform: uppercase;
   }
   /* Tablet View (768px - 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -232,4 +240,72 @@
     flex-direction: column; /* Stack footer bottom content */
     text-align: center;
   }
+}
+
+
+
+/* Popup Modal */
+.popup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: rgba(255, 255, 255, 1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 450px;
+  position: relative;
+  color: #fff;
+  backdrop-filter: blur(5px);
+  text-align: left;
+  /* border: 1px solid rgb(78, 78, 78); */
+  box-shadow: 1px 1px 5px #1b1b1b;
+}
+
+.popup-content h2 {
+  width: 100%;
+  text-align: center;
+  font-size: var(--fs-l);
+  color: #105e3c;
+}
+
+.popup-content p {
+  width: 100%;
+  text-align: center;
+color: #1b1b1b;
+}
+
+.popup-content button {
+  color: red;
+  border: none;
+  border-radius: 5em;
+  cursor: pointer;
+  width: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  background-color: transparent;
+  font-weight: bolder;
+}
+.popup-content a{
+  text-decoration:underline;
+}
+.popup-content button:hover {
+  color: rgb(0, 0, 0);
+}
+.design-dev span{
+  color:  white !important;
 }

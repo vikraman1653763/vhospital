@@ -3,7 +3,7 @@
 .about-sec-1 {
     width: 100%;
     height: 100vh;
-    background-image: url('/assets/hosp/vh 06.webp'); /* Set your banner image path */
+    background-image: url('/assets/hosp/vh06.webp'); /* Set your banner image path */
     background-size: cover;
     background-position: center;
     display: flex;

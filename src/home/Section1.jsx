@@ -6,13 +6,13 @@ const Section1 = () => {
     
     const cards = [
         {
-          image: "/assets/hosp/vh 09.webp",
+          image: "/assets/hosp/vh09.webp",
         },
         {
-          image: "/assets/hosp/vh 08.webp",
+          image: "/assets/hosp/vh08.webp",
         },
         {
-          image: "/assets/hosp/vh 07.webp",
+          image: "/assets/hosp/vh07.webp",
         },
     ];
     
