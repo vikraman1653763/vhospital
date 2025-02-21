@@ -78,12 +78,13 @@ nav {
   padding: 0.2em 0;
   list-style: none;
   border-radius: 5px;
-  z-index: 15;
-  pointer-events: none; 
-  width: 160px; /* Increase width (default 150px or adjust as needed) */
-  min-width: 100%;  /* Ensures it matches parent width */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 15 !important;
+  pointer-events: auto; 
+  width: 160px; 
+  min-width: 100%;  
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
   margin-top: 1em;
+  background: linear-gradient(50deg, rgba(16,94,60,1) 0%, rgba(42,153,105,1) 100%);
 }
 
 .menu-item.active .submenu-item {
