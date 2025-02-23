@@ -18,6 +18,11 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+  
+    // Preserve the active dropdown if menu was already open
+    if (mobileMenuOpen) {
+      setActiveMenu(null); // Close dropdowns only when menu is closing
+    }
   };
 
   useEffect(() => {
