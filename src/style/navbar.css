@@ -136,48 +136,48 @@ nav {
 @media screen and (max-width: 767px) {
   /* Hide Desktop Menu */
   .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background: linear-gradient(60deg, rgba(252, 252, 255, 0) 0%, #18a86a 40%, #105e3c 100%);
-      position: absolute;
-      top: 60px;
-      left: 0;
-      text-align: center;
-      z-index: 100;
-      padding: 1em 0;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background:#105e3c;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    z-index: 100;
+    padding: 1em 0;
   }
-
+  
   /* Show Menu when Open */
   .nav-links.open {
-      display: flex;
+    display: flex;
   }
-
+  
   .nav-links li {
-      width: 100%;
-      margin: 0;
+    width: 100%;
+    margin: 0;
   }
-
+  
   .nav-links li a,
   .nav-links li span {
-      font-size: var(--fs-s);
-      padding: 1em;
-      display: block;
-      width: 100%;
+    font-size: var(--fs-s);
+    padding: 1em;
+    display: block;
+    width: 100%;
   }
-
+  
   /* Show Mobile Toggle Button */
   .mobile-menu-icon {
-      display: block;
-      cursor: pointer;
-      font-size: var(--fs-m);
-      color: white;
+    display: block;
+    cursor: pointer;
+    font-size: var(--fs-m);
+    color: white;
   }
-
+  
   /* Hide Dropdown Items Initially */
   .submenu-item {
-      position: relative;
-      background-color: #0c5a3c;
+    position: relative;
+    background: #0c5a3c;
       width: 100%;
       text-align: center;
       padding: 0;
@@ -201,32 +201,32 @@ nav {
   overflow-y: auto;
   background: linear-gradient(270deg, rgba(42,153,105,1) 0%, rgba(20,103,67,1) 21%, rgba(16,94,60,1) 59%, rgba(42,153,105,1) 100%);
   border-radius: 0 0 10px 10px;
-  z-index: 20; /* Increase z-index so it appears above other elements */
+  z-index: 20;
 }
-  
-  .indi-type-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
-    padding: 1em;
-    list-style: none;
-  }
-  
-  /* Scrollbar for better usability */
-  .types-box::-webkit-scrollbar {
-    width: 6px;
-  }
-  
-  .types-box::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 3px;
-  }
+
+.indi-type-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  padding: 1em;
+  list-style: none;
+}
+
+/* Scrollbar for better usability */
+.types-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.types-box::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+}
 }
 
 /* 🔹 Desktop (≥ 768px) */
 @media screen and (min-width: 767px) {
   /* Hide Mobile Menu Icon */
   .mobile-menu-icon {
-      display: none;
+    display: none;
   }
 }

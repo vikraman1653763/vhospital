@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './component/navbar.jsx';
+import SpecialNavPage from './component/SpecialNavPage.jsx';
 import Loader from './component/Loader.jsx';
 import Footer from './component/Footer.jsx';
 import ScrollToTop from './component/ScrollToTop.jsx';
@@ -15,6 +16,8 @@ const SpecialityPage = lazy(() => import('./component/SpecialityPage.jsx'));
 const Success = lazy(() => import('./component/Success.jsx'));
 const Err = lazy(() => import('./component/404.jsx'));
 
+
+
 function App() {
   return (
     <Router>
@@ -28,7 +31,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/service" element={<Service />} />
             <Route path="/success" element={<Success />} />
-
+            <Route path="/specialities" element={<SpecialNavPage />} />
             {/* Dynamic Routes */}
             {specialityData.map((speciality) => (
               <Route

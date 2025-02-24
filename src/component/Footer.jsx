@@ -76,8 +76,7 @@ const Footer = () => {
             <h2>About DevZen</h2>
             <p>
               DevZen specializes in web and app development, delivering high-quality solutions tailored to your business needs.
-            </p>
-            <p>
+            
               This website was developed by&nbsp;
               <a href="https://vikramang.netlify.app" target="_blank" rel="noopener noreferrer">
                 Vikraman G

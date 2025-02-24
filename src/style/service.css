@@ -65,7 +65,7 @@
   }
 
   .service-sec-1-content {
-    padding: 2rem 1.5em; /* Adjust padding */
+    padding: 2rem .5em; /* Adjust padding */
   }
 
   .service-sec-1-title {
@@ -74,7 +74,7 @@
   }
 
   .service-sec-1-description {
-    font-size: var(--fs-xxs);
+    font-size: var(--fs-xs);
     line-height: 1.4;
   }
 }

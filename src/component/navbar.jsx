@@ -13,8 +13,14 @@ const Navbar = () => {
   const menuRef = useRef(null);
 
   const toggleMenu = (menu) => {
-    setActiveMenu(activeMenu === menu ? null : menu);
+    if (menu === 'specialities' && window.innerWidth <= 768) {
+      setActiveMenu(null);
+      setMobileMenuOpen(false);
+    } else {
+      setActiveMenu(activeMenu === menu ? null : menu);
+    }
   };
+  
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -59,9 +65,18 @@ const Navbar = () => {
         <ul className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/service">Services</Link></li>
+
           <li onClick={() => toggleMenu('specialities')}>
-            <span>Specialities & Consultants</span>
+            {window.innerWidth <= 768 ? (
+              <Link to="/specialities" onClick={() => setMobileMenuOpen(false)} className="special-nav-link">
+                Specialities & Consultants
+              </Link>
+            ) : (
+              <span className="special-nav-text">Specialities & Consultants</span>
+            )}
           </li>
+
+
           <li className="menu-item" onClick={() => toggleMenu('academic')}>
             <span>Academic</span>
             {activeMenu === 'academic' && (

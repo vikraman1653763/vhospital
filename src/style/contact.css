@@ -70,7 +70,7 @@
   }
 
   .contact-sec-1-content {
-    padding: 2em 1.5rem; /* Further reduce padding */
+    padding: 2em .5rem; /* Further reduce padding */
   }
 
   .contact-sec-1-title {
@@ -79,7 +79,7 @@
   }
 
   .contact-sec-1-description {
-    font-size: var(--fs-xxs);
+    font-size: var(--fs-xs);
     line-height: 1.4;
   }
 }
