@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './component/navbar.jsx';
+import Navbar from './component/Navbar.jsx';
 import Loader from './component/Loader.jsx';
 import Footer from './component/Footer.jsx';
 import ScrollToTop from './component/ScrollToTop.jsx';
@@ -10,6 +10,7 @@ import './App.css';
 const Home = lazy(() => import('./component/Home.jsx'));
 const About = lazy(() => import('./component/About.jsx'));
 const Contact = lazy(() => import('./component/Contact.jsx'));
+const Career = lazy(() => import('./component/Career.jsx'));
 const Service = lazy(() => import('./component/service.jsx'));
 const SpecialityPage = lazy(() => import('./component/SpecialityPage.jsx'));
 const Success = lazy(() => import('./component/Success.jsx'));
@@ -26,6 +27,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/career" element={<Career />} />
             <Route path="/service" element={<Service />} />
             <Route path="/success" element={<Success />} />
 

@@ -37,7 +37,7 @@ const Section4 = () => {
           className="service-sec-4-image"
           data-aos="fade-left" // Animation for the image
         >
-          <img src="/assets/hosp/05.webp" alt="Emergency and Trauma" />
+          <img src="/assets/hosp/vh05.webp" alt="Emergency and Trauma" />
         </div>
       </div>
     </section>
