@@ -14,12 +14,12 @@ const Section1 = () => {
         <Carousel
             showArrows={true}
             autoPlay={true}
-            interval={2000}  // Adjust timing
+            interval={5000}  // Adjust timing
             infiniteLoop={true}
             stopOnHover={false}
             showThumbs={false}
             showStatus={false}
-            transitionTime={1000}  // Smooth transition
+            transitionTime={2000}  // Smooth transition
             animationHandler="fade"  // Enable fade effect
             useKeyboardArrows={false}  // Prevent slide effect
         >
