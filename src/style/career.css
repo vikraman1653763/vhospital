@@ -12,7 +12,7 @@
   }
   
   .career-sec-1-banner {
-    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
     width: 100%;
     height: 100%;
     display: flex;
@@ -553,6 +553,9 @@ font-size: var(--fs-l);
   font-size: var(--fs-s);
   color: #333;
   margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .career-sec-5-button {
@@ -571,6 +574,13 @@ font-size: var(--fs-l);
   color: #105e3c;
   font-size: var(--fs-s);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.career-sec-5-description svg{
+  color: #105e3c;
+  margin: 0em .5em;
+
 }
 .career-sec-5-button:hover {
   color: #105e3c;
