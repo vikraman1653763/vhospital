@@ -1250,6 +1250,74 @@
         color: #105e3c;
         margin: .5em;
       }
+
+      /* #############################sectionn10########################### */
+
+      
+      
+      .service-sec-11-health-checkup {
+        padding: .5rem 13rem;
+        border-radius: 10px;
+        background: #f8f8f8;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      .service-sec-11-health-checkup h2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-size: var(--fs-s);
+        color: #105e3c;
+        padding: 1rem;
+        border-radius: 5px;
+        background: #e6f4ea;
+      }
+      
+      .service-sec-11-categories {
+        margin-top: 1rem;
+        padding-left: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      
+      .service-sec-11-categories > * {
+        width: calc(33.333% - 1em); 
+        margin-bottom: 1rem; 
+      }
+      
+    
+      
+      
+      .service-sec-11-category h3 {
+        font-size: var(--fs-m);
+        margin-bottom: 0.5rem;
+        color: #105e3c;
+      }
+      
+      .service-sec-11-category ul {
+        list-style: none;
+        padding-left: 1rem;
+      }
+      
+      .service-sec-11-category li {
+        font-size: var(--fs-s);
+        padding: 0.3rem 0;
+        color: #333;
+        position: relative;
+      }
+      
+      .service-sec-11-category li::before {
+        content: "\2022";
+        color: #105e3c;
+        font-weight: bold;
+        display: inline-block;
+        width: 1rem;
+        margin-left: -1rem;
+      }
+
+
     /* #### Tablet View (768px - 1024px) - Align same as desktop #### */
 @media (max-width: 1024px) {
   .service-sec-10 {
@@ -1275,6 +1343,14 @@
   .service-sec-10-card {
     width: calc(33.33% - 1em); /* Maintain three cards per row */
   }
+ 
+  .service-sec-11-health-checkup h2 {
+  padding: 2rem 5rem;
+    font-size: var(--fs-s);
+}
+.service-sec-11-category h3 {
+    font-size: var(--fs-s);
+}
 }
 
 /* #### Mobile View (≤767px) - Align same as desktop #### */
@@ -1315,4 +1391,25 @@
    width: calc(50% - 1em);
     width: 125px;
   }
+  .service-sec-11-health-checkup{
+    padding: .5em 1em ;
+  }
+  .service-sec-11-health-checkup h2 {
+    font-size: var(--fs-a);
+    padding: 1.5rem;
+      padding: 0.8rem;
+  }
+  .service-sec-11-category h3 {
+      font-size: var(--fs-xs);
+  }
+  .service-sec-11-category li {
+      font-size: var(--fs-xs);
 }
+.service-sec-11-categories > * {
+  width: calc(33.333% - 1em); 
+}
+}
+
+
+
+
