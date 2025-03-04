@@ -1,8 +1,8 @@
-
+/* Section 1 */
 .career-sec-1 {
     width: 100%;
     height: 100vh;
-    background-image: url('/assets/hosp/vh03.webp');
+    background-image: url('/assets/hosp/vh04.webp');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -31,7 +31,7 @@
   }
   
   .career-sec-1-description {
-    font-size: var(--fs-s);
+    font-size: 1.2rem;
     line-height: 1.6;
   }
 /* Tablet View (≤1024px) */
@@ -79,3 +79,540 @@
   }
 }
 
+/* Section 2 */
+
+/*###################section-2########################### */
+.career-sec-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 13rem;
+  position: relative;
+}
+
+.career-sec-2-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0em;
+}
+
+.career-sec-2-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.career-sec-2-title {
+  font-size:var(--fs-xl);
+  margin-bottom: 20px;
+  color: #105e3c;
+}
+
+.career-sec-2-description {
+  font-size:var(--fs-s);
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+.career-sec-2-image{
+  flex: 1;
+}
+.career-sec-2-image img {
+  width: 70%;
+  border-radius: 10px;
+}
+
+
+/* Tablet View (≤1024px) - Keep Desktop Alignment */
+@media screen and (max-width: 1024px) {
+.career-sec-2 {
+  padding: 1rem 5rem; /* Reduce side padding */
+  overflow: hidden;
+}
+.career-sec-2-title{
+font-size: var(--fs-l);
+}
+.career-sec-2-content {
+  flex-direction: row; /* Maintain horizontal alignment */
+}
+
+.career-sec-2-image img {
+  width: 100%; /* Adjust image size */
+}
+}
+
+/* Mobile View (≤767px) - Align Equipment Cards in 2 Columns */
+@media screen and (max-width: 767px) {
+.career-sec-2 {
+  padding: 2rem 2rem; /* Reduce padding */
+}
+
+.career-sec-2-content {
+  flex-direction: column; /* Stack text and image */
+  text-align: center;
+  align-items: center;
+}
+
+.career-sec-2-image img {
+  width: 90%;
+}
+
+.career-sec-2-title {
+  font-size: var(--fs-m);
+}
+
+.career-sec-2-description {
+  font-size: var(--fs-xs);
+}
+}
+
+/* Section2.css */
+
+.career-sec-3-container {
+  padding: 2rem 10rem;
+  position: relative;
+  background-color: #f9f9f9;
+  }
+  .career-hosp svg{
+  top: 1%;
+  left: -11%;
+  position: absolute;
+  width: 50%;
+  opacity: .4;
+  }
+  .career-sec-3-content {
+  max-width:100vw;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  }
+  .career-sec-3-content-box-1{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  /* flex: 5; */
+  }
+  .career-sec-3-content-box-2{
+  border-left: .2rem solid #105e3c;
+  padding: 1em;
+  }
+  .career-sec-3-title {
+  font-size: var(--fs-xl);
+  font-weight: bold;
+  color:#105e3c;
+  margin-bottom: 20px;
+  white-space: nowrap; /* Prevents text from breaking into a new line */
+  overflow: visible; /* Ensures the text stays within the container */
+  }
+  
+  .career-sec-3-description {
+  font-size: var(--fs-s);
+  margin-bottom: 30px;
+  line-height: 1.6;
+  width: 100%;
+  z-index: 4;
+  
+  }
+  
+  .career-sec-3-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items:flex-end;
+  padding-right: 1em;
+  
+  }
+  
+  .career-sec-3-card {
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 25em;
+  height: auto; /* Adjust as needed */
+  text-align: center;
+  border: 1px solid #ddd;
+  }
+  
+  
+  
+  .career-sec-3-card h3 {
+  font-size: var(--fs-m);
+  color:#105e3c;
+  margin-bottom: 15px;
+  
+  }
+  
+  .career-sec-3-card p {
+  font-size: var(--fs-s);
+  
+  }
+  /* Tablet view (768px - 1024px) */
+  /* Tablet view (768px - 1024px) */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .career-sec-3-container {
+    padding: 1rem 5rem;
+    position: relative;
+    background-color: #f9f9f9;
+  }
+  
+  .career-hosp svg {
+    width: 40%; /* Resize dragon image for tablet */
+    top: 3%;
+    left: -8%;
+    opacity: 0.5;
+  }
+  
+  .career-sec-3-content {
+    display: flex;
+    flex-direction: row; /* Keep content in row layout */
+    justify-content: space-around; /* Space out sections */
+    align-items: center; /* Align content to the top */
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .career-sec-3-content-box-1 {
+    width: 45%; /* Adjust width */
+  }
+  
+  .career-sec-3-content-box-2 {
+    border-left: 0.2rem solid #105e3c; /* Keep border for separation */
+    padding: 1.5em;
+    margin-left: 2rem;
+    width: 45%; /* Adjust width */
+  }
+  
+  .career-sec-3-title {
+    font-size: var(--fs-l); /* Adjust title font size for tablet */
+    margin-bottom: 15px;
+  }
+  
+  .career-sec-3-description {
+    font-size:var(--fs-s); /* Adjust description font size for tablet */
+    margin-bottom: 20px;
+  }
+  
+  .career-sec-3-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 1em;
+  }
+  
+  .career-sec-3-card {
+    width: 18em; /* Reduce width for tablet */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .career-sec-3-card h3 {
+    font-size: var(--fs-s); /* Adjust heading font size */
+    color: #105e3c;
+    margin-bottom: 15px;
+  }
+  
+  .career-sec-3-card p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+  }
+  
+  /* Mobile view (max-width: 768px) */
+  @media screen and (max-width: 767px) {
+  .career-sec-3-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    width: 100vw;
+  }
+  
+  .career-hosp svg {
+    position: absolute;
+    width: 60%; /* Resize dragon image */
+    top: 5%;
+    left: 15%;
+    opacity: 0.5;
+  }
+  
+  .career-sec-3-content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .career-sec-3-content-box-1,
+  .career-sec-3-content-box-2 {
+    width: 90%; /* Full width for inner boxes */
+  }
+  .career-sec-3-title {
+    font-size: var(--fs-m); /* Resize title for mobile */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .career-sec-3-description {
+    font-size: var(--fs-xs); /* Resize description */
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    width: 100%;
+  }
+  
+  .career-sec-3-cards {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+  }
+  
+  /* Remove border between the two sections */
+  .career-sec-3-content-box-2 {
+    border-left: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+  }
+  
+  .career-sec-3-card {
+    width: 90%; /* Adjust card width to full container */
+    height: auto; /* Keep the cards at consistent height */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .career-sec-3-card h3 {
+    font-size: var(--fs-s); /* Adjust font size for heading */
+    margin-bottom: 10px;
+    color: #105e3c;
+  }
+  
+  .career-sec-3-card p {
+    font-size: var(--fs-xs); /* Adjust font size for paragraph */
+  }
+  }
+
+/* CSS for Career Page */
+.job-section {
+  padding: 2rem 10rem;
+  /* background-color: #f9f9f9; */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.job-title {
+  font-size: var(--fs-xl);
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #105e3c;
+}
+
+.job-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.job-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e2dfdf;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 4px 6px rgba(16, 94, 60, 0.35);
+  padding: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-img-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.job-img {
+  font-size: 5rem;
+  color: #105e3c;
+}
+
+.job-info {
+  text-align: center;
+}
+
+.job-name {
+  font-size: var(--fs-m);
+  font-weight: bold;
+  color: #105e3c;
+  margin-bottom: 0.5rem;
+}
+
+.job-description {
+  font-size: var(--fs-s);
+}
+
+/* Tablet View (≤1024px) */
+@media (max-width: 1024px) {
+  .job-section{
+    padding: 2rem 4rem;
+  }
+  .job-title {
+    font-size: var(--fs-l);
+    margin-bottom: 1.5rem;
+  }
+  .job-card {
+    width: 300px;
+  }
+  .job-name {
+    font-size: var(--fs-s);
+  }
+  .job-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile View (≤767px) */
+@media (max-width: 767px) {
+  .job-section {
+    padding: 1rem;
+  }
+  .job-title {
+    font-size: var(--fs-m);
+  }
+  .job-list {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .job-card {
+    width: 220px;
+    padding: 1rem;
+  }
+  .job-img-container {
+    width: 60px;
+    height: 60px;
+  }
+  .job-img {
+    font-size: 4rem;
+  }
+  .job-name {
+    font-size: var(--fs-s);
+  }
+  .job-description {
+    font-size: var(--fs-xs);
+  }
+}
+
+      
+/* Section 7 */
+.career-sec-5-container {
+  padding: 3em 13rem;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.career-sec-5-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.career-sec-5-title {
+  font-size: var(--fs-xl);
+  color: #105e3c;
+  margin-bottom: 1em;
+}
+
+.career-sec-5-description {
+  font-size: var(--fs-s);
+  color: #333;
+  margin-bottom: 2em;
+}
+
+.career-sec-5-button {
+  display: inline-block;
+  font-size: var(--fs-s);
+  background-color: #105e3c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  padding: .5em;
+  border: 1px solid #fff;
+
+}
+.career-sec-5-description a{
+  color: #105e3c;
+  font-size: var(--fs-s);
+  text-decoration: none;
+}
+.career-sec-5-button:hover {
+  color: #105e3c;
+  border: 1px solid #105e3c;
+  background-color: #fff;
+}
+/* Tablet View (≤1024px) */
+@media screen and (max-width: 1024px) {
+.career-sec-5-container {
+padding: 3em 5rem; /* Reduce padding for better fit */
+}
+
+.career-sec-5-title {
+font-size: var(--fs-l); /* Slightly reduce font size */
+}
+
+.career-sec-5-description {
+font-size: var(--fs-s);
+}
+}
+
+/* Mobile View (≤767px) */
+@media screen and (max-width: 767px) {
+.career-sec-5-container {
+padding: 2em 2rem; /* Further reduce padding */
+}
+
+.career-sec-5-title {
+font-size: var(--fs-m); /* Adjust title size */
+}
+
+.career-sec-5-description {
+font-size: var(--fs-xs);
+margin-bottom: 1em;
+}
+.career-sec-5-description a{
+  color: #105e3c;
+  font-size: var(--fs-xs);
+  text-decoration: none;
+}
+.career-sec-5-button {
+padding: 0.75em 1.5em; /* Increase button padding for better touch */
+font-size: var(--fs-s);
+}
+}

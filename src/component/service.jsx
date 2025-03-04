@@ -12,6 +12,7 @@ import Section7 from '../service/Section7';
 import Section8 from '../service/Section8';
 import Section9 from '../service/Section9';
 import Section10 from '../service/Section10';
+import Section11 from '../service/Section11';
 function Service() {
   return (
     <div>
@@ -21,6 +22,7 @@ function Service() {
      <Section3/>
      <Section4/>
         <Section5/>
+        <Section11/>
       <Section6/> 
     <Section7/> 
       <Section8/>

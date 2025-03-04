@@ -67,16 +67,14 @@ const ServicesData = [
     id: 'healthcheckups',
     heading: 'Health Checkups',
     texts: [
-      "Comprehensive Health Checkups",
-      "Customized Screening Programs",
-      "Expert Supervision & Care",
-      "Early Detection of Health Risks",
-      "Holistic Wellness Approach",
-      "Personalized Packages for All Age Groups",
-      "Focus on Preventive Care",
-      "Prompt Diagnosis & Treatment",
-      "Advanced Diagnostic Technology",
-      "Journey to Better Health Starts Here"
+      "BASIC HEALTH CHECKUP - Rs. 1,040/-",
+      "MASTER HEALTH CHECKUP - Rs. 2,500/-",
+      "EXECUTIVE MASTER HEALTH CHECKUP - Rs. 5,500/-",
+      "EXECUTIVE HEART CHECKUP - Rs. 4,500/-",
+      "WELL WOMEN HEALTH CHECKUP - Rs. 1,900/-",
+      "DIABETIC HEALTH CHECKUP - Rs. 1,000/-",
+      "BASIC CHILD HEALTH CHECKUP (5 years & above) - Rs. 1,100/-",
+   
     ],
   },
   {

@@ -30,6 +30,7 @@ const Footer = () => {
             <li><Link to="/" className="footer-link">Home</Link></li>
             <li><Link to="/about" className="footer-link">About</Link></li>
             <li><Link to="/service" className="footer-link">Service</Link></li>
+            <li><Link to="/career" className="footer-link">Career</Link></li>
             <li><Link to="/contact" className="footer-link">Contact</Link></li>
             <li><Link to="https://venkataeswaraalliedhealthsciences.com/" className="footer-link" target="_blank" rel="noopener noreferrer">Academic</Link></li>
           </ul>
@@ -62,10 +63,10 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="footer-bottom">
         <p className="footer-bottom-text">
-          © 2024 Venkataeswara Hospital
+          © 2025 Venkataeswara Hospital. All Rights Reserved.
         </p>
         <p>
-          developed by <button onClick={handlePopupOpen} className="footer-developer-link">devzen</button>
+          Developed by <button onClick={handlePopupOpen} className="footer-developer-link">devzen</button>
         </p>
       </div>
 
@@ -76,8 +77,7 @@ const Footer = () => {
             <h2>About DevZen</h2>
             <p>
               DevZen specializes in web and app development, delivering high-quality solutions tailored to your business needs.
-            </p>
-            <p>
+            
               This website was developed by&nbsp;
               <a href="https://vikramang.netlify.app" target="_blank" rel="noopener noreferrer">
                 Vikraman G
