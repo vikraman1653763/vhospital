@@ -8,11 +8,11 @@
     padding: 0.3em 13em;
     font-family: Arial, sans-serif;
     background-size:200% 200%; 
-    background-image: linear-gradient(260deg, rgba(61,131,97,1) 0%, rgba(28,103,88,1) 30%, rgba(28,103,88,1) 60%, rgba(61,131,97,1) 100%);
-    animation: gradientAnimation 6s infinite linear;
+    background-image: linear-gradient(180deg, rgba(61,131,97,1) 0%, rgba(28,103,88,1) 30%, rgba(28,103,88,1) 60%, rgba(61,131,97,1) 100%);
+    /* animation: gradientAnimation 6s infinite linear; */
 }
 
-@keyframes gradientAnimation {
+/* @keyframes gradientAnimation {
   0% {
     background-position: -100% 0%;
 }
@@ -22,7 +22,7 @@
 100% {
     background-position: 100% 100%;
 }
-}
+} */
 
   .footer-container {
     display: flex;
@@ -126,7 +126,7 @@
   
   .footer-bottom {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin: .5em 0;

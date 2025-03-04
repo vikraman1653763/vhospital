@@ -7,6 +7,23 @@ import { LiaStethoscopeSolid } from "react-icons/lia";
 import { useNavigate } from 'react-router-dom';
 
 const ServicesData = [
+  
+  {
+    icon: <GiLoveInjection />,
+    title: 'Health Checkups',
+    id: 'healthcheckups',
+    heading: 'Health Checkups',
+    texts: [
+      "BASIC HEALTH CHECKUP - Rs. 1,040/-",
+      "MASTER HEALTH CHECKUP - Rs. 2,500/-",
+      "EXECUTIVE MASTER HEALTH CHECKUP - Rs. 5,500/-",
+      "EXECUTIVE HEART CHECKUP - Rs. 4,500/-",
+      "WELL WOMEN HEALTH CHECKUP - Rs. 1,900/-",
+      "DIABETIC HEALTH CHECKUP - Rs. 1,000/-",
+      "BASIC CHILD HEALTH CHECKUP (5 years & above) - Rs. 1,100/-",
+   
+    ],
+  },
   {
     icon: <FaAmbulance />,
     title: 'Ambulance',
@@ -61,22 +78,7 @@ const ServicesData = [
       "Comprehensive Critical Care Support"
     ],
   },
-  {
-    icon: <GiLoveInjection />,
-    title: 'Health Checkups',
-    id: 'healthcheckups',
-    heading: 'Health Checkups',
-    texts: [
-      "BASIC HEALTH CHECKUP - Rs. 1,040/-",
-      "MASTER HEALTH CHECKUP - Rs. 2,500/-",
-      "EXECUTIVE MASTER HEALTH CHECKUP - Rs. 5,500/-",
-      "EXECUTIVE HEART CHECKUP - Rs. 4,500/-",
-      "WELL WOMEN HEALTH CHECKUP - Rs. 1,900/-",
-      "DIABETIC HEALTH CHECKUP - Rs. 1,000/-",
-      "BASIC CHILD HEALTH CHECKUP (5 years & above) - Rs. 1,100/-",
-   
-    ],
-  },
+ 
   {
     icon: <FaXRay />,
     title: 'Imaging',
@@ -200,7 +202,7 @@ const Service = ({ SelectService, setSelectService, service }) => {
 };
 
 const Services = () => {
-  const [SelectService, setSelectService] = useState('ambulance');
+  const [SelectService, setSelectService] = useState('healthcheckups');
   const navigate = useNavigate(); // For redirection
 
   const selectedServiceData = ServicesData.find(
@@ -210,10 +212,10 @@ const Services = () => {
 
   // Map Service ID to Section IDs
   const serviceToSectionMap = {
+    healthcheckups: 'health',
     ambulance: 'ambulance',
     dietary: 'diet',
     emergency: 'emergency',
-    healthcheckups: 'health',
     imaging: 'image',
     icu: 'icu',
     laboratory: 'lab',
