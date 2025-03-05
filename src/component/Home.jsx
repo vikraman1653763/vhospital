@@ -24,7 +24,7 @@ function Home() {
       <Section4/>
        <Section10/>
       {/* <Section6/> */}
-      {/* <Section11/> */}
+      <Section11/>
       {/* <Section12/> */}
       <Section7/>
 

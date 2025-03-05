@@ -5,14 +5,14 @@ const DoctorsData = {
   heading: 'Meet Our Specialists',
   doctors: [
     {
-      img: '/assets/doc1.webp',
-      name: 'Dr. John Smith',
-      job: 'Cardiologist',
+      img: '/assets/hosp/krishna.webp',
+      name: 'Dr. Krishna Moorthy',
+      job: 'Orthologist',
     },
     {
-      img: '/assets/doc2.webp',
-      name: 'Dr. Kristin Watson',
-      job: 'Dentist',
+      img: '/assets/hosp/sindhuja.webp',
+      name: 'Dr. Sindhuja',
+      job: 'Dermatologist',
     },
     {
       img: '/assets/doc3.webp',

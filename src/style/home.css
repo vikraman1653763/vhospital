@@ -995,6 +995,8 @@
 
 .doctor-img {
   width: 100%;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius:70px;
 }
 
 .doctor-info {
@@ -1024,7 +1026,12 @@
     justify-content: center;
     gap: 1rem;
   }
-
+  .doctor-img {
+    width: 100%;
+    padding: 0.2em;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius:40px;
+  }
   .doctor-card {
     width: 8rem;
   }
@@ -1060,6 +1067,13 @@
   }
   .doctor-job {
     font-size: 0.5rem;
+  }
+  .doctor-img {
+    width: 100%;
+    padding: 0.1em;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius:20px;
+    margin-left: 15px;
   }
   .doctor-name {
     font-size: var(--fs-xs);
