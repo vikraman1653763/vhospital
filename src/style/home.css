@@ -1057,13 +1057,15 @@
     grid-template-columns: repeat(2, 1fr); /* 2 doctors per row */
     gap: 0.5rem;
     justify-content: center;
+    justify-items: center;
   }
   .doctor-card {
     width: 7.5rem;
     height: 10.5rem;
+    border-radius: 10px;
   }
   .doctor-image {
-    width: 70px;
+    width: 100%;
   }
   .doctor-job {
     font-size: 0.5rem;
@@ -1073,7 +1075,7 @@
     padding: 0.1em;
     border-top-left-radius: 20px;
     border-bottom-right-radius:20px;
-    margin-left: 15px;
+    margin-left: 0%;
   }
   .doctor-name {
     font-size: var(--fs-xs);

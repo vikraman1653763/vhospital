@@ -14,16 +14,7 @@ const DoctorsData = {
       name: 'Dr. Sindhuja',
       job: 'Dermatologist',
     },
-    {
-      img: '/assets/doc3.webp',
-      name: 'Dr. Robert Flores',
-      job: 'Surgeon',
-    },
-    {
-      img: '/assets/doc4.webp',
-      name: 'Dr. Katherine Allen',
-      job: 'Neurologist',
-    },
+
   ],
   heading2: 'Who Are We?',
   desc: 'A collaborative hospital service website is a digital platform that brings together healthcare professionals, patients and administrators to streamline and engage the delivery of healthcare services. This innovative platform allows for seamless communication and coordination among healthcare teams, enabling them to provide more efficient and personalized care to patients.',
