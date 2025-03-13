@@ -1,6 +1,7 @@
 .contact-page{
-  overflow-x: hidden;
-}.contact-sec-1 {
+  overflow: hidden;
+}
+.contact-sec-1 {
     width: 100vw;
     height: 100vh;
     background-image: url('/assets/hosp/vh01.webp');

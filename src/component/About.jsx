@@ -8,7 +8,7 @@ import Section5 from '../about/Section5';
 import Section6 from '../about/Section6';
 function About() {
   return (
-    <div>
+    <div className='about-page'>
     <Section1/> 
       <Section2/>
      <Section3/> 
