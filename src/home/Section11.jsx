@@ -22,7 +22,7 @@ const DoctorsData = {
     {
       img: '/assets/hosp/madhu.webp',
       name: 'Dr. Madhu Sankar',
-      job: 'Chief Cardiothoraric Surgeon',
+      job: 'Cardiac Anesthesiologist',
     },
   ],
   heading2: 'Who Are We?',
