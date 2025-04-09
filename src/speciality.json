@@ -45,8 +45,16 @@
         "logo": "/specialityimg/cardiosurglogo.webp",
         "description1": "At Venkataeswara Hospitals, we offer advanced cardiothoracic surgical care to address complex conditions affecting the heart, lungs, and chest cavity. Our skilled team of cardiothoracic surgeons is equipped to handle a wide range of surgeries, from minimally invasive procedures to major open-heart surgeries, ensuring precision and safety at every step.",
         "description2": "The thorax, home to vital organs like the heart and lungs, demands exceptional expertise due to its intricate network of blood vessels and nerves. Our surgeons collaborate closely with the Cardiology Department to deliver both curative treatments and exploratory diagnostics for heart conditions.",
-        "description3": "We specialize in treating coronary artery diseases, valve disorders, congenital defects, and lung-related conditions, offering personalized care plans to improve outcomes. With state-of-the-art technology and a focus on patient-centric care, Venkataeswara Hospitals is committed to providing safe, effective, and lifesaving cardiothoracic surgeries."
-        },
+        "description3": "We specialize in treating coronary artery diseases, valve disorders, congenital defects, and lung-related conditions, offering personalized care plans to improve outcomes. With state-of-the-art technology and a focus on patient-centric care, Venkataeswara Hospitals is committed to providing safe, effective, and lifesaving cardiothoracic surgeries.",
+        "doctors": [
+        {
+          "doctor_name": "Dr. N. Madhu Sankar",
+          "specialist": "Chief Cardiothoraric Surgeon",
+          "time": "9.00 AM – 5.00 PM",
+          "image": "/assets/hosp/madhu.webp"
+        }
+      ]  
+      },
         {
           "id": "counselling",
           "title": "Counselling",

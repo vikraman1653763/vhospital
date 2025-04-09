@@ -8,7 +8,7 @@ const SpecialityPage = ({ data }) => {
   const [validData, setValidData] = useState(null);
 
   useEffect(() => {
-    AOS.init({ duration: 500 }); // Initialize AOS with a duration of 500ms
+    AOS.init({ duration: 500 });
   }, []);
 
   useEffect(() => {
@@ -24,10 +24,10 @@ const SpecialityPage = ({ data }) => {
       {validData ? (
         <div className="special-page">
           {/* Title */}
-          <h1 className="special-title" >{validData.title}</h1>
+          <h1 className="special-title">{validData.title}</h1>
 
           {/* First Section */}
-          <div className="special-section" >
+          <div className="special-section">
             <div className="special-text" data-aos="fade-right">{validData.description1}</div>
             <div className="special-image">
               <img src={validData.image} alt={validData.title} />
@@ -37,7 +37,7 @@ const SpecialityPage = ({ data }) => {
           {/* Second Section */}
           <div className="special-section" data-aos="fade-up">
             <div className="special-logo">
-              <img src={validData.logo} alt={validData.title} />
+              <img src={validData.logo} alt={`${validData.title} logo`} />
             </div>
             <div className="special-text-2" data-aos="fade-left">{validData.description2}</div>
           </div>
@@ -47,15 +47,19 @@ const SpecialityPage = ({ data }) => {
             <div className="special-text-3">{validData.description3}</div>
           </div>
 
-          {/* Our Doctors Section (Only if doctors are available) */}
+          {/* Our Doctors Section */}
           {validData.doctors && validData.doctors.length > 0 && (
-            <div className="doctors-section" >
+            <div className="doctors-section">
               <h3 className="doctors-title">Our Doctors</h3>
               <div className="doctors-list">
                 {validData.doctors.map((doctor, index) => (
                   <div className="doctors-card" key={index} data-aos="fade-up">
                     <div className="doctors-img-container">
-                      <FaUserDoctor className='doctors-img'/>
+                      {doctor.image ? (
+                        <img src={doctor.image} alt={doctor.doctor_name} className="doctors-img" />
+                      ) : (
+                        <FaUserDoctor className="doctors-img" />
+                      )}
                     </div>
                     <div className="doctor-info">
                       <h4 className="doctor-name">{doctor.doctor_name}</h4>
