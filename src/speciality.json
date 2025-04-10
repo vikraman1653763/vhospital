@@ -52,6 +52,11 @@
           "specialist": "Chief Cardiothoracic Surgeon",
           "time": "9.00 AM – 5.00 PM",
           "image": "/assets/hosp/madhu.webp"
+        },
+        {
+          "doctor_name": "Dr. Kirthivasan",
+          "specialist": "Cardiac Anesthesiologist",
+          "time": "9.00 AM – 5.00 PM"
         }
       ]  
       },
